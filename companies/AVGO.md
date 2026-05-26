@@ -1,0 +1,214 @@
+---
+type: company
+ticker: AVGO
+name: Broadcom Inc.
+sector: Technology
+industry: Semiconductors
+country: US
+updated: "2026-05-26"
+sources:
+  - info.json
+  - peers.json
+  - value_chain.md
+  - segments.json
+  - insider.json
+  - holders.json
+  - transcript_competitors.json
+edges:
+  - { type: competes_with, target: ADI, confidence: 0.6 }
+  - { type: competes_with, target: AMD, confidence: 0.6 }
+  - { type: competes_with, target: ASML, confidence: 0.6 }
+  - { type: competes_with, target: FORM, confidence: 0.6 }
+  - { type: competes_with, target: META, confidence: 0.6 }
+  - { type: competes_with, target: MU, confidence: 0.6 }
+  - { type: competes_with, target: POWI, confidence: 0.6 }
+  - { type: competes_with, target: QRVO, confidence: 0.6 }
+  - { type: competes_with, target: SMTC, confidence: 0.6 }
+  - { type: competes_with, target: TSM, confidence: 0.6 }
+  - { type: competes_with, target: MRVL, confidence: 0.9 }
+  - { type: competes_with, target: NVDA, confidence: 0.95 }
+  - { type: competes_with, target: AMD, confidence: 0.6 }
+  - { type: competes_with, target: NTNX, confidence: 0.7 }
+  - { type: competes_with, target: INTC, confidence: 0.6 }
+  - { type: competes_with, target: ANET, confidence: 0.6 }
+  - { type: competes_with, target: CSCO, confidence: 0.7 }
+  - { type: competes_with, target: Red Hat, confidence: 0.65 }
+  - { type: competes_with, target: MSFT, confidence: 0.6 }
+  - { type: partners_with, target: OpenAI, confidence: 0.85 }
+  - { type: partners_with, target: GOOGL, confidence: 0.9 }
+  - { type: partners_with, target: 6701.T, confidence: 0.7 }
+  - { type: partners_with, target: GOOGL, confidence: 0.9 }
+  - { type: partners_with, target: META, confidence: 0.85 }
+  - { type: sells_to, target: Customers, confidence: 0.4 }
+  - { type: sells_to, target: Field, confidence: 0.4 }
+  - { type: sells_to, target: Cisco, confidence: 0.4 }
+  - { type: sells_to, target: Investment Thesis, confidence: 0.4 }
+  - { type: sells_to, target: Micron, confidence: 0.4 }
+  - { type: sells_to, target: Tier, confidence: 0.4 }
+  - { type: sells_to, target: Broadcom Inc, confidence: 0.4 }
+  - { type: sells_to, target: Evaluate, confidence: 0.4 }
+  - { type: sells_to, target: Samsung, confidence: 0.4 }
+  - { type: sells_to, target: Value, confidence: 0.4 }
+  - { type: sells_to, target: Model, confidence: 0.4 }
+  - { type: sells_to, target: Amkor, confidence: 0.4 }
+  - { type: sells_to, target: Future, confidence: 0.4 }
+  - { type: sells_to, target: Acquisition, confidence: 0.4 }
+  - { type: sells_to, target: Technology, confidence: 0.4 }
+  - { type: sells_to, target: Value Chain Index, confidence: 0.4 }
+  - { type: sells_to, target: Jimmy, confidence: 0.4 }
+  - { type: sells_to, target: Lenovo, confidence: 0.65 }
+  - { type: sells_to, target: Reddit, confidence: 0.4 }
+  - { type: sells_to, target: Many, confidence: 0.4 }
+  - { type: sells_to, target: Archives, confidence: 0.4 }
+  - { type: sells_to, target: Supply Chain Implications, confidence: 0.4 }
+  - { type: sells_to, target: Journal, confidence: 0.4 }
+  - { type: sells_to, target: Tell, confidence: 0.4 }
+  - { type: sells_to, target: Foxconn, confidence: 0.4 }
+  - { type: sells_to, target: Secondary Offering, confidence: 0.4 }
+  - { type: sells_to, target: Broadcom, confidence: 0.4 }
+  - { type: sells_to, target: Signals Bottleneck, confidence: 0.4 }
+  - { type: sells_to, target: Intel, confidence: 0.4 }
+  - { type: sells_to, target: Suppliers, confidence: 0.4 }
+  - { type: sells_to, target: Nasdaq, confidence: 0.4 }
+  - { type: sells_to, target: Avago Technologies, confidence: 0.4 }
+  - { type: sells_to, target: Avago, confidence: 0.4 }
+  - { type: sells_to, target: Null Exposure, confidence: 0.4 }
+  - { type: sells_to, target: Avago Technologies Announces Withdrawal, confidence: 0.4 }
+  - { type: sells_to, target: Solactive, confidence: 0.4 }
+  - { type: sells_to, target: Substack, confidence: 0.4 }
+  - { type: sells_to, target: Division, confidence: 0.4 }
+  - { type: sells_to, target: Working, confidence: 0.4 }
+  - { type: sells_to, target: Dell, confidence: 0.4 }
+  - { type: sells_to, target: Capacity, confidence: 0.4 }
+  - { type: sells_to, target: GOOGL, confidence: 0.95 }
+  - { type: sells_to, target: Anthropic, confidence: 0.9 }
+  - { type: sells_to, target: META, confidence: 0.95 }
+  - { type: sells_to, target: OpenAI, confidence: 0.9 }
+  - { type: sells_to, target: NEC Corporation, confidence: 0.7 }
+  - { type: sells_to, target: DELL, confidence: 0.65 }
+  - { type: sells_to, target: HPQ, confidence: 0.6 }
+  - { type: sells_to, target: CSCO, confidence: 0.6 }
+  - { type: sells_to, target: GOOGL, confidence: 0.95 }
+  - { type: sells_to, target: AAPL, confidence: 0.9 }
+  - { type: sells_to, target: ANET, confidence: 0.6 }
+  - { type: competes_with, target: META, confidence: 0.6 }
+  - { type: competes_with, target: NVDA, confidence: 0.6 }
+  - { type: competes_with, target: TSM, confidence: 0.6 }
+  - { type: supplied_by, target: Suppliers, confidence: 0.4 }
+  - { type: supplied_by, target: Customers, confidence: 0.4 }
+  - { type: supplied_by, target: Field, confidence: 0.4 }
+  - { type: supplied_by, target: Cisco, confidence: 0.4 }
+  - { type: supplied_by, target: Investment Thesis, confidence: 0.4 }
+  - { type: supplied_by, target: Micron, confidence: 0.4 }
+  - { type: supplied_by, target: Tier, confidence: 0.4 }
+  - { type: supplied_by, target: Broadcom Inc, confidence: 0.4 }
+  - { type: supplied_by, target: Evaluate, confidence: 0.4 }
+  - { type: supplied_by, target: Samsung, confidence: 0.4 }
+  - { type: supplied_by, target: Value, confidence: 0.4 }
+  - { type: supplied_by, target: Model, confidence: 0.4 }
+  - { type: supplied_by, target: Amkor, confidence: 0.4 }
+  - { type: supplied_by, target: Future, confidence: 0.4 }
+  - { type: supplied_by, target: Acquisition, confidence: 0.4 }
+  - { type: supplied_by, target: Technology, confidence: 0.4 }
+  - { type: supplied_by, target: Value Chain Index, confidence: 0.4 }
+  - { type: supplied_by, target: Jimmy, confidence: 0.4 }
+  - { type: supplied_by, target: Lenovo, confidence: 0.4 }
+  - { type: supplied_by, target: Reddit, confidence: 0.4 }
+  - { type: supplied_by, target: Many, confidence: 0.4 }
+  - { type: supplied_by, target: Archives, confidence: 0.4 }
+  - { type: supplied_by, target: Supply Chain Implications, confidence: 0.4 }
+  - { type: supplied_by, target: Journal, confidence: 0.4 }
+  - { type: supplied_by, target: Tell, confidence: 0.4 }
+  - { type: supplied_by, target: Foxconn, confidence: 0.6 }
+  - { type: supplied_by, target: Secondary Offering, confidence: 0.4 }
+  - { type: supplied_by, target: Broadcom, confidence: 0.4 }
+  - { type: supplied_by, target: Signals Bottleneck, confidence: 0.4 }
+  - { type: supplied_by, target: Intel, confidence: 0.4 }
+  - { type: supplied_by, target: Nasdaq, confidence: 0.4 }
+  - { type: supplied_by, target: Avago Technologies, confidence: 0.4 }
+  - { type: supplied_by, target: Avago, confidence: 0.4 }
+  - { type: supplied_by, target: Null Exposure, confidence: 0.4 }
+  - { type: supplied_by, target: Avago Technologies Announces Withdrawal, confidence: 0.4 }
+  - { type: supplied_by, target: Solactive, confidence: 0.4 }
+  - { type: supplied_by, target: Substack, confidence: 0.4 }
+  - { type: supplied_by, target: Division, confidence: 0.4 }
+  - { type: supplied_by, target: Working, confidence: 0.4 }
+  - { type: supplied_by, target: Dell, confidence: 0.4 }
+  - { type: supplied_by, target: Capacity, confidence: 0.4 }
+  - { type: supplied_by, target: TSM, confidence: 0.95 }
+  - { type: supplied_by, target: UMC, confidence: 0.6 }
+  - { type: supplied_by, target: GFS, confidence: 0.6 }
+  - { type: supplied_by, target: SMIC, confidence: 0.5 }
+  - { type: supplied_by, target: ASX, confidence: 0.7 }
+  - { type: supplied_by, target: Siliconware Precision Industries, confidence: 0.7 }
+  - { type: supplied_by, target: AMKR, confidence: 0.7 }
+  - { type: supplied_by, target: UTAC, confidence: 0.6 }
+  - { type: supplied_by, target: STATSChipPAC, confidence: 0.6 }
+  - { type: supplied_by, target: Samsung Electronics, confidence: 0.6 }
+  - { type: supplied_by, target: FCX, confidence: 0.6 }
+  - { type: supplied_by, target: EMN, confidence: 0.6 }
+  - { type: supplied_by, target: SKYT, confidence: 0.5 }
+  - { type: supplied_by, target: SNPS, confidence: 0.7 }
+  - { type: supplied_by, target: CDNS, confidence: 0.7 }
+  - { type: supplied_by, target: ARM, confidence: 0.6 }
+  - { type: supplied_by, target: 000660.KS, confidence: 0.45 }
+  - { type: supplied_by, target: 005930.KS, confidence: 0.4 }
+  - { type: supplied_by, target: MU, confidence: 0.4 }
+---
+
+# Broadcom Inc. (AVGO)
+
+## Overview
+
+- **Sector:** Technology
+- **Industry:** Semiconductors
+- **Country:** US
+- **Website:** https://www.broadcom.com
+
+## Competitors
+
+- [Analog Devices, Inc.](ADI.md) (ADI)
+- [Advanced Micro Devices, Inc.](AMD.md) (AMD)
+- [ASML Holding N.V.](ASML.md) (ASML)
+- [FormFactor, Inc.](FORM.md) (FORM)
+- [Meta Platforms, Inc.](META.md) (META)
+- [Micron Technology, Inc.](MU.md) (MU)
+- [Power Integrations, Inc.](POWI.md) (POWI)
+- [Qorvo, Inc.](QRVO.md) (QRVO)
+- [Semtech Corporation](SMTC.md) (SMTC)
+- [Taiwan Semiconductor Manufacturing Company Limited](TSM.md) (TSM)
+- [Marvell Technology](MRVL.md) (MRVL)
+- [NVIDIA](NVDA.md) (NVDA)
+- [Advanced Micro Devices](AMD.md) (AMD)
+- [Nutanix](NTNX.md) (NTNX)
+- [Intel](INTC.md) (INTC)
+- [Arista Networks](ANET.md) (ANET)
+- [Cisco Systems](CSCO.md) (CSCO)
+- Red Hat
+- [Microsoft](MSFT.md) (MSFT)
+
+## Key Insiders
+
+- Bryant Diane M (director)
+- DELLY GAYLA J (director)
+- Hao Kenneth (director)
+- Kawwas Charlie B (officer: President, SSG)
+- Low Check Kian (director)
+- PAGE JUSTINE (director)
+- SAMUELI HENRY (director)
+- TAN HOCK E (director, officer: President and CEO)
+- Velaga S. Ram (officer: President, ISG)
+- You Harry L. (director)
+
+## Top Institutional Holders
+
+- ADAPT Investment Managers SA
+- ALKEON CAPITAL MANAGEMENT LLC
+- BERKOWITZ CAPITAL & CO  LLC
+- BNP PARIBAS FINANCIAL MARKETS
+- BOOTHBAY FUND MANAGEMENT, LLC
+- Broderick Brian C
+- COATUE MANAGEMENT LLC
+- CTC LLC
+- Capital Advisory Group Advisory Services, LLC
+- DAI ICHI MUTUAL LIFE INSURANCE CO
