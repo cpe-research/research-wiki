@@ -8,7 +8,6 @@ country: US
 updated: "2026-05-26"
 sources:
   - info.json
-  - peers.json
   - value_chain.md
   - segments.json
   - insider.json
@@ -26,16 +25,36 @@ edges:
   - { type: competes_with, target: SMTC, confidence: 0.6 }
   - { type: competes_with, target: TSM, confidence: 0.6 }
   - { type: competes_with, target: MRVL, confidence: 0.9 }
-  - { type: competes_with, target: NVDA, confidence: 0.95 }
-  - { type: competes_with, target: AMD, confidence: 0.6 }
+  - { type: competes_with, target: NVDA, confidence: 0.6 }
   - { type: competes_with, target: NTNX, confidence: 0.7 }
   - { type: competes_with, target: INTC, confidence: 0.6 }
   - { type: competes_with, target: ANET, confidence: 0.6 }
   - { type: competes_with, target: CSCO, confidence: 0.7 }
-  - { type: competes_with, target: Red Hat, confidence: 0.65 }
+  - { type: competes_with, target: Red Hat, confidence: 0.6 }
   - { type: competes_with, target: MSFT, confidence: 0.6 }
+  - { type: competes_with, target: ADI, confidence: 0.6 }
+  - { type: competes_with, target: AMD, confidence: 0.6 }
+  - { type: competes_with, target: ASML, confidence: 0.6 }
+  - { type: competes_with, target: FORM, confidence: 0.6 }
+  - { type: competes_with, target: META, confidence: 0.6 }
+  - { type: competes_with, target: MU, confidence: 0.6 }
+  - { type: competes_with, target: POWI, confidence: 0.6 }
+  - { type: competes_with, target: QRVO, confidence: 0.6 }
+  - { type: competes_with, target: SMTC, confidence: 0.6 }
+  - { type: competes_with, target: TSM, confidence: 0.6 }
+  - { type: competes_with, target: MRVL, confidence: 0.95 }
+  - { type: competes_with, target: NVDA, confidence: 0.85 }
+  - { type: competes_with, target: AMD, confidence: 0.6 }
+  - { type: competes_with, target: NTNX, confidence: 0.65 }
+  - { type: competes_with, target: INTC, confidence: 0.55 }
+  - { type: competes_with, target: ANET, confidence: 0.6 }
+  - { type: competes_with, target: CSCO, confidence: 0.7 }
   - { type: partners_with, target: OpenAI, confidence: 0.85 }
   - { type: partners_with, target: GOOGL, confidence: 0.9 }
+  - { type: partners_with, target: 6701.T, confidence: 0.7 }
+  - { type: partners_with, target: META, confidence: 0.85 }
+  - { type: partners_with, target: GOOGL, confidence: 0.9 }
+  - { type: partners_with, target: NEC Corporation, confidence: 0.65 }
   - { type: partners_with, target: 6701.T, confidence: 0.7 }
   - { type: partners_with, target: GOOGL, confidence: 0.9 }
   - { type: partners_with, target: META, confidence: 0.85 }
@@ -88,12 +107,16 @@ edges:
   - { type: sells_to, target: DELL, confidence: 0.65 }
   - { type: sells_to, target: HPQ, confidence: 0.6 }
   - { type: sells_to, target: CSCO, confidence: 0.6 }
+  - { type: sells_to, target: AAPL, confidence: 0.9 }
+  - { type: sells_to, target: ANET, confidence: 0.6 }
+  - { type: sells_to, target: GOOGL, confidence: 0.95 }
+  - { type: sells_to, target: META, confidence: 0.95 }
+  - { type: sells_to, target: DELL, confidence: 0.65 }
+  - { type: sells_to, target: HPQ, confidence: 0.6 }
+  - { type: sells_to, target: CSCO, confidence: 0.6 }
   - { type: sells_to, target: GOOGL, confidence: 0.95 }
   - { type: sells_to, target: AAPL, confidence: 0.9 }
   - { type: sells_to, target: ANET, confidence: 0.6 }
-  - { type: competes_with, target: META, confidence: 0.6 }
-  - { type: competes_with, target: NVDA, confidence: 0.6 }
-  - { type: competes_with, target: TSM, confidence: 0.6 }
   - { type: supplied_by, target: Suppliers, confidence: 0.4 }
   - { type: supplied_by, target: Customers, confidence: 0.4 }
   - { type: supplied_by, target: Field, confidence: 0.4 }
@@ -154,6 +177,22 @@ edges:
   - { type: supplied_by, target: 000660.KS, confidence: 0.45 }
   - { type: supplied_by, target: 005930.KS, confidence: 0.4 }
   - { type: supplied_by, target: MU, confidence: 0.4 }
+  - { type: supplied_by, target: TSM, confidence: 0.95 }
+  - { type: supplied_by, target: UMC, confidence: 0.6 }
+  - { type: supplied_by, target: GFS, confidence: 0.6 }
+  - { type: supplied_by, target: Semiconductor Manufacturing International Corporation, confidence: 0.5 }
+  - { type: supplied_by, target: ASX, confidence: 0.75 }
+  - { type: supplied_by, target: AMKR, confidence: 0.7 }
+  - { type: supplied_by, target: UTAC Holdings, confidence: 0.6 }
+  - { type: supplied_by, target: FCX, confidence: 0.55 }
+  - { type: supplied_by, target: EMN, confidence: 0.55 }
+  - { type: supplied_by, target: SKYT, confidence: 0.5 }
+  - { type: supplied_by, target: SNPS, confidence: 0.7 }
+  - { type: supplied_by, target: CDNS, confidence: 0.7 }
+  - { type: supplied_by, target: ARM, confidence: 0.6 }
+  - { type: supplied_by, target: 000660.KS, confidence: 0.85 }
+  - { type: supplied_by, target: 005930.KS, confidence: 0.8 }
+  - { type: supplied_by, target: MU, confidence: 0.8 }
 ---
 
 # Broadcom Inc. (AVGO)
@@ -167,6 +206,24 @@ edges:
 
 ## Competitors
 
+- [ADI](ADI.md) (ADI)
+- [AMD](AMD.md) (AMD)
+- [ASML](ASML.md) (ASML)
+- [FORM](FORM.md) (FORM)
+- [META](META.md) (META)
+- [MU](MU.md) (MU)
+- [POWI](POWI.md) (POWI)
+- [QRVO](QRVO.md) (QRVO)
+- [SMTC](SMTC.md) (SMTC)
+- [TSM](TSM.md) (TSM)
+- [MRVL](MRVL.md) (MRVL)
+- [NVDA](NVDA.md) (NVDA)
+- [NTNX](NTNX.md) (NTNX)
+- [INTC](INTC.md) (INTC)
+- [ANET](ANET.md) (ANET)
+- [CSCO](CSCO.md) (CSCO)
+- Red Hat
+- [MSFT](MSFT.md) (MSFT)
 - [Analog Devices, Inc.](ADI.md) (ADI)
 - [Advanced Micro Devices, Inc.](AMD.md) (AMD)
 - [ASML Holding N.V.](ASML.md) (ASML)
@@ -184,8 +241,6 @@ edges:
 - [Intel](INTC.md) (INTC)
 - [Arista Networks](ANET.md) (ANET)
 - [Cisco Systems](CSCO.md) (CSCO)
-- Red Hat
-- [Microsoft](MSFT.md) (MSFT)
 
 ## Key Insiders
 
