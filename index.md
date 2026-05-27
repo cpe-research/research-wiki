@@ -8,7 +8,7 @@ updated: "2026-05-27"
 
 - [Apple Inc. (AAPL)](companies/AAPL.md)
 - [AMD (AMD)](companies/AMD.md)
-- [Broadcom Inc. (AVGO)](companies/AVGO.md)
+- [AVGO (AVGO)](companies/AVGO.md)
 - [META (META)](companies/META.md)
 - [NVDA (NVDA)](companies/NVDA.md)
 - [Qorvo, Inc. (QRVO)](companies/QRVO.md)
@@ -18,4 +18,4 @@ updated: "2026-05-27"
 ## Graph Statistics
 
 - **Companies:** 8
-- **Edges:** 116
+- **Edges:** 100

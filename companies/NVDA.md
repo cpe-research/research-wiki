@@ -12,9 +12,15 @@ sources:
   - transcript_competitors.json
 edges:
   - { type: competes_with, target: AVGO, confidence: 0.9 }
+  - { type: competes_with, target: AVGO, confidence: 0.85, description: "Competes in AI accelerator market (custom XPUs vs GPUs) and data center networking (Ethernet switching vs NVLink/Spectrum)" }
+  - { type: partners_with, target: UBER, confidence: 0.9, description: "Partnership targeting 100,000 NVIDIA-powered autonomous vehicles on Uber's platform by 2027" }
 ---
 
 # NVDA (NVDA)
+
+## Competitors
+
+- [AVGO](AVGO.md) (AVGO)
 
 ## Key Insiders
 

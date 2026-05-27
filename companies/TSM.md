@@ -12,9 +12,14 @@ sources:
   - transcript_competitors.json
 edges:
   - { type: competes_with, target: AVGO, confidence: 0.4 }
+  - { type: competes_with, target: AVGO, confidence: 0.4 }
 ---
 
 # TSM (TSM)
+
+## Competitors
+
+- [AVGO](AVGO.md) (AVGO)
 
 ## Key Insiders
 

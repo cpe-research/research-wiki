@@ -12,9 +12,14 @@ sources:
   - transcript_competitors.json
 edges:
   - { type: competes_with, target: AVGO, confidence: 0.7 }
+  - { type: competes_with, target: AVGO, confidence: 0.55, description: "Competes in data center AI accelerators with MI300 series GPUs and custom silicon" }
 ---
 
 # AMD (AMD)
+
+## Competitors
+
+- [AVGO](AVGO.md) (AVGO)
 
 ## Key Insiders
 
