@@ -7,15 +7,15 @@ updated: "2026-05-27"
 ## Companies
 
 - [Apple Inc. (AAPL)](companies/AAPL.md)
-- [AMD (AMD)](companies/AMD.md)
-- [AVGO (AVGO)](companies/AVGO.md)
+- [Advanced Micro Devices, Inc. (AMD)](companies/AMD.md)
+- [Broadcom Inc. (AVGO)](companies/AVGO.md) ✓
 - [META (META)](companies/META.md)
 - [NVDA (NVDA)](companies/NVDA.md)
 - [Qorvo, Inc. (QRVO)](companies/QRVO.md)
-- [TSM (TSM)](companies/TSM.md)
+- [Taiwan Semiconductor Manufacturing Company Limited (TSM)](companies/TSM.md)
 - [Uber Technologies, Inc. (UBER)](companies/UBER.md)
 
-## Graph Statistics
+## Statistics
 
 - **Companies:** 8
-- **Edges:** 100
+- **Reports published:** 1

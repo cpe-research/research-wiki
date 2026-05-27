@@ -10,9 +10,6 @@ sources:
   - insider.json
   - holders.json
   - transcript_competitors.json
-edges:
-  - { type: competes_with, target: AVGO, confidence: 0.4 }
-  - { type: competes_with, target: AVGO, confidence: 0.4 }
 ---
 
 # META (META)

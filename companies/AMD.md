@@ -1,7 +1,10 @@
 ---
 type: company
 ticker: AMD
-name: AMD
+name: Advanced Micro Devices, Inc.
+sector: Technology
+industry: Semiconductors
+country: US
 updated: "2026-05-27"
 sources:
   - info.json
@@ -10,16 +13,16 @@ sources:
   - insider.json
   - holders.json
   - transcript_competitors.json
-edges:
-  - { type: competes_with, target: AVGO, confidence: 0.7 }
-  - { type: competes_with, target: AVGO, confidence: 0.55, description: "Competes in data center AI accelerators with MI300 series GPUs and custom silicon" }
 ---
 
-# AMD (AMD)
+# Advanced Micro Devices, Inc. (AMD)
 
-## Competitors
+## Overview
 
-- [AVGO](AVGO.md) (AVGO)
+- **Sector:** Technology
+- **Industry:** Semiconductors
+- **Country:** US
+- **Website:** https://www.amd.com
 
 ## Key Insiders
 
@@ -32,10 +35,10 @@ edges:
 - BNP PARIBAS FINANCIAL MARKETS
 - BRIGADE CAPITAL MANAGEMENT, LP
 - Blankinship & Foster, LLC
-- Broderick Brian C
 - COATUE MANAGEMENT LLC
-- Delaney Dennis R
-- Dempze Nancy E
-- Elefante Mark B
-- Kidder Stephen W
 - MAPLELANE CAPITAL, LLC
+- MUFG Securities EMEA plc
+- Mizuho Markets Cayman LP
+- Modern Wealth Management, LLC
+- Oak Grove Capital LLC
+- Platinum Management (NY) LLC
