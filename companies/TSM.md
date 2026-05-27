@@ -11,29 +11,14 @@ sources:
   - holders.json
   - transcript_competitors.json
 edges:
-  - { type: competes_with, target: AAPL, confidence: 0.6 }
-  - { type: competes_with, target: AVGO, confidence: 0.6 }
-  - { type: competes_with, target: META, confidence: 0.6 }
-  - { type: competes_with, target: NVDA, confidence: 0.6 }
-  - { type: competes_with, target: AAPL, confidence: 0.6 }
-  - { type: competes_with, target: AVGO, confidence: 0.6 }
-  - { type: competes_with, target: META, confidence: 0.6 }
-  - { type: competes_with, target: NVDA, confidence: 0.6 }
+  - { type: competes_with, target: AVGO, confidence: 0.4 }
 ---
 
 # TSM (TSM)
 
-## Competitors
-
-- [AAPL](AAPL.md) (AAPL)
-- [AVGO](AVGO.md) (AVGO)
-- [META](META.md) (META)
-- [NVDA](NVDA.md) (NVDA)
-
 ## Key Insiders
 
 - Chuang Tzu-Sou (officer: VP)
-- Huang Jen-Chau (officer: SVP and CFO)
 - Liaw Yung-Haw (officer: VP)
 - Lin Chris Horng-Dar (officer: VP and CIO)
 - Lin Shyue-Shyh (officer: VP)
@@ -42,6 +27,7 @@ edges:
 - Tien Bor-Zen (officer: VP)
 - Wang Ying-Lang (officer: SVP)
 - Wei Che-Chia (director, officer: Chairman and CEO)
+- Wu Shien-Yang (officer: SVP)
 
 ## Top Institutional Holders
 
