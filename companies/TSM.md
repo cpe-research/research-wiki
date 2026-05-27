@@ -2,7 +2,7 @@
 type: company
 ticker: TSM
 name: TSM
-updated: "2026-05-26"
+updated: "2026-05-27"
 sources:
   - info.json
   - value_chain.md
@@ -15,9 +15,20 @@ edges:
   - { type: competes_with, target: AVGO, confidence: 0.6 }
   - { type: competes_with, target: META, confidence: 0.6 }
   - { type: competes_with, target: NVDA, confidence: 0.6 }
+  - { type: competes_with, target: AAPL, confidence: 0.6 }
+  - { type: competes_with, target: AVGO, confidence: 0.6 }
+  - { type: competes_with, target: META, confidence: 0.6 }
+  - { type: competes_with, target: NVDA, confidence: 0.6 }
 ---
 
 # TSM (TSM)
+
+## Competitors
+
+- [AAPL](AAPL.md) (AAPL)
+- [AVGO](AVGO.md) (AVGO)
+- [META](META.md) (META)
+- [NVDA](NVDA.md) (NVDA)
 
 ## Key Insiders
 

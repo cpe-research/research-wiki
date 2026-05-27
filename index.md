@@ -1,5 +1,5 @@
 ---
-updated: "2026-05-26"
+updated: "2026-05-27"
 ---
 
 # Knowledge Graph Index
@@ -16,4 +16,4 @@ updated: "2026-05-26"
 ## Graph Statistics
 
 - **Companies:** 6
-- **Edges:** 333
+- **Edges:** 325

@@ -5,7 +5,7 @@ name: Apple Inc.
 sector: Technology
 industry: Consumer Electronics
 country: US
-updated: "2026-05-26"
+updated: "2026-05-27"
 sources:
   - info.json
   - value_chain.md
@@ -24,23 +24,15 @@ edges:
   - { type: competes_with, target: TSM, confidence: 0.6 }
   - { type: competes_with, target: 005930.KS, confidence: 0.7 }
   - { type: competes_with, target: AMZN, confidence: 0.55 }
-  - { type: competes_with, target: GOOGL, confidence: 0.6 }
-  - { type: competes_with, target: META, confidence: 0.6 }
-  - { type: competes_with, target: MSFT, confidence: 0.6 }
-  - { type: competes_with, target: NVDA, confidence: 0.6 }
-  - { type: competes_with, target: NXT, confidence: 0.6 }
-  - { type: competes_with, target: RIME, confidence: 0.6 }
-  - { type: competes_with, target: SONY, confidence: 0.6 }
-  - { type: competes_with, target: TBCH, confidence: 0.6 }
-  - { type: competes_with, target: TSM, confidence: 0.6 }
-  - { type: competes_with, target: 005930.KS, confidence: 0.7 }
-  - { type: competes_with, target: GOOGL, confidence: 0.7 }
-  - { type: competes_with, target: MSFT, confidence: 0.65 }
-  - { type: competes_with, target: AMZN, confidence: 0.55 }
   - { type: competes_with, target: Huawei, confidence: 0.5 }
   - { type: competes_with, target: 1810.HK, confidence: 0.5 }
-  - { type: partners_with, target: GOOGL, confidence: 0.8 }
+  - { type: competes_with, target: 005930.KS, confidence: 0.8, description: "Competes head-to-head in smartphones, tablets, wearables, and PCs" }
+  - { type: competes_with, target: MSFT, confidence: 0.8, description: "Competes in personal computers, operating systems, productivity software, and subscription services" }
+  - { type: competes_with, target: GOOGL, confidence: 0.75, description: "Competes in mobile operating systems, app distribution, and digital services" }
+  - { type: competes_with, target: AMZN, confidence: 0.6, description: "Competes in streaming media, smart home devices, and digital content distribution" }
+  - { type: competes_with, target: SONY, confidence: 0.5, description: "Competes in consumer electronics and entertainment/streaming services" }
   - { type: partners_with, target: GOOGL, confidence: 0.75 }
+  - { type: partners_with, target: GOOGL, confidence: 0.75, description: "AI and search collaboration that creates value across Apple products and services" }
   - { type: sells_to, target: Field, confidence: 0.4 }
   - { type: sells_to, target: Hon Hai Precision, confidence: 0.4 }
   - { type: sells_to, target: Apple Supply Chain, confidence: 0.4 }
@@ -88,11 +80,11 @@ edges:
   - { type: sells_to, target: Economic, confidence: 0.4 }
   - { type: sells_to, target: Supply Chain Strength, confidence: 0.4 }
   - { type: sells_to, target: Key Players, confidence: 0.4 }
-  - { type: sells_to, target: SNOW, confidence: 0.85 }
-  - { type: sells_to, target: AZN, confidence: 0.85 }
-  - { type: sells_to, target: Coppel, confidence: 0.8 }
   - { type: sells_to, target: SNOW, confidence: 0.8 }
   - { type: sells_to, target: AZN, confidence: 0.8 }
+  - { type: sells_to, target: Coppel, confidence: 0.6, description: "Enterprise customer deploying MacBook Air and iPad in Mexican retail operations" }
+  - { type: sells_to, target: SNOW, confidence: 0.7, description: "Enterprise customer deploying over 9,000 Mac devices company-wide" }
+  - { type: sells_to, target: AZN, confidence: 0.7, description: "Enterprise customer deploying over 5,000 M5-powered iPad Pros for pharmaceutical sales" }
   - { type: supplied_by, target: Field, confidence: 0.4 }
   - { type: supplied_by, target: Hon Hai Precision, confidence: 0.4 }
   - { type: supplied_by, target: Apple Supply Chain, confidence: 0.4 }
@@ -147,13 +139,11 @@ edges:
   - { type: supplied_by, target: 2317.TW, confidence: 0.6 }
   - { type: supplied_by, target: QCOM, confidence: 0.55 }
   - { type: supplied_by, target: ON, confidence: 0.55 }
-  - { type: supplied_by, target: GLW, confidence: 0.9 }
-  - { type: supplied_by, target: MU, confidence: 0.8 }
-  - { type: supplied_by, target: TSM, confidence: 0.85 }
-  - { type: supplied_by, target: GFS, confidence: 0.9 }
-  - { type: supplied_by, target: 2317.TW, confidence: 0.6 }
-  - { type: supplied_by, target: QCOM, confidence: 0.55 }
-  - { type: supplied_by, target: ON, confidence: 0.55 }
+  - { type: supplied_by, target: GLW, confidence: 0.9, description: "Supplies 100% of cover glass for iPhone and Apple Watch" }
+  - { type: supplied_by, target: MU, confidence: 0.8, description: "Memory supplier building advanced chip packaging and test facility for Apple" }
+  - { type: supplied_by, target: TSM, confidence: 0.85, description: "Manufactures Apple-designed SoCs at advanced process nodes" }
+  - { type: supplied_by, target: 2317.TW, confidence: 0.65, description: "Major outsourced final assembly and manufacturing partner" }
+  - { type: supplied_by, target: GFS, confidence: 0.9, description: "Manufactures wireless connectivity and power management chips for Apple" }
 ---
 
 # Apple Inc. (AAPL)
@@ -178,21 +168,13 @@ edges:
 - [TSM](TSM.md) (TSM)
 - 005930.KS
 - [AMZN](AMZN.md) (AMZN)
-- [Alphabet Inc.](GOOGL.md) (GOOGL)
-- [Meta Platforms, Inc.](META.md) (META)
-- [Microsoft Corporation](MSFT.md) (MSFT)
-- [NVIDIA Corporation](NVDA.md) (NVDA)
-- [Nextpower Inc.](NXT.md) (NXT)
-- [Algorhythm Holdings, Inc.](RIME.md) (RIME)
-- [Sony Group Corporation](SONY.md) (SONY)
-- [Turtle Beach Corporation](TBCH.md) (TBCH)
-- [Taiwan Semiconductor Manufacturing Company Limited](TSM.md) (TSM)
-- [Samsung](005930.KS.md) (005930.KS)
-- [Google (Alphabet)](GOOGL.md) (GOOGL)
-- [Microsoft](MSFT.md) (MSFT)
-- [Amazon](AMZN.md) (AMZN)
 - Huawei
-- [Xiaomi](1810.HK.md) (1810.HK)
+- 1810.HK
+- [Samsung Electronics](005930.KS.md) (005930.KS)
+- [Microsoft](MSFT.md) (MSFT)
+- [Alphabet](GOOGL.md) (GOOGL)
+- [Amazon](AMZN.md) (AMZN)
+- [Sony Group](SONY.md) (SONY)
 
 ## Key Insiders
 

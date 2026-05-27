@@ -2,7 +2,7 @@
 type: company
 ticker: META
 name: META
-updated: "2026-05-26"
+updated: "2026-05-27"
 sources:
   - info.json
   - value_chain.md
@@ -15,9 +15,19 @@ edges:
   - { type: competes_with, target: AVGO, confidence: 0.6 }
   - { type: competes_with, target: TSM, confidence: 0.6 }
   - { type: partners_with, target: AVGO, confidence: 0.85 }
+  - { type: competes_with, target: AAPL, confidence: 0.6 }
+  - { type: competes_with, target: AVGO, confidence: 0.6 }
+  - { type: competes_with, target: TSM, confidence: 0.6 }
+  - { type: partners_with, target: AVGO, confidence: 0.85 }
 ---
 
 # META (META)
+
+## Competitors
+
+- [AAPL](AAPL.md) (AAPL)
+- [AVGO](AVGO.md) (AVGO)
+- [TSM](TSM.md) (TSM)
 
 ## Key Insiders
 
