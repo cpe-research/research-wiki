@@ -17,6 +17,8 @@ sources:
 ## Competitors
 
 - [Advanced Micro Devices, Inc.](AMD.md) (AMD)
+- [NVIDIA Corporation](NVDA.md) (NVDA)
+- [Qorvo, Inc.](QRVO.md) (QRVO)
 
 ## Key Insiders
 
