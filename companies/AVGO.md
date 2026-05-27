@@ -15,173 +15,70 @@ sources:
   - transcript_competitors.json
 edges:
   - { type: competes_with, target: ADI, confidence: 0.6 }
-  - { type: competes_with, target: AMD, confidence: 0.6 }
-  - { type: competes_with, target: ASML, confidence: 0.6 }
-  - { type: competes_with, target: FORM, confidence: 0.6 }
-  - { type: competes_with, target: META, confidence: 0.6 }
-  - { type: competes_with, target: MU, confidence: 0.6 }
-  - { type: competes_with, target: POWI, confidence: 0.6 }
-  - { type: competes_with, target: QRVO, confidence: 0.6 }
-  - { type: competes_with, target: SMTC, confidence: 0.6 }
-  - { type: competes_with, target: TSM, confidence: 0.6 }
-  - { type: competes_with, target: MRVL, confidence: 0.95 }
-  - { type: competes_with, target: NVDA, confidence: 0.85 }
-  - { type: competes_with, target: NTNX, confidence: 0.65 }
-  - { type: competes_with, target: INTC, confidence: 0.55 }
-  - { type: competes_with, target: ANET, confidence: 0.6 }
-  - { type: competes_with, target: CSCO, confidence: 0.7 }
-  - { type: competes_with, target: Red Hat, confidence: 0.55, description: "Competes in enterprise private cloud and container orchestration (VMware VCF vs. OpenShift)" }
-  - { type: competes_with, target: MSFT, confidence: 0.6 }
-  - { type: competes_with, target: MRVL, confidence: 0.9, description: "Direct competitor in custom AI ASIC design services and data center networking silicon (Prestera vs. Tomahawk)" }
-  - { type: competes_with, target: NVDA, confidence: 0.85, description: "Competes in AI accelerator market (custom XPUs vs GPUs) and data center networking (Tomahawk vs Spectrum switching ASICs)" }
+  - { type: competes_with, target: AMD, confidence: 0.7 }
+  - { type: competes_with, target: ASML, confidence: 0.5 }
+  - { type: competes_with, target: META, confidence: 0.4 }
+  - { type: competes_with, target: MU, confidence: 0.5 }
+  - { type: competes_with, target: MRVL, confidence: 0.85 }
+  - { type: competes_with, target: NVDA, confidence: 0.9 }
+  - { type: competes_with, target: QCOM, confidence: 0.6 }
+  - { type: competes_with, target: TSM, confidence: 0.4 }
+  - { type: competes_with, target: INTC, confidence: 0.7 }
+  - { type: competes_with, target: MRVL, confidence: 0.9, description: "Competes head-to-head in custom AI ASIC design services for hyperscaler customers" }
+  - { type: competes_with, target: NVDA, confidence: 0.85, description: "Competes in AI accelerator market (custom XPUs vs GPUs) and data center networking (Ethernet switching vs NVLink/Spectrum)" }
+  - { type: competes_with, target: INTC, confidence: 0.5, description: "Competes in data center Ethernet networking silicon products" }
+  - { type: competes_with, target: MSFT, confidence: 0.55, description: "Competes with Broadcom's VMware via Hyper-V and Azure Stack in enterprise virtualization" }
+  - { type: competes_with, target: AMZN, confidence: 0.5, description: "In-house AI chip development (Trainium/Inferentia) competes with Broadcom's custom XPU design model" }
+  - { type: competes_with, target: Cerebras Systems, confidence: 0.45, description: "Competes for AI training/inference compute workloads with wafer-scale AI accelerator chips" }
   - { type: competes_with, target: AMD, confidence: 0.55, description: "Competes in data center AI accelerators with MI300 series GPUs and custom silicon" }
-  - { type: competes_with, target: NTNX, confidence: 0.65, description: "Competes in hyperconverged infrastructure and private cloud platforms (VMware VCF vs. Nutanix Cloud Platform)" }
-  - { type: competes_with, target: INTC, confidence: 0.5, description: "Competes in Ethernet networking silicon products for data centers" }
-  - { type: competes_with, target: ANET, confidence: 0.55, description: "competes at the data center networking system level, though also a customer for Broadcom's Tomahawk switch ASICs" }
-  - { type: competes_with, target: CSCO, confidence: 0.65, description: "competes in data center Ethernet switch ASICs (Silicon One vs. Tomahawk) and enterprise networking" }
-  - { type: competes_with, target: MSFT, confidence: 0.55, description: "Competes in enterprise virtualization and hybrid cloud infrastructure (VMware vs. Hyper-V/Azure Stack)" }
-  - { type: partners_with, target: OpenAI, confidence: 0.85, description: "Strategic collaboration to co-develop custom AI accelerator silicon" }
-  - { type: partners_with, target: GOOGL, confidence: 0.9 }
-  - { type: partners_with, target: 6701.T, confidence: 0.7 }
-  - { type: partners_with, target: META, confidence: 0.85 }
-  - { type: partners_with, target: NEC Corporation, confidence: 0.6, description: "Partners on VMware Cloud Foundation enterprise deployment and systems integration" }
-  - { type: sells_to, target: Customers, confidence: 0.4 }
-  - { type: sells_to, target: Field, confidence: 0.4 }
-  - { type: sells_to, target: Cisco, confidence: 0.4 }
-  - { type: sells_to, target: Investment Thesis, confidence: 0.4 }
-  - { type: sells_to, target: Micron, confidence: 0.4 }
-  - { type: sells_to, target: Tier, confidence: 0.4 }
-  - { type: sells_to, target: Broadcom Inc, confidence: 0.4 }
-  - { type: sells_to, target: Evaluate, confidence: 0.4 }
-  - { type: sells_to, target: Samsung, confidence: 0.4 }
-  - { type: sells_to, target: Value, confidence: 0.4 }
-  - { type: sells_to, target: Model, confidence: 0.4 }
-  - { type: sells_to, target: Amkor, confidence: 0.4 }
-  - { type: sells_to, target: Future, confidence: 0.4 }
-  - { type: sells_to, target: Acquisition, confidence: 0.4 }
-  - { type: sells_to, target: Technology, confidence: 0.4 }
-  - { type: sells_to, target: Value Chain Index, confidence: 0.4 }
-  - { type: sells_to, target: Jimmy, confidence: 0.4 }
-  - { type: sells_to, target: Lenovo, confidence: 0.6, description: "Uses VMware Cloud Foundation infrastructure software" }
-  - { type: sells_to, target: Reddit, confidence: 0.4 }
-  - { type: sells_to, target: Many, confidence: 0.4 }
-  - { type: sells_to, target: Archives, confidence: 0.4 }
-  - { type: sells_to, target: Supply Chain Implications, confidence: 0.4 }
-  - { type: sells_to, target: Journal, confidence: 0.4 }
-  - { type: sells_to, target: Tell, confidence: 0.4 }
-  - { type: sells_to, target: Foxconn, confidence: 0.4 }
-  - { type: sells_to, target: Secondary Offering, confidence: 0.4 }
-  - { type: sells_to, target: Broadcom, confidence: 0.4 }
-  - { type: sells_to, target: Signals Bottleneck, confidence: 0.4 }
-  - { type: sells_to, target: Intel, confidence: 0.4 }
-  - { type: sells_to, target: Suppliers, confidence: 0.4 }
-  - { type: sells_to, target: Nasdaq, confidence: 0.4 }
-  - { type: sells_to, target: Avago Technologies, confidence: 0.4 }
-  - { type: sells_to, target: Avago, confidence: 0.4 }
-  - { type: sells_to, target: Null Exposure, confidence: 0.4 }
-  - { type: sells_to, target: Avago Technologies Announces Withdrawal, confidence: 0.4 }
-  - { type: sells_to, target: Solactive, confidence: 0.4 }
-  - { type: sells_to, target: Substack, confidence: 0.4 }
-  - { type: sells_to, target: Division, confidence: 0.4 }
-  - { type: sells_to, target: Working, confidence: 0.4 }
-  - { type: sells_to, target: Dell, confidence: 0.4 }
-  - { type: sells_to, target: Capacity, confidence: 0.4 }
-  - { type: sells_to, target: GOOGL, confidence: 0.95 }
-  - { type: sells_to, target: Anthropic, confidence: 0.9, description: "Supplies custom TPU compute infrastructure for Anthropic's AI training and inference workloads" }
-  - { type: sells_to, target: META, confidence: 0.95 }
-  - { type: sells_to, target: OpenAI, confidence: 0.9, description: "Co-developing custom AI accelerator XPUs, with 10 gigawatts of capacity planned for deployment starting 2027" }
-  - { type: sells_to, target: NEC Corporation, confidence: 0.6, description: "Uses VMware Cloud Foundation infrastructure software" }
-  - { type: sells_to, target: DELL, confidence: 0.65 }
-  - { type: sells_to, target: HPQ, confidence: 0.6 }
-  - { type: sells_to, target: CSCO, confidence: 0.6 }
-  - { type: sells_to, target: AAPL, confidence: 0.9 }
-  - { type: sells_to, target: ANET, confidence: 0.6 }
+  - { type: competes_with, target: NTNX, confidence: 0.65, description: "Competes with Broadcom's VMware in hyperconverged infrastructure and private cloud platforms" }
+  - { type: competes_with, target: CSCO, confidence: 0.65, description: "competes in data center Ethernet switch ASICs (Cisco Silicon One vs. Broadcom Tomahawk)" }
+  - { type: competes_with, target: Red Hat, confidence: 0.6, description: "Competes with Broadcom's VMware via OpenShift in enterprise containerization and private cloud" }
+  - { type: partners_with, target: OpenAI, confidence: 0.85, description: "Multi-year strategic co-development partnership for 10 GW of custom AI XPU compute capacity through 2029" }
+  - { type: partners_with, target: NEC Corporation, confidence: 0.6, description: "Partnership for VMware Cloud Foundation enterprise deployment and integration" }
+  - { type: partners_with, target: 6701.T, confidence: 0.6, description: "Partners on VMware Cloud Foundation enterprise deployment and go-to-market" }
+  - { type: sells_to, target: Google, confidence: 0.92 }
+  - { type: sells_to, target: Meta, confidence: 0.88 }
+  - { type: sells_to, target: OpenAI, confidence: 0.9, description: "Developing and supplying custom AI accelerator (XPU) chips for OpenAI's compute infrastructure" }
+  - { type: sells_to, target: Anthropic, confidence: 0.85, description: "Supplies TPU compute infrastructure (custom AI accelerator capacity) for Anthropic's AI workloads" }
+  - { type: sells_to, target: Microsoft, confidence: 0.7 }
   - { type: sells_to, target: GOOGL, confidence: 0.95, description: "Designs and supplies custom TPU AI accelerators (7th-gen Ironwood) for Google's AI infrastructure" }
-  - { type: sells_to, target: META, confidence: 0.95, description: "Designs and supplies custom MTIA AI accelerator chips for Meta's data center infrastructure" }
-  - { type: sells_to, target: DELL, confidence: 0.6, description: "Uses VMware Cloud Foundation infrastructure software" }
-  - { type: sells_to, target: HPQ, confidence: 0.5, description: "Uses VMware Cloud Foundation infrastructure software" }
-  - { type: sells_to, target: CSCO, confidence: 0.6, description: "Supplies Tomahawk Ethernet switching ASICs used in Cisco's networking equipment" }
-  - { type: sells_to, target: GOOGL, confidence: 0.95, description: "Broadcom's largest AI customer; designs and supplies custom TPU accelerators, Tomahawk switch ASICs, and optical DSPs for Google's data centers" }
+  - { type: sells_to, target: META, confidence: 0.9, description: "Designs and manufactures custom MTIA AI accelerator chips for Meta's data centers" }
   - { type: sells_to, target: AAPL, confidence: 0.9, description: "Supplies 5G RF front-end modules, Wi-Fi/Bluetooth combo chips, and GPS receivers for Apple devices" }
-  - { type: sells_to, target: ANET, confidence: 0.65, description: "Supplies Tomahawk switching ASICs used in Arista's data center networking switches" }
-  - { type: supplied_by, target: Suppliers, confidence: 0.4 }
-  - { type: supplied_by, target: Customers, confidence: 0.4 }
-  - { type: supplied_by, target: Field, confidence: 0.4 }
-  - { type: supplied_by, target: Cisco, confidence: 0.4 }
-  - { type: supplied_by, target: Investment Thesis, confidence: 0.4 }
-  - { type: supplied_by, target: Micron, confidence: 0.4 }
-  - { type: supplied_by, target: Tier, confidence: 0.4 }
-  - { type: supplied_by, target: Broadcom Inc, confidence: 0.4 }
-  - { type: supplied_by, target: Evaluate, confidence: 0.4 }
-  - { type: supplied_by, target: Samsung, confidence: 0.4 }
-  - { type: supplied_by, target: Value, confidence: 0.4 }
-  - { type: supplied_by, target: Model, confidence: 0.4 }
-  - { type: supplied_by, target: Amkor, confidence: 0.4 }
-  - { type: supplied_by, target: Future, confidence: 0.4 }
-  - { type: supplied_by, target: Acquisition, confidence: 0.4 }
-  - { type: supplied_by, target: Technology, confidence: 0.4 }
-  - { type: supplied_by, target: Value Chain Index, confidence: 0.4 }
-  - { type: supplied_by, target: Jimmy, confidence: 0.4 }
-  - { type: supplied_by, target: Lenovo, confidence: 0.4 }
-  - { type: supplied_by, target: Reddit, confidence: 0.4 }
-  - { type: supplied_by, target: Many, confidence: 0.4 }
-  - { type: supplied_by, target: Archives, confidence: 0.4 }
-  - { type: supplied_by, target: Supply Chain Implications, confidence: 0.4 }
-  - { type: supplied_by, target: Journal, confidence: 0.4 }
-  - { type: supplied_by, target: Tell, confidence: 0.4 }
+  - { type: sells_to, target: CSCO, confidence: 0.6, description: "Supplies Tomahawk Ethernet switching ASICs used in Cisco networking equipment" }
+  - { type: sells_to, target: NEC Corporation, confidence: 0.6, description: "Enterprise customer and integration partner for VMware Cloud Foundation infrastructure software" }
+  - { type: sells_to, target: Lenovo, confidence: 0.55, description: "Enterprise customer for VMware Cloud Foundation infrastructure software" }
+  - { type: sells_to, target: DELL, confidence: 0.55, description: "purchases server storage connectivity components (SAS/SATA HBAs, RAID controllers, Fibre Channel HBAs)" }
+  - { type: sells_to, target: HPQ, confidence: 0.5, description: "Enterprise customer for VMware Cloud Foundation infrastructure software" }
+  - { type: sells_to, target: GOOGL, confidence: 0.95, description: "designs custom TPU AI accelerators (Ironwood 7th gen), Tomahawk switch ASICs, and optical DSPs for Google's AI infrastructure" }
+  - { type: sells_to, target: HPE, confidence: 0.55, description: "purchases server storage connectivity components (SAS/SATA HBAs, RAID controllers, Fibre Channel HBAs)" }
+  - { type: sells_to, target: ANET, confidence: 0.65, description: "Supplies Tomahawk Ethernet switching ASICs used in Arista's data center switches" }
+  - { type: supplied_by, target: TSMC, confidence: 0.95 }
+  - { type: supplied_by, target: ASE, confidence: 0.8 }
+  - { type: supplied_by, target: SPIL, confidence: 0.7 }
+  - { type: supplied_by, target: UMC, confidence: 0.5 }
+  - { type: supplied_by, target: GlobalFoundries, confidence: 0.5 }
+  - { type: supplied_by, target: Amkor, confidence: 0.6 }
   - { type: supplied_by, target: Foxconn, confidence: 0.5, description: "Manufacturing partner for hardware assembly" }
-  - { type: supplied_by, target: Secondary Offering, confidence: 0.4 }
-  - { type: supplied_by, target: Broadcom, confidence: 0.4 }
-  - { type: supplied_by, target: Signals Bottleneck, confidence: 0.4 }
-  - { type: supplied_by, target: Intel, confidence: 0.4 }
-  - { type: supplied_by, target: Nasdaq, confidence: 0.4 }
-  - { type: supplied_by, target: Avago Technologies, confidence: 0.4 }
-  - { type: supplied_by, target: Avago, confidence: 0.4 }
-  - { type: supplied_by, target: Null Exposure, confidence: 0.4 }
-  - { type: supplied_by, target: Avago Technologies Announces Withdrawal, confidence: 0.4 }
-  - { type: supplied_by, target: Solactive, confidence: 0.4 }
-  - { type: supplied_by, target: Substack, confidence: 0.4 }
-  - { type: supplied_by, target: Division, confidence: 0.4 }
-  - { type: supplied_by, target: Working, confidence: 0.4 }
-  - { type: supplied_by, target: Dell, confidence: 0.4 }
-  - { type: supplied_by, target: Capacity, confidence: 0.4 }
-  - { type: supplied_by, target: TSM, confidence: 0.95 }
-  - { type: supplied_by, target: UMC, confidence: 0.6 }
-  - { type: supplied_by, target: GFS, confidence: 0.6 }
-  - { type: supplied_by, target: SMIC, confidence: 0.5 }
-  - { type: supplied_by, target: ASX, confidence: 0.75 }
-  - { type: supplied_by, target: Siliconware Precision Industries, confidence: 0.6, description: "Provides semiconductor assembly, test, and packaging (OSAT) services" }
-  - { type: supplied_by, target: AMKR, confidence: 0.7 }
-  - { type: supplied_by, target: UTAC, confidence: 0.6 }
-  - { type: supplied_by, target: STATSChipPAC, confidence: 0.6 }
-  - { type: supplied_by, target: Samsung Electronics, confidence: 0.5, description: "Supplies high-bandwidth memory (HBM) components for Broadcom's AI silicon products" }
-  - { type: supplied_by, target: FCX, confidence: 0.55 }
-  - { type: supplied_by, target: EMN, confidence: 0.55 }
-  - { type: supplied_by, target: SKYT, confidence: 0.5 }
-  - { type: supplied_by, target: SNPS, confidence: 0.7 }
-  - { type: supplied_by, target: CDNS, confidence: 0.7 }
-  - { type: supplied_by, target: ARM, confidence: 0.6 }
-  - { type: supplied_by, target: 000660.KS, confidence: 0.85 }
-  - { type: supplied_by, target: 005930.KS, confidence: 0.8 }
-  - { type: supplied_by, target: MU, confidence: 0.8 }
-  - { type: supplied_by, target: Semiconductor Manufacturing International Corporation, confidence: 0.5 }
-  - { type: supplied_by, target: UTAC Holdings, confidence: 0.6 }
-  - { type: supplied_by, target: TSM, confidence: 0.95, description: "Primary foundry for leading-edge semiconductor fabrication, single-source dependency for advanced node wafers and CoWoS packaging" }
+  - { type: supplied_by, target: TSM, confidence: 0.95, description: "Primary foundry for leading-edge semiconductor fabrication (advanced node wafers and CoWoS packaging)" }
   - { type: supplied_by, target: UMC, confidence: 0.5, description: "Secondary foundry providing wafer fabrication services" }
   - { type: supplied_by, target: GFS, confidence: 0.5, description: "Secondary foundry providing wafer fabrication services" }
-  - { type: supplied_by, target: SMIC, confidence: 0.5, description: "Secondary foundry providing wafer fabrication services" }
   - { type: supplied_by, target: ASX, confidence: 0.7, description: "Provides semiconductor assembly, test, and packaging (OSAT) services" }
+  - { type: supplied_by, target: SPIL (Siliconware Precision Industries), confidence: 0.8, description: "Provides semiconductor assembly and test services" }
   - { type: supplied_by, target: AMKR, confidence: 0.6, description: "Provides semiconductor assembly and packaging services" }
+  - { type: supplied_by, target: Foxconn Technology Group, confidence: 0.8, description: "Provides assembly, test, and contract manufacturing services" }
+  - { type: supplied_by, target: SMIC, confidence: 0.45, description: "Minor secondary foundry providing wafer fabrication services" }
+  - { type: supplied_by, target: Siliconware Precision Industries, confidence: 0.6, description: "Provides semiconductor assembly, test, and packaging services" }
+  - { type: supplied_by, target: SNPS, confidence: 0.65, description: "provides electronic design automation (EDA) tools for chip design" }
+  - { type: supplied_by, target: CDNS, confidence: 0.65, description: "provides electronic design automation (EDA) tools for chip design" }
+  - { type: supplied_by, target: ARM, confidence: 0.55, description: "Provides processor IP cores licensed for chip design" }
+  - { type: supplied_by, target: Samsung Electronics, confidence: 0.5, description: "Supplies memory and semiconductor components" }
   - { type: supplied_by, target: FCX, confidence: 0.5, description: "Supplies copper used in semiconductor manufacturing" }
-  - { type: supplied_by, target: EMN, confidence: 0.5, description: "Supplies specialty chemicals for semiconductor manufacturing" }
-  - { type: supplied_by, target: SKYT, confidence: 0.5, description: "US-based foundry providing wafer fabrication services" }
-  - { type: supplied_by, target: SNPS, confidence: 0.6, description: "provides electronic design automation (EDA) tools used in Broadcom's chip design process" }
-  - { type: supplied_by, target: CDNS, confidence: 0.6, description: "provides electronic design automation (EDA) tools used in Broadcom's chip design process" }
-  - { type: supplied_by, target: ARM, confidence: 0.6, description: "Provides semiconductor IP cores and architecture licensing" }
-  - { type: supplied_by, target: SK Hynix, confidence: 0.55, description: "Supplies high-bandwidth memory (HBM) components for Broadcom's custom AI accelerator designs" }
-  - { type: supplied_by, target: MU, confidence: 0.7, description: "supplies high-bandwidth memory (HBM) for custom AI accelerator packages" }
+  - { type: supplied_by, target: EMN, confidence: 0.45, description: "Supplies specialty chemicals used in semiconductor manufacturing" }
+  - { type: supplied_by, target: SKYT, confidence: 0.45, description: "US-based foundry providing wafer fabrication services" }
   - { type: supplied_by, target: 000660.KS, confidence: 0.8, description: "supplies high-bandwidth memory (HBM) integrated into custom AI accelerator packages" }
   - { type: supplied_by, target: 005930.KS, confidence: 0.7, description: "supplies high-bandwidth memory (HBM) for custom AI accelerator packages" }
+  - { type: supplied_by, target: MU, confidence: 0.7, description: "supplies high-bandwidth memory (HBM) for custom AI accelerator packages" }
 ---
 
 # Broadcom Inc. (AVGO)
@@ -198,29 +95,23 @@ edges:
 - [ADI](ADI.md) (ADI)
 - [AMD](AMD.md) (AMD)
 - [ASML](ASML.md) (ASML)
-- [FORM](FORM.md) (FORM)
 - [META](META.md) (META)
 - [MU](MU.md) (MU)
-- [POWI](POWI.md) (POWI)
-- [QRVO](QRVO.md) (QRVO)
-- [SMTC](SMTC.md) (SMTC)
-- [TSM](TSM.md) (TSM)
 - [MRVL](MRVL.md) (MRVL)
 - [NVDA](NVDA.md) (NVDA)
-- [NTNX](NTNX.md) (NTNX)
+- [QCOM](QCOM.md) (QCOM)
+- [TSM](TSM.md) (TSM)
 - [INTC](INTC.md) (INTC)
-- [ANET](ANET.md) (ANET)
-- [CSCO](CSCO.md) (CSCO)
-- Red Hat
-- [MSFT](MSFT.md) (MSFT)
 - [Marvell Technology](MRVL.md) (MRVL)
 - [NVIDIA](NVDA.md) (NVDA)
+- [Intel](INTC.md) (INTC)
+- [Microsoft](MSFT.md) (MSFT)
+- [Amazon](AMZN.md) (AMZN)
+- Cerebras Systems
 - [Advanced Micro Devices](AMD.md) (AMD)
 - [Nutanix](NTNX.md) (NTNX)
-- [Intel](INTC.md) (INTC)
-- [Arista Networks](ANET.md) (ANET)
 - [Cisco Systems](CSCO.md) (CSCO)
-- [Microsoft](MSFT.md) (MSFT)
+- Red Hat
 
 ## Key Insiders
 
