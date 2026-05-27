@@ -1,10 +1,7 @@
 ---
 type: company
 ticker: AMD
-name: Advanced Micro Devices, Inc.
-sector: Technology
-industry: Semiconductors
-country: US
+name: AMD
 updated: "2026-05-27"
 sources:
   - info.json
@@ -15,24 +12,12 @@ sources:
   - transcript_competitors.json
 ---
 
-# Advanced Micro Devices, Inc. (AMD)
-
-## Overview
-
-- **Sector:** Technology
-- **Industry:** Semiconductors
-- **Country:** US
-- **Website:** https://www.amd.com
+# AMD (AMD)
 
 ## Competitors
 
-- [NVIDIA](NVDA.md) (NVDA)
-- [Intel](INTC.md) (INTC)
-- [Broadcom Inc.](AVGO.md) (AVGO)
-- [Marvell Technology](MRVL.md) (MRVL)
-- [Qualcomm](QCOM.md) (QCOM)
-- [Lattice Semiconductor](LSCC.md) (LSCC)
-- Ampere Computing
+- [AVGO](AVGO.md) (AVGO)
+- [NVIDIA Corporation](NVDA.md) (NVDA)
 
 ## Key Insiders
 
@@ -241,6 +226,22 @@ Full capital structure detail in Appendix D.
 ---
 
 ## Appendix
+
+    Mac OS X            	   2   q      �                                      ATTR       �   �                     �     com.apple.provenance  ���%��_
+
+    Mac OS X            	   2   q      �                                      ATTR       �   �                     �     com.apple.provenance  ���%��_
+
+    Mac OS X            	   2   q      �                                      ATTR       �   �                     �     com.apple.provenance  ���%��_
+
+    Mac OS X            	   2   q      �                                      ATTR       �   �                     �     com.apple.provenance  ���%��_
+
+    Mac OS X            	   2   q      �                                      ATTR       �   �                     �     com.apple.provenance  ���%��_
+
+    Mac OS X            	   2   q      �                                      ATTR       �   �                     �     com.apple.provenance  ���%��_
+
+    Mac OS X            	   2   q      �                                      ATTR       �   �                     �     com.apple.provenance  ���%��_
+
+    Mac OS X            	   2   q      �                                      ATTR       �   �                     �     com.apple.provenance  ���%��_
 
 # Appendix A: Competitive Position — AMD
 

@@ -1,10 +1,7 @@
 ---
 type: company
 ticker: QRVO
-name: Qorvo, Inc.
-sector: Technology
-industry: Semiconductors
-country: US
+name: QRVO
 updated: "2026-05-27"
 sources:
   - info.json
@@ -15,24 +12,11 @@ sources:
   - transcript_competitors.json
 ---
 
-# Qorvo, Inc. (QRVO)
-
-## Overview
-
-- **Sector:** Technology
-- **Industry:** Semiconductors
-- **Country:** US
-- **Website:** https://www.qorvo.com
+# QRVO (QRVO)
 
 ## Competitors
 
-- [Skyworks Solutions](SWKS.md) (SWKS)
-- [Broadcom Inc.](AVGO.md) (AVGO)
-- [Qualcomm](QCOM.md) (QCOM)
-- Murata Manufacturing
-- [Analog Devices](ADI.md) (ADI)
-- [NXP Semiconductors](NXPI.md) (NXPI)
-- [MACOM Technology Solutions](MTSI.md) (MTSI)
+- [AVGO](AVGO.md) (AVGO)
 
 ## Key Insiders
 
@@ -323,6 +307,22 @@ Adjusted EBITDA = Operating income ($411M) + D&A from cashflow ($259M) = $670M. 
 ---
 
 ## Appendix
+
+    Mac OS X            	   2   q      �                                      ATTR       �   �                     �     com.apple.provenance  ���%��_
+
+    Mac OS X            	   2   q      �                                      ATTR       �   �                     �     com.apple.provenance  ���%��_
+
+    Mac OS X            	   2   q      �                                      ATTR       �   �                     �     com.apple.provenance  ���%��_
+
+    Mac OS X            	   2   q      �                                      ATTR       �   �                     �     com.apple.provenance  ���%��_
+
+    Mac OS X            	   2   q      �                                      ATTR       �   �                     �     com.apple.provenance  ���%��_
+
+    Mac OS X            	   2   q      �                                      ATTR       �   �                     �     com.apple.provenance  ���%��_
+
+    Mac OS X            	   2   q      �                                      ATTR       �   �                     �     com.apple.provenance  ���%��_
+
+    Mac OS X            	   2   q      �                                      ATTR       �   �                     �     com.apple.provenance  ���%��_
 
 # Appendix A: Competitive Position — Qorvo (QRVO)
 

@@ -1,10 +1,7 @@
 ---
 type: company
 ticker: TSM
-name: Taiwan Semiconductor Manufacturing Company Limited
-sector: Technology
-industry: Semiconductors
-country: TW
+name: TSM
 updated: "2026-05-27"
 sources:
   - info.json
@@ -15,26 +12,16 @@ sources:
   - transcript_competitors.json
 ---
 
-# Taiwan Semiconductor Manufacturing Company Limited (TSM)
-
-## Overview
-
-- **Sector:** Technology
-- **Industry:** Semiconductors
-- **Country:** TW
-- **Website:** https://www.tsmc.com
+# TSM (TSM)
 
 ## Competitors
 
-- [Samsung](005930.KS.md) (005930.KS)
-- [Intel](INTC.md) (INTC)
-- [GlobalFoundries](GFS.md) (GFS)
-- [United Microelectronics Corporation](UMC.md) (UMC)
-- SMIC
+- [AVGO](AVGO.md) (AVGO)
 
 ## Key Insiders
 
 - Chuang Tzu-Sou (officer: VP)
+- Huang Jen-Chau (officer: SVP and CFO)
 - Liaw Yung-Haw (officer: VP)
 - Lin Chris Horng-Dar (officer: VP and CIO)
 - Lin Shyue-Shyh (officer: VP)
@@ -43,7 +30,6 @@ sources:
 - Tien Bor-Zen (officer: VP)
 - Wang Ying-Lang (officer: SVP)
 - Wei Che-Chia (director, officer: Chairman and CEO)
-- Wu Shien-Yang (officer: SVP)
 
 ## Top Institutional Holders
 
@@ -387,6 +373,22 @@ See **Appendix D** for full capital structure detail.
 ---
 
 ## Appendix
+
+    Mac OS X            	   2   q      �                                      ATTR       �   �                     �     com.apple.provenance  ���%��_
+
+    Mac OS X            	   2   q      �                                      ATTR       �   �                     �     com.apple.provenance  ���%��_
+
+    Mac OS X            	   2   q      �                                      ATTR       �   �                     �     com.apple.provenance  ���%��_
+
+    Mac OS X            	   2   q      �                                      ATTR       �   �                     �     com.apple.provenance  ���%��_
+
+    Mac OS X            	   2   q      �                                      ATTR       �   �                     �     com.apple.provenance  ���%��_
+
+    Mac OS X            	   2   q      �                                      ATTR       �   �                     �     com.apple.provenance  ���%��_
+
+    Mac OS X            	   2   q      �                                      ATTR       �   �                     �     com.apple.provenance  ���%��_
+
+    Mac OS X            	   2   q      �                                      ATTR       �   �                     �     com.apple.provenance  ���%��_
 
 # Appendix A: Competitive Position — TSMC (TSM)
 

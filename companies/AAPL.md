@@ -25,11 +25,14 @@ sources:
 
 ## Competitors
 
-- [Samsung Electronics](SSNLF.md) (SSNLF)
-- [Alphabet Inc.](GOOGL.md) (GOOGL)
-- [Microsoft Corporation](MSFT.md) (MSFT)
-- [Amazon.com Inc.](AMZN.md) (AMZN)
-- [Sony Group Corporation](SONY.md) (SONY)
+- [SSNLF](SSNLF.md) (SSNLF)
+- [MSFT](MSFT.md) (MSFT)
+- [GOOGL](GOOGL.md) (GOOGL)
+- [AMZN](AMZN.md) (AMZN)
+- [SONY](SONY.md) (SONY)
+- 005930.KS
+- Huawei
+- [Xiaomi](XIACF.md) (XIACF)
 
 ## Key Insiders
 

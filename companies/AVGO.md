@@ -1,10 +1,7 @@
 ---
 type: company
 ticker: AVGO
-name: Broadcom Inc.
-sector: Technology
-industry: Semiconductors
-country: US
+name: AVGO
 updated: "2026-05-27"
 sources:
   - info.json
@@ -12,24 +9,18 @@ sources:
   - segments.json
   - insider.json
   - holders.json
+  - transcript_competitors.json
 ---
 
-# Broadcom Inc. (AVGO)
-
-## Overview
-
-- **Sector:** Technology
-- **Industry:** Semiconductors
-- **Country:** US
-- **Website:** https://www.broadcom.com
+# AVGO (AVGO)
 
 ## Competitors
 
-- [Marvell Technology](MRVL.md) (MRVL)
-- [NVIDIA](NVDA.md) (NVDA)
-- [Advanced Micro Devices, Inc.](AMD.md) (AMD)
-- Cerebras Systems
-- [Qorvo, Inc.](QRVO.md) (QRVO)
+- [AMD](AMD.md) (AMD)
+- [META](META.md) (META)
+- [NVDA](NVDA.md) (NVDA)
+- [QRVO](QRVO.md) (QRVO)
+- [TSM](TSM.md) (TSM)
 
 ## Key Insiders
 
@@ -59,1435 +50,1226 @@ sources:
 
 ---
 
-# Research Report: Broadcom Inc. (AVGO)
+> **⚠️ DRAFT — this report did not pass the citation audit.** Some claims may lack source verification. Treat as preliminary research.
 
-**Report Date:** May 13, 2026
-**Data as of:** May 13, 2026 (market close)
-**Price:** $417.80 [File: quote.json -- price]
-**Market Cap:** $1,978.2B [File: quote.json -- marketCap]
-**Enterprise Value:** $1,757.3B (FY2025) [File: enterprise_value.json -- enterpriseValue]
+# Broadcom Inc. (AVGO) — Research Report
 
-*This report contains no investment opinion, thesis, conviction score, or buy/sell/hold recommendation. All claims are sourced facts, labeled inferences, or flagged data gaps.*
-
----
-
-## 1. Competitive Position
-
-<!-- IC Question: Where does AVGO rank vs peers, and is its position improving or deteriorating? What would change the answer: Loss of a top-3 XPU customer, successful COT deployment by a hyperscaler, Marvell winning a majority of new design mandates, or NVIDIA custom silicon entry. -->
-
-### Market Position
-
-Broadcom is a $1.98T market cap fabless semiconductor and infrastructure software company headquartered in Palo Alto, CA, with 37,000 employees [File: info.json -- marketCap, fullTimeEmployees, address]. AVGO operates in two reported segments: Semiconductor Solutions ($12,515M Q1 FY2026, +52% YoY) and Infrastructure Software ($6,796M Q1 FY2026, +1% YoY) [File: company_ir.md -- Verified: C008, C009].
-
-**Custom AI Silicon (XPU):** AVGO does not disclose a formal market share figure for the custom AI ASIC segment. No standardized third-party methodology exists for this market. What is quantifiable:
-- Q1 FY2026 AI revenue: $8.4B, +106% YoY [File: company_ir.md -- Verified: C002]. Annualized run rate: ~$33.6B [Inference: $8.4B × 4] [Sources: company_ir.md].
-- Q2 FY2026 AI semiconductor revenue guidance: $10.7B, implying ~$42.8B annualized [File: company_ir.md -- Verified: C007].
-- 6 custom XPU customers identified: Google, Anthropic, Meta, OpenAI, and two unnamed [File: transcript.json -- Hock Tan prepared remarks].
-- Marvell Technology (MRVL), the primary competitor, reported FY2026 total revenue of $8.195B [File: ecosystem_signals.md -- Verified: C050]. AVGO's single-quarter AI revenue ($8.4B) exceeds Marvell's full-year total revenue ($8.2B).
-
-**Networking:** AI networking grew to 33% of AI revenue in Q1 and is projected to reach 40% in Q2 [File: transcript.json -- Hock Tan]. Tomahawk 6 (100 Tbps) is described as the only 100 Tbps switch available [File: transcript.json -- Hock Tan, Q&A with Ross Seymore].
-
-### Porter's Five Forces Summary
-
-| Force | Factual Finding | Key Source |
-|-------|----------------|-----------|
-| **New entrants** | 20+ years of ASIC IP; analyst estimates COT efforts are "at least 2x less performant" (analyst opinion, not verified) [File: transcript.json -- Harlan Sur, analyst question]. CEO: "we will not see competition in COT for many years to come" [File: transcript.json -- Hock Tan]. | transcript.json |
-| **Supplier power** | ~95% of wafers from TSMC [Verified: C017, from 10-K]. No long-term wafer agreements — per-order procurement [Verified: C026]. TSMC hitting capacity limits in 2026 [Verified: C016]. | supply_demand.md, supply_indicators.md |
-| **Buyer power** | 6 XPU customers, Google is largest known. Google supply agreement through 2031 [Verified: C055]. Custom design creates 12-24 month switching costs. | transcript.json, ecosystem_signals.md |
-| **Substitutes** | NVIDIA GPUs are primary substitute. CEO characterizes XPU as "strategic" vs GPU as "transactional and optionality" [File: transcript.json -- Hock Tan]. Coexistence model within same hyperscaler. | transcript.json |
-| **Rivalry** | Marvell is #2 at ~12x smaller revenue scale. MRVL acquired Celestial AI ($3.25B) for co-packaged optics [Corroborated: C052]. NVDA competes for same hyperscaler compute budget ($187.1B TTM revenue). | ecosystem_signals.md |
-
-### Competitive Evolution
-
-Broadcom's position was built through serial acquisitions: Avago-Broadcom (2016), CA Technologies (2018, $18.9B), Symantec Enterprise (2019, $10.7B), VMware (2023, ~$61B) [Verified: C037]. Goodwill trajectory: $1.7B (FY2015) → $97.8B (FY2025) [File: balance.json -- goodwill].
-
-XPU customer base expanded from 3 disclosed customers (pre-2025) to 6 as of Q1 FY2026. OpenAI (6th customer) expected to deploy in volume 2027 at >1 gigawatt [File: transcript.json -- Hock Tan].
-
-The market structure is evolving from GPU-dominated (NVIDIA near-monopoly) toward a dual-track model (GPUs for general training + custom XPUs for inference/specialized workloads) [Inference: from hyperscaler ordering patterns showing both GPU and XPU procurement] [Sources: transcript.json, ecosystem_signals.md].
+**Report Date:** 2026-05-27
+**Data As Of:** 2026-05-26 (price), FY2025 (ended Nov 2, 2025) for annual financials, Q1 FY2026 (ended Feb 2, 2026) for most recent quarter
+**Ticker:** AVGO | NASDAQ | Technology | Semiconductors
+**Price:** $422.01 [info.json: price]
+**ADV:** $10,036MM [info.json: averageVolume (23,781,641) × price ($422.01)]
+**Market Cap:** $1,998.1B [info.json: marketCap]
+**Net Debt:** $49.0B (2.5% of mkt cap) [balance.json: totalDebt ($65,136M) − cashAndShortTermInvestments ($16,178M)]
+**Net Cash:** −$49.0B (−2.5% of mkt cap) [balance.json: cashAndShortTermInvestments ($16,178M) − totalDebt ($65,136M)]
+**Enterprise Value:** $2,047.0B [Computed: $1,998.1B mkt cap + $65.1B debt − $16.2B cash]
+**Short Interest:** 1.10% of float (51,011,972 shares short / 4,642,774,789 float) [short_interest.md + shares_float.json]
 
 ---
 
-## 2. Supply/Demand Balance
+## 1. Business Overview
 
-<!-- IC Question: Is industry supply sufficient to meet demand at current prices, and when does that change? What would change: Major TSMC capacity expansion, demand shock from hyperscaler CapEx pullback, new foundry entrant at advanced nodes. -->
+<!-- IC Question: What does this company do, how is it organized, and how large is each piece? What would change the answer: major divestiture, acquisition, segment reclassification, revenue mix shift. -->
 
-### Custom AI Silicon: Demand Exceeds Supply
+Broadcom Inc. is a global technology company that designs, develops, and supplies semiconductor and infrastructure software solutions. Headquartered in Palo Alto, CA, with 37,000 full-time employees [info.json: fullTimeEmployees]. CEO: Hock E. Tan [info.json: ceo]. Listed on NASDAQ Global Select (CIK 0001730168) since August 6, 2009 [info.json: ipoDate].
 
-**Demand drivers:**
-- Google 2026 CapEx guidance: $180B–$190B (updated April 29, 2026; up from $91.45B in 2025) [Contradicted: C053 — ecosystem_signals.md used stale $175B–$185B guidance; actual updated figure is $180B–$190B per CFO Anat Ashkenazi]. Google Cloud backlog: $240B [Verified: C053 for revenue figures].
-- Anthropic annual revenue run rate surpassing $30B; $21B in TPU rack orders ($10B + $11B) [Corroborated: C056].
-- OpenAI collaboration: 10 gigawatts of custom AI accelerators [Verified: C015].
-- AVGO has a $73B AI-specific backlog with an 18-month delivery window [Corroborated: C023]. Note: this is a round number disclosed by management without customer or product breakdown.
+### Reportable Segments
 
-**Supply constraints:**
-- TSMC is at production capacity limits for advanced nodes. Broadcom's Natarajan Ramachandran (director of product marketing): "TSMC is hitting (production capacity) limits... that has become a bottleneck, or that has kind of choked the supply chain in 2026" [Verified: C016].
-- PCB lead times stretched from ~6 weeks to 6 months [Corroborated: C018 — management characterization via Reuters, not independently verified PCB industry data].
-- One Tier 3 analyst source estimates Google demands 12M TPU units in 2027 but only ~7M can be shipped due to CoWoS constraints [Single-Source: C049 — proprietary analyst estimates from FundaAI Substack; TSMC and Google do not disclose TPU unit volumes. This claim should not be treated as established fact].
+Broadcom reports **two** segments: **Semiconductor Solutions** and **Infrastructure Software** [segment_financials.md: SEC 10-Q avgo-20260201.htm] [claim_verification.json: C069, Verified]. Note: the FMP info.json description references four legacy segments (Wired Infrastructure, Wireless Communications, Enterprise Storage, Industrial & Other); this is outdated post-VMware restructuring.
 
-**Supply trajectory:** TSMC CapEx guided at high end of $52B–$56B range for 2026 [Corroborated: C048]. CoWoS capacity expansion ongoing but demand exceeds supply through at least mid-2027 per TSMC commentary [File: ecosystem_signals.md -- TSMC CC Wei].
+| Segment | FY2025 Revenue | % of FY2025 | Q1 FY2026 Revenue | Q1 FY2026 % | Q1 YoY Growth |
+|---------|---------------|-------------|-------------------|-------------|---------------|
+| Semiconductor Solutions | ~$36.9B | ~57.7% | $12.5B | 64.7% | +52% |
+| Infrastructure Software | ~$27.0B | ~42.3% | $6.8B | 35.2% | +1% |
+| **Total** | **$63,887M** | **100%** | **$19,311M** | **100%** | **+29.5%** |
 
-**Pricing:** Non-GAAP gross margin held at 77% in Q1 FY2026 [File: transcript.json -- Kirsten Spears]. CEO stated margins on AI products are "fairly consistent with the models we have in the rest of the semiconductor business" [File: transcript.json -- Hock Tan].
+Sources: FY2025 total revenue from [income.json: revenue]. FY2025 segment split from Bullfincher aggregator [business_overview.md] [Single-Source caveat: FMP segments.json returned 404; Bullfincher is the only source for the annual percentage]. Q1 FY2026 segment data from [transcript_segments.json: Kirsten Spears]. Q1 FY2026 total from [earnings.json: revenueActual, 2026-03-04]. Percentages computed: $12.5B/$19.311B = 64.7%; $6.8B/$19.311B = 35.2%.
 
-### Other Segments
+### Semiconductor Solutions ($12.5B, 64.7% of Q1 revenue)
 
-| Segment | Q1 FY2026 | Trend | Source |
-|---------|-----------|-------|--------|
-| Non-AI Semiconductor | $4.1B | Flat YoY | [transcript.json -- Hock Tan] |
-| Infrastructure Software | $6.8B (+1% YoY) | VMware +13% YoY within segment; ARR +19% YoY | [Verified: C009; transcript.json] |
-| Q2 FY2026 Total Guidance | ~$22.0B (+47% YoY) | AI semi guided $10.7B; Software guided $7.2B (+9% YoY) | [Verified: C007] |
+Management discloses two sub-categories on earnings calls (not in SEC filings):
+
+| Sub-Category | Q1 FY2026 Revenue | % of Semi | YoY Growth |
+|--------------|-------------------|-----------|------------|
+| AI Semiconductors | $8.4B | 67.2% | +106% |
+| Non-AI Semiconductors | $4.1B | 32.8% | flat (0%) |
+
+AI semiconductor sub-components (management commentary): Custom AI Accelerators (XPUs) ~$5.6B (~2/3 of AI revenue, +140% YoY) [Inference: Hock Tan stated AI networking = "1/3 of total AI revenue," implying XPU = remaining 2/3] [Sources: transcript_segments.json]. AI Networking (switches, DSPs, SerDes, optical) ~$2.8B (~1/3 of AI revenue, +60% YoY) [transcript_segments.json: Hock Tan] [claim_verification.json: C007, Single-Source].
+
+Key products: (1) Custom AI XPUs including Google TPU (Ironwood, 7th gen) and Meta MTIA; (2) Tomahawk 6 Ethernet switching ASICs (100 Tbps, 200G SerDes); (3) Optical DSPs at 1.6 Tbps; (4) High-Speed SerDes (200G shipping, 400G in development); (5) Jericho routing ASICs; (6) Broadband SoCs; (7) Wireless SoCs (Apple customer [claim_verification.json: C092, Corroborated]); (8) Server storage controllers [transcript_segments.json: Hock Tan].
+
+### Infrastructure Software ($6.8B, 35.2% of Q1 revenue)
+
+Key products: (1) VMware Cloud Foundation (VCF) — VMware revenue grew 13% YoY in Q1 FY2026, TCV >$9.2B, ARR growth 19% YoY [transcript_segments.json: Hock Tan]; (2) CA Technologies mainframe software (acquired 2018, $18.9B); (3) Symantec Enterprise Security (acquired 2019, $10.7B); (4) Brocade SAN/Fiber Channel [business_overview.md].
+
+Segment-level Q1 FY2026 margins (non-GAAP): Semiconductor gross margin ~68%, operating margin 60%. Software gross margin 93%, operating margin 78% [transcript_segments.json: Kirsten Spears].
+
+### Revenue Mix: Narrative vs. Reality
+
+AI semiconductor revenue ($8.4B, 43.5% of Q1 total) is the largest single revenue stream, growing 106% YoY. Q2 FY2026 AI guidance is $10.7B (+140% YoY), rising to ~48.6% of guided $22B total [transcript_segments.json: Hock Tan]. This is disclosed, quantified, and verified revenue — not pre-revenue [claim_verification.json: C041, Verified].
+
+Infrastructure Software ($6.8B) generates 93% gross margins and 78% operating margins — the highest-margin segment. At 93% gross margin, Software contributes ~$6.3B gross profit vs. Semi's ~$8.5B at 68% [Inference: margin × revenue computation] [Sources: transcript_segments.json].
+
+Non-AI Semiconductors ($4.1B, 21.2%) are flat and declining as a share of total.
+
+### Major Customers
+
+6 named custom AI XPU customers: Google (TPU Ironwood), Anthropic (1 GW in 2026, 3+ GW in 2027), Meta (MTIA), OpenAI (first-gen XPU, volume 2027), and 2 unnamed [transcript_segments.json: Hock Tan]. $10B Ironwood TPU rack order from Anthropic received Q3 FY2025 [claim_verification.json: C003, Corroborated].
+
+Top 5 end customers ~40% of FY2025 and FY2024 revenue through all channels [EDGAR: 10-K FY2025]. Per-customer revenue is not disclosed in SEC filings [Data gap]. 48% of revenue via distributors [EDGAR: 10-K FY2025].
+
+### Brief History
+
+Avago Technologies (HP spinoff) acquired Broadcom Corporation ($37B, 2016), then CA Technologies ($18.9B, 2018), Symantec enterprise ($10.7B, 2019), and VMware ($61B, closed Nov 22, 2023) [business_overview.md; income.json]. FY2024 revenue jumped 44.0% ($35.8B → $51.6B), substantially driven by VMware consolidation [Inference: goodwill increased $54.2B from FY2023 to FY2024, confirming acquisition impact] [Sources: balance.json, income.json]. 10-for-1 stock split completed July 2024.
 
 ---
 
-## 3. Value Chain
+## 2. Competitive Position
 
-<!-- IC Question: Where is value captured, and is it migrating toward or away from AVGO? What would change: Vertical integration by customer (COT), TSMC pricing power increasing faster than AVGO can pass through, disintermediation via new packaging/interconnect technology. -->
+<!-- IC Question: For each product, who competes and what are relative strengths? What would change: loss of a top customer, entry of well-capitalized competitor, customer building in-house, technology disruption. Base rate: custom AI ASIC market has had zero successful new entrants at scale. -->
+
+### Custom AI XPUs
+
+**Broadcom vs. Marvell Technology (MRVL):** AVGO is #1 by revenue in custom AI ASICs. AVGO's single-quarter AI revenue ($8.4B) exceeds Marvell's total full-year revenue ($8.2B, FY2026 ended Jan 2026) [income.json; ecosystem_signals.md: MRVL FY2026, Verified C011]. Marvell's custom ASIC revenue is ~$1.5B annualized [ecosystem_signals.md: Single-Source C016]. Third-party market share estimates for AVGO: ~70% [ecosystem_signals.md: Gotrade, Single-Source C039]; Yahoo Finance separately projects 60% for 2027 [claim_verification.json: C039 cross-reference]. AVGO does not disclose custom AI ASIC market share in SEC filings [Data gap].
+
+Marvell competitive signals: (1) reportedly secured portion of next-gen Google TPU work [ecosystem_signals.md: Corroborated C015, 3 independent sources]; (2) NVIDIA invested $2B in Marvell (March 2026) for NVLink-compatible interconnect [ecosystem_signals.md: Verified C017]; (3) acquired Celestial AI ($3.25B), XConn ($540M), Polariton in optical interconnect [Verified C018, C019]; (4) 20+ custom design wins at record level [Corroborated C020].
+
+**Broadcom vs. NVIDIA (GPU co-opetition):** NVIDIA's data center revenue was $75.2B in Q1 FY2027 (+92% YoY) [ecosystem_signals.md: Contradicted C022 — $75.2B not $75.3B as cited in some sources]. GPUs and custom ASICs compete for the same hyperscaler compute budget but serve different optimization points. Vera Rubin next-gen promises "up to 10x more performance per watt" for specific inference workloads vs. Blackwell [Verified C031, with "up to" qualifier].
+
+**Customer-owned tooling (COT) risk:** Hyperscalers (Google, Amazon Trainium, Microsoft Maia) have internal silicon teams. CEO Tan: "We will not see competition in COT for many years to come" [transcript.json: Hock Tan, Q&A]. This is management's assessment, not independently verified.
+
+### Networking ASICs
+
+Tomahawk 6 at 100 Tbps with 200G SerDes — CEO called Broadcom "first-to-market" [transcript.json: Hock Tan]. Optical DSPs: "We are again the only player out there doing DSP at 1.6 terabit" [transcript_segments.json: Hock Tan]. Marvell competes in switching and optical DSPs, bolstered by the $2B NVIDIA investment for NVLink-compatible interconnect. Quantified market share data for networking ASICs is not available [Data gap].
+
+### Infrastructure Software (VMware)
+
+VMware Cloud Foundation occupies a dominant position in enterprise server virtualization. VMware TCV >$9.2B in Q1 FY2026, ARR growth 19% YoY [transcript_segments.json: Hock Tan]. Alternatives include Nutanix, Red Hat OpenShift, and public cloud native. Post-acquisition pricing changes (reported increases up to 45%) have created customer dissatisfaction [claim_verification.json: C079]. No quantified churn data is available [Data gap].
+
+### Competition Evolution (3-5 Years)
+
+2021-2023: Broadcom competed broadly across networking, broadband, wireless. Custom ASIC concentrated on Google TPU. 2023-2024: AI demand explosion + $61B VMware acquisition. Competitive field narrowed to AI dynamics. 2025-2026: Market becoming more oligopolistic at the custom ASIC layer. MRVL closing the gap through M&A and NVIDIA partnership, but starting from 7.8x smaller revenue base. Barriers to entry rising (capital intensity, TSMC access, multi-year customer relationships).
+
+---
+
+## 3. Supply/Demand Balance
+
+<!-- IC Question: Is industry supply sufficient to meet demand at current prices, and when does that change? What would change: major capacity announcement, demand shock, policy change. Base rate: semiconductor supply/demand imbalances in advanced nodes have historically persisted 18-36 months. -->
+
+### Demand
+
+**Backlog:** Total consolidated backlog $162B (Q4 FY2025), AI-specific backlog $73B [backlog_breakdown.md: Verified C001]. Total backlog = 2.5x FY2025 revenue ($162B/$63.9B). AI backlog = ~2.2 years at Q1 FY2026 run rate ($73B/$33.6B annualized) [Computed].
+
+**AI revenue trajectory:** ~$4.1B (Q1 FY2025 implied) → $8.4B (Q1 FY2026, +106% YoY) → $10.7B guided (Q2 FY2026, +140% YoY) [transcript_segments.json: Hock Tan; earnings.json]. AI as % of total: ~27% → 43.5% → ~48.6%.
+
+**Demand durability:** Hyperscaler AI capex commitments: Google $175-185B, Meta $60-65B, Microsoft $80B+, Amazon $100B+ [customer_capex.md]. TSMC CEO C.C. Wei: demand "significantly outpaces supply" with "sold-out environment" through 2026 [ecosystem_signals.md]. CEO Tan targets "$100 billion in 2027" from AI chips [transcript.json: Hock Tan]. ~98% of Q1 FY2026 YoY revenue growth was from AI semiconductors [Inference: Q1 FY2025 total $14,916M; growth of ~$4.4B YoY almost entirely from AI semi growth of ~$4.3B] [Sources: earnings.json, transcript.json].
+
+### Supply Constraints
+
+1. **Leading-edge wafers (TSMC 3nm/5nm):** Sold out. Advanced chips (≤7nm) = ~74% of TSMC wafer revenue [ecosystem_signals.md].
+2. **CoWoS advanced packaging:** TSMC only provider at scale; growing >80% CAGR 2026-2028 [Corroborated C036]. NVDA estimated ~50% of CoWoS capacity [Unverifiable C043].
+3. **HBM:** Industry-wide constraint from SK Hynix, Samsung, Micron.
+4. **Substrates (T-glass):** CEO Tan: "We were early in being able to lock up T-glass" [transcript.json].
+
+AVGO has "fully secured capacity of these components for '26 through '28" [transcript.json: Hock Tan]. Kawwas confirmed: "we're probably the first one to secure that up to '28 or beyond" [transcript.json: Charlie Kawwas].
+
+### Supply Addition Timeline
+
+- TSMC Tainan 3nm fab: volume H1 2027 [ecosystem_signals.md]
+- TSMC Arizona 2nd fab (3nm): production H2 2027 [Verified C037]
+- TSMC Japan 2nd fab (3nm): production 2028
+- TSMC Arizona packaging fab: permitting stage
+- Total TSMC US investment: $165B [Verified C037]
+
+### Synthesis
+
+Demand exceeds supply in 2026. TSMC is "sold out" and CEO Tan described capacity as "choked." The supply constraint is structural in 2026 and begins easing in 2027 as new fabs come online. Pricing has been stable: CEO Tan rejected margin dilution concerns from rack-level shipments, stating "you must be a bit hallucinating" [transcript.json: Hock Tan, Q&A]. AVGO, NVDA, and MRVL all compete for the same TSMC capacity pool.
+
+---
+
+## 4. Value Chain
+
+<!-- IC Question: Where is value captured, and is it migrating toward or away from this company? What would change: vertical integration by customer/supplier, margin compression, technology disintermediation. Base rate: semiconductor value chain positions rarely shift materially within 5 years absent a major architecture transition. -->
 
 ### Value Chain Map
 
-**Semiconductor chain:** Raw Materials → EDA/IP (Synopsys, Cadence, ARM) → **Chip Design (AVGO — in-house)** → Wafer Fabrication (TSMC ~95%) → Assembly/Test/Packaging (ASE, SPIL, UTAC, Amkor) → Distribution → End Customer (hyperscalers, enterprise)
+**Semiconductor:** Raw materials → TSMC foundry (primary) → CoWoS packaging (TSMC) → **AVGO: chip design + IP** → OSAT assembly/test (ASE, SPIL, Amkor, Foxconn) → Distribution (48% distributors, 52% direct) → Hyperscaler customers → AI data centers [EDGAR: 10-K FY2025; transcript.json]. AVGO is fabless for standard CMOS; maintains internal III-V fabrication (FBAR filters, GaAs/InP lasers) in the U.S. and Singapore [EDGAR: 10-K FY2025].
 
-**Software chain:** **Software Development (AVGO — VMware)** → **Licensing/Subscription** → Enterprise Integration (NEC, Lenovo, Dell, HP, Cisco) → End Customer
+**Software:** Open-source ecosystem → **AVGO: software development + IP** (VMware, CA, Symantec) → Distribution → Enterprise customers [transcript_segments.json].
 
-AVGO occupies Stage 3 (design) in semiconductors and Stages 1-2 (development/licensing) in software — the highest-IP-content stages [File: info.json -- description; File: value_chain.md].
+### Upstream Dependencies
 
-### Margin Capture by Chain Stage
+TSMC is the primary foundry: "the majority of front-end wafer manufacturing" [EDGAR: 10-K FY2025]. The specific "~95% of wafers" figure widely cited is not in the 10-K [Unverifiable C038]. No long-term supply contracts per 10-K ("generally on a purchase order basis") [EDGAR: 10-K FY2025], but management describes multiyear capacity commitments for AI components [transcript.json; claim_verification.json: C096, Verified — Broadcom VP confirmed "long-term agreements with suppliers to secure capacity commitments for as long as three to four years"]. [Inference: general purchases remain per-order, while strategic AI components have specific capacity agreements] [Sources: 10-K FY2025, transcript.json, claim_verification.json C096].
 
-| Stage | Representative | Gross Margin | Source |
-|-------|---------------|-------------|--------|
-| Chip Design (fabless) | AVGO | 67.8% (GAAP FY2025) | [File: income.json] |
-| Foundry | TSMC | ~55-57% | [Inference from TSMC Q1 2026 ~50% net margin] [Sources: ecosystem_signals.md -- C045, C046] |
-| OSAT | ASE (est.) | ~20-25% | [Inference: historical OSAT margins; no ASE data in raw files] |
-| Networking peer | Marvell | ~65% gross, 35.3% non-GAAP op | [Verified: C050, C051] |
+### Margin Capture Across the Chain
 
-### Key Dependencies
+| Stage | Entity | Gross Margin | Operating Margin |
+|-------|--------|-------------|-----------------|
+| Foundry | TSMC | 66.2% | 58.1% |
+| Chip design (semi) | AVGO | 68% (non-GAAP) | 60% (non-GAAP) |
+| Software | AVGO | 93% | 78% |
+| GPU design | NVIDIA | 75.0% (GAAP) | — |
+| OSAT | ASE/SPIL | ~20-25% | ~8-12% |
 
-1. **TSMC:** ~95% of wafers [Verified: C017]. No long-term agreements [Verified: C026]. All advanced node manufacturing in Taiwan.
-2. **Customer concentration:** 6 XPU customers. Google is largest known customer — supply agreement through 2031 [Verified: C055]. Anthropic's $21B in TPU orders flows through Google infrastructure [Corroborated: C056], amplifying Google concentration.
-3. **Geographic concentration:** All foundries, OSATs, and PCB suppliers in Asia (Taiwan, Singapore, China, Korea, Philippines) [File: value_chain.md -- upstream suppliers].
+[ecosystem_signals.md: TSMC Q1 2026, Verified C034; transcript_segments.json: Kirsten Spears; Inference for OSAT margins from general industry knowledge] [Sources: ecosystem_signals.md, transcript_segments.json]
+
+AVGO's GAAP operating margin (39.9% FY2025) is depressed by $8.8B D&A, primarily amortization of acquired intangibles [income.json: depreciationAndAmortization]. Capex-to-revenue: 0.98% ($623M/$63.9B FY2025) [cashflow.json], consistent with fabless model.
 
 ### Integration Direction
 
-AVGO has not integrated backward (remains fabless; PP&E flat at ~$2.5B, FY2021–FY2025) [File: balance.json]. Forward integration via acquisitions: VMware (FY2024, $54.2B goodwill increase), CA Technologies (FY2019, ~$10B goodwill), Symantec Enterprise (FY2019, ~$7B goodwill) [File: balance.json -- goodwill step-ups]. This positions AVGO from component supplier to platform provider.
+**Forward:** AVGO has moved from chips to rack-level systems (Anthropic $10B rack order [Corroborated C003]) and into the software abstraction layer (VMware acquisition). CEO Tan positioned VCF as "the permanent abstraction layer between AI software and physical chips" [transcript.json].
 
-**COT threat:** Hyperscalers are attempting in-house chip design. Google's agreement through 2031 [Verified: C055] partially mitigates this risk contractually. CEO characterized COT timeline as "many years" away [File: transcript.json -- Hock Tan]. Amazon's Trainium/Graviton chips are designed in-house — evidence that COT is technically feasible for some customers.
+**Competitors integrating toward AVGO:** Marvell secured portion of Google TPU work [Corroborated C015]. NVIDIA invested $2B in Marvell [Verified C017]. Hyperscalers have internal silicon teams, though CEO Tan asserts no COT competition "for many years."
 
----
+### Inventory Signals
 
-## 4. Capital Structure
-
-<!-- IC Question: How is the company funded, and what are its financial obligations? What would change: Major debt issuance or repayment, credit rating change, M&A financing. -->
-
-### Balance Sheet Overview
-
-| Component | FY2025 (Nov 2, 2025) | Q1 FY2026 (Feb 1, 2026) | Source |
-|-----------|----------------------|------------------------|--------|
-| Market Cap | $1,708.3B | $1,978.2B | [enterprise_value.json; quote.json] |
-| Long-term debt | $61,984M | $63,805M | [balance.json; company_ir.md -- Verified: C011] |
-| Short-term debt | $3,152M | $2,252M | [balance.json; company_ir.md -- Verified: C011] |
-| **Total debt** | **$65,136M** | **~$66,057M** | [balance.json; Verified: C039] |
-| Cash & equivalents | $16,178M | $14,174M | [balance.json; company_ir.md -- Verified: C011] |
-| **Net debt** | **$48,958M** | **~$51,883M** | [balance.json; computed] |
-| Stockholders' equity | $81,292M | $79,872M | [balance.json; company_ir.md -- Verified: C011] |
-| Total assets | $171,092M | $169,903M | [balance.json; company_ir.md -- Verified: C011] |
-| Goodwill | $97,801M | $97,801M | [balance.json; company_ir.md -- Verified: C011] |
-| Goodwill + Intangibles | $130,074M (76.0% of assets) | — | [balance.json] |
-| Tangible book value | -$48,782M | — | [metrics.json] |
-| Enterprise Value | $1,757.3B | — | [enterprise_value.json] |
-
-Debt increased ~$921M from FY2025 to Q1 FY2026. Long-term debt rose $1,821M while short-term debt fell $900M [Inference: suggests refinancing of near-term maturities into longer-term instruments] [Sources: balance.json, company_ir.md].
-
-### Debt Evolution
-
-FY2019 $32.8B → FY2020 $41.7B (+$8.9B, Symantec) → FY2021 $40.3B → FY2022 $40.0B → FY2023 $39.6B → FY2024 $67.6B (+$27.9B, VMware) → FY2025 $65.1B (-$2.4B) [File: balance.json -- totalDebt].
-
-### Known Debt Tranches
-
-| Tranche | Rate | Maturity | Source |
-|---------|------|----------|--------|
-| $5,000M Senior Notes | 5.150% | Nov 15, 2031 | [convertible_detail.md -- Verified: C040, SEC 424B2] |
-| $750M Senior Notes | 4.300% | 2031 | [convertible_detail.md -- Corroborated: C041] |
-| $1,250M Senior Notes | 4.600% | 2033 | [convertible_detail.md -- Corroborated: C041] |
-| $1,250M Senior Notes | 4.950% | 2035 | [convertible_detail.md -- Corroborated: C041] |
-| Additional July 2025 / Jan 2026 tranches | — | — | [Data gap: G002 — full maturity schedule requires 10-K footnotes] |
-
-**Mandatory Convertible Preferred Stock (AVGOP):** 8.0% per annum distributions ($80/year) [Verified: C042].
-
-### Leverage & Coverage
-
-| Metric | FY2025 | FY2024 | FY2023 | Source |
-|--------|--------|--------|--------|--------|
-| Net Debt / EBITDA | 1.41x | 2.44x | 1.24x | [metrics.json] |
-| Debt / Equity | 0.80x | 1.00x | 1.65x | [ratios.json] |
-| Interest Coverage | 7.94x | 3.41x | 9.99x | [ratios.json] |
-| Current Ratio | 1.71x | 1.17x | 2.82x | [ratios.json] |
-
-Interest expense declined from $3,953M (FY2024) to $3,210M (FY2025) despite total debt declining only $2.4B [Inference: weighted average cost of debt fell from ~5.8% to ~4.9%] [Sources: income.json, balance.json].
-
-### Cash Flow Coverage
-
-- FY2025 FCF: $26.914B [File: cashflow.json]
-- FY2025 Interest expense: $3,210M → FCF covers interest 8.4x
-- Q1 FY2026 FCF: $8,010M [Verified: C006]
-- Total capital returned Q1 FY2026: $10.95B ($3.1B dividends + $7.85B buybacks) [Verified: C010] — exceeded FCF, funded by cash on balance sheet.
+Inventory increased from $2.27B (FY2025) to $3.0B (Q1 FY2026), days on hand expanded from 40 to 68 days. CFO Spears attributed this to "anticipation of accelerating AI semiconductor growth" [transcript_segments.json: Kirsten Spears]. Deferred revenue totaled $13.0B (FY2025-end: $9.5B current + $3.5B non-current [balance.json]), primarily VMware subscription prepayments.
 
 ---
 
-## 5. Key Stats
+## 5. Capital Structure
 
-<!-- IC Question: What does the market currently price, and how does it compare to historical patterns? What would change: Significant price move, multiple expansion/compression, technical breakout/breakdown. -->
+<!-- IC Question: How does the company raise money to spend on its business? What would change: major debt issuance or repayment, M&A financing, credit rating change, new equity issuance. -->
 
-### Technical Indicators (as of May 13, 2026)
+### Equity Composition
 
-| Indicator | Value | Source |
-|-----------|-------|--------|
-| Price | $417.80 | [quote.json] |
-| 52-week range | $221.60 – $437.68 | [quote.json] |
-| RSI (14) | 58.88 | [technicals.json] |
-| 21d EMA | $407.29 | [technicals.json] |
-| 50d SMA | $365.13 | [technicals.json] |
-| 200d SMA | $345.51 | [technicals.json] |
-| ADV (30d, $) | $8.20B | [technicals.json] |
-| Avg Volume (30d) | 19,954,138 shares | [technicals.json] |
-| Beta | 1.44 | [info.json] |
-| Historical Volatility (ann.) | 46.28% | [options.json] |
+Single class of common stock ($0.001 par value) [insider.json: securityName]. No preferred equity outstanding — Series A Mandatory Convertible Preferred ($3.0B issued Sep 2019) fully converted to common stock September 30, 2022 [convertible_search.json; balance.json: preferredStock $0, FY2025]. Shares outstanding: 4,734,670,000. Float: 4,642,774,789 (98.1% free float) [shares_float.json].
 
-Price is above all major moving averages. RSI at 58.88 is neutral (neither overbought nor oversold).
+### Market Cap
 
-### Computed Multiples (at $417.80)
+$1,998.1B at $422.01/share [quote.json: marketCap].
 
-| Multiple | Value | Computation | Source |
-|----------|-------|-------------|--------|
-| Trailing P/E (GAAP, basic) | 85.1x | $417.80 / $4.91 | [Computed: quote.json / income.json eps FY2025] |
-| Trailing P/E (GAAP, diluted) | 87.6x | $417.80 / $4.77 | [Computed: quote.json / income.json epsDiluted FY2025] |
-| Forward P/E (FY2026E) | 36.9x | $417.80 / $11.32 | [Computed: quote.json / ratings.json epsAvg] |
-| P/FCF | 73.5x | $1,978.2B / $26.914B | [Computed: quote.json / cashflow.json FCF FY2025] |
-| P/FCF (SBC-adjusted) | 102.2x | $1,978.2B / $19.346B | [Computed: FCF minus $7.568B SBC] |
-| EV/EBITDA (GAAP) | 50.6x | $1,757.3B / $34.714B | [metrics.json -- evToEBITDA FY2025] |
-| EV/Revenue | 27.5x | $1,757.3B / $63.887B | [metrics.json -- evToSales FY2025] |
-| Dividend Yield | 0.62% | $2.60 / $417.80 | [Computed: company_ir.md $0.65/qtr / quote.json] |
-| P/Book | 24.8x | $1,978.2B / $79.872B | [Computed: quote.json / company_ir.md equity] |
+### Debt Composition
 
-**Note on P/E:** FY2025 GAAP EPS of $4.77 (diluted) reflects a -1.7% effective tax rate (net $397M tax benefit) [File: ratios.json]. At a normalized 21% statutory rate, net income would decline from $23,126M to ~$17,956M, a 22.3% reduction. Normalized P/E (diluted) would be ~$417.80 / $3.70 ≈ 112.9x [Inference: $17,956M / 4,853M shares = $3.70 normalized EPS] [Sources: income.json, ratios.json].
+| Component | Amount | Source |
+|-----------|--------|--------|
+| **Total Debt** | **$65,136M** | [balance.json: totalDebt, FY2025] |
+| Short-term Debt | $3,152M | [balance.json: shortTermDebt] |
+| Long-term Debt | $61,984M | [balance.json: longTermDebt] |
+| Capital Lease Obligations | $0 | [balance.json: capitalLeaseObligations] |
 
-### Short Interest
+Debt consists primarily of senior unsecured notes. In November 2023, Broadcom issued $29B in new senior notes for VMware acquisition financing. Known tranche: 2031 Notes at 5.150% [convertible_detail.md: SEC.gov filing reference]. Full maturity schedule by tranche is not available in the raw data [Data gap: 10-K debt maturity table not extracted].
 
-- Shares short: ~51.0M–54.6M [Corroborated: C043]
-- % of float: ~1.10–1.32% (varies by source/date; MarketBeat reports 1.10% as of April 30, 2026) [Corroborated: C043]
-- Days to cover: 2.1–2.6 [File: short_interest.md]
+**Debt trajectory:** FY2023 $39.6B → FY2024 $67.6B (+$28.0B, VMware financing) → FY2025 $65.1B (−$2.4B reduction). [Inference: FY2024 debt increase aligns with VMware close and cashflow.json showing $20.3B net debt issuance + $26.0B acquisition spend] [Sources: balance.json, cashflow.json].
 
-### Earnings Beat/Miss Pattern
+### Convertible Debt
 
-| Quarter | EPS Actual | EPS Est. | Beat | Rev Actual | Rev Est. | Rev Beat |
-|---------|-----------|----------|------|-----------|----------|----------|
-| Q1 FY2026 | $2.05 | $2.03 | +$0.02 (+1.0%) | $19,311M | $19,256M | +$55M (+0.3%) |
-| Q4 FY2025 | $1.95 | $1.87 | +$0.08 (+4.3%) | $18,015M | $17,466M | +$549M (+3.1%) |
-| Q3 FY2025 | $1.69 | $1.66 | +$0.03 (+1.8%) | $15,952M | $15,826M | +$126M (+0.8%) |
-| Q2 FY2025 | $1.58 | $1.57 | +$0.01 (+0.6%) | $15,004M | $14,958M | +$46M (+0.3%) |
-| Q1 FY2025 | $1.60 | $1.51 | +$0.09 (+6.0%) | $14,916M | $14,616M | +$300M (+2.1%) |
+None outstanding. The Series A Mandatory Convertible Preferred was fully converted by Sep 2022 [convertible_search.json; balance.json: FY2025 preferredStock $0].
 
-[File: earnings.json -- all entries]. 10 consecutive quarterly EPS beats. Median EPS beat: +$0.03 (+1.8%). Next earnings: June 3, 2026; consensus Q2 FY2026 EPS: $2.40, revenue: $22,023M [File: earnings.json].
+### Cash and Equivalents
 
-### Scoring Metrics
+$16,178M [balance.json: cashAndCashEquivalents, FY2025].
 
-- Altman Z-Score: 14.34 (>3.0 = low bankruptcy probability) [File: scores.json]
-- Piotroski F-Score: 6 of 9 [File: scores.json]
+### Minority Interest
+
+$0 [balance.json: minorityInterest, FY2025].
+
+### Enterprise Value
+
+$2,047.0B [Computed: $1,998.1B market cap + $65,136M debt − $16,178M cash]. The FMP-stored EV of $1,757.3B [enterprise_value.json] was calculated at the filing-date price of $362.55 and is stale.
+
+### Net Debt / EBITDA
+
+**1.41x** [Computed: $48,958M net debt / $34,714M FY2025 EBITDA] [Sources: balance.json, income.json]. This compares to 2.44x at FY2024-end, reflecting rapid deleveraging as EBITDA grew and $2.4B debt was repaid.
 
 ---
 
-## 6. Risk Factors
+## Cross-Reference Discrepancies
 
-<!-- IC Question: What specific events could materially alter AVGO's financial performance? What would change: New regulation, customer loss, supply chain disruption, executive departure. -->
+1. **NVDA data center revenue:** Risk_factors.md cites $75.3B in one instance; competitive_position.md cites $75.2B and flags Contradicted C022. The verified figure is $75.2B, not $75.3B [claim_verification.json: C022].
+2. **TSMC wafer dependency:** Multiple analyses cite "~95% of wafers from TSMC." The 10-K says "the majority" without quantification [Unverifiable C038].
+3. **Employee count:** info.json description says 19,000; info.json fullTimeEmployees field says 37,000. The 37,000 figure is current [info.json: fullTimeEmployees].
+4. **ADV discrepancy:** technicals.json adv_30d ($7.87B, using 30-day avg volume 18.77M shares) vs. info.json averageVolume × price ($10.04B, using longer-term avg volume 23.78M shares). Report header uses info.json per specification.
 
-### Customer Concentration
+## Data Gaps
 
-- **6 custom XPU customers:** Google, Anthropic (via Google TPU infrastructure), Meta, OpenAI, and 2 unnamed [File: transcript.json -- Hock Tan].
-- **Exact customer revenue percentages are not disclosed.** 10-K states certain customers exceed 10% of revenue but provides no exact figures [Data gap: G001].
-- **Google is the single largest identified customer.** Supply agreement through 2031 [Verified: C055]. Google 2026 CapEx guidance of $180B–$190B is the primary demand driver.
-- **Anthropic's $21B in TPU orders flows through Google infrastructure** [Corroborated: C056], amplifying Google concentration rather than diversifying it.
-- AI revenue ($8.4B Q1 FY2026) represents 43.5% of total revenue from a small number of customers [File: company_ir.md].
-
-### Supply Chain Dependencies
-
-- **~95% of wafers from TSMC** [Verified: C017, 10-K]. TSMC capacity constrained in 2026 [Verified: C016]. No long-term wafer agreements — per-order procurement [Verified: C026].
-- **Geographic concentration:** All foundry, OSAT, and PCB suppliers in Asia.
-- **PCB lead times:** Stretched from ~6 weeks to 6 months [Corroborated: C018 — management characterization, not independently verified].
-- **Management claims capacity secured through 2028** for leading-edge wafers, HBM, and substrates [File: transcript.json -- Hock Tan, Charlie Kawwas].
-
-### Regulatory & Geopolitical
-
-- **EU antitrust:** Broadcom suing EU regulators over VMware-related document requests (active as of May 13, 2026) [File: news.json -- Reuters]. Financial exposure not quantified.
-- **China/export controls:** Geographic revenue breakdown unavailable (FMP returned 404) [File: segments.json]. Impact of export controls is a data gap.
-- **Taiwan geopolitical risk:** ~95% wafer supply from TSMC in Taiwan.
-
-### Financial Risks
-
-- **Debt:** $65.1B total (FY2025), up from $39.6B pre-VMware. Net Debt/EBITDA: 1.41x (FY2025) [File: metrics.json]. Complete maturity schedule unavailable [Data gap: G002].
-- **SBC dilution:** SBC rose from 6.1% of revenue (FY2023) to 11.8% (FY2025) [File: cashflow.json, metrics.json]. Diluted shares: 4,853M (FY2025) vs 4,270M (FY2023), +13.7% [File: income.json].
-- **Tax rate anomaly:** FY2025 effective tax rate was -1.7% (net $397M tax benefit). At normalized 21% rate, net income would be $17,956M vs reported $23,126M — 22.3% lower [File: income.json, ratios.json].
-- **AR growth outpacing revenue:** AR +61.8% YoY vs revenue +23.9% YoY (FY2025). DSO rose from 31.3 to 40.8 days [File: metrics.json].
-- **Working capital consumption:** -$8.5B in FY2025, the largest drain in the data set [File: cashflow.json].
-- **Goodwill:** $97.8B (57.2% of total assets). Tangible book value: -$48.8B [File: balance.json, metrics.json].
-
-### Insider Activity
-
-| Insider | Role | Action | Shares | Price Range | Date |
-|---------|------|--------|--------|-------------|------|
-| Henry Samueli | Director (co-founder) | S-Sale | 223,402 | $317–$321 | 2026-03-25 |
-| S. Ram Velaga | President, ISG | S-Sale | 38,215 | $352–$371 | 2026-04-08–10 |
-| Charlie B Kawwas | President, SSG | S-Sale | 10,000 | $345.23 | 2026-04-08 |
-| Hock E. Tan | CEO | G-Gift | 22,000 | $0 | 2026-04-08 |
-
-[File: insider.json]. No open-market purchases by any insider. 10b5-1 plan status not indicated. Samueli sale (~$71.3M proceeds) represents <1% of his ~37M indirect share position.
-
-### Key Person Risk
-
-- CEO Hock E. Tan has led all major strategic decisions since 2016 [File: info.json -- ceo].
-- CFO transition: Amie Thuener (Alphabet's VP, CAO and Corporate Controller) joining as CFO effective June 12, 2026, replacing Kirsten Spears [Verified: C057]. New CFO coming from AVGO's largest customer creates a relationship dynamic.
-
-### Execution Risk
-
-- VMware integration ongoing. Infrastructure software revenue +1% YoY despite reported price increases of 100-600%+ [File: claim_verification.json -- C059: Unverifiable for specific figures]. The +1% growth alongside reported significant price increases suggests customer attrition, though exact churn data is not disclosed.
-- VMware price increase range is wide and cannot be reconciled: 45% (LinkedIn, [Unverifiable: C059]) to 600%+ (TechDaily.ai). The 45% figure appears low relative to other reports.
-
-### Data Gaps in Risk Assessment
-
-- Exact customer concentration percentages [G001]
-- Geographic revenue breakdown [segments.json -- 404]
-- Complete debt maturity waterfall [G002]
-- "AI revenue" formal definition [G003]
-- Congressional trading data [government.json -- 404]
-- Peer financial data (NVDA, AMD margins) for comparison [G005]
-
----
-
-## Discrepancies & Cross-Reference Conflicts
-
-### Identified Discrepancies Between Analyses
-
-| # | Discrepancy | Analysis A | Analysis B | Resolution |
-|---|------------|-----------|-----------|------------|
-| 1 | Google 2026 CapEx guidance | ecosystem_signals.md uses $175B–$185B | competitive_position.md uses $180B–$190B | Updated to $180B–$190B per April 29, 2026 earnings call [Contradicted: C053]. Report uses updated figure. |
-| 2 | Operating margin (FY2025) | Forbes: 40.8%; CSIMarket: 41.46%; Trefis: 39.0% | income.json: 39.89% GAAP | GAAP from income.json (39.89%) is ground truth [Contradicted: C027]. Differences arise from GAAP/non-GAAP and timing. |
-| 3 | 5-year revenue CAGR | StockStory: 22.6% | Computed from income.json: 21.7% | income.json is ground truth [Contradicted: C035]. ~1pp difference from different date ranges. |
-| 4 | AVGO 2025 stock return | Forbes: +69% | SlickCharts/Motley Fool/TIKR: +49% | +49% corroborated by 3 sources [Contradicted: C030]. Forbes figure likely uses different time period. |
-| 5 | Semiconductor market CAGR | Iowa: 9%; McKinsey: 13%; Technavio: 3.8% | — | Range is 3.8%–13% depending on scope and period [Contradicted: C020]. |
-| 6 | WACC calculation | financial_data.md states "~7.6%" | Formula shown (55.5% × 12.4% + 44.5% × 3.9%) yields ~8.6% | Computation error in financial analysis. Correct WACC: ~8.6%. EPV and franchise value adjusted accordingly in appendix. |
-| 7 | Employee count | info.json description: "19,000" | info.json fullTimeEmployees field: "37,000" | Description is stale (pre-VMware). Field value of 37,000 is current. |
-| 8 | Trefis revenue growth | Trefis: 28.0% LTM | income.json FY2025 YoY: 23.9% | Cannot replicate 28.0% from any standard calculation [Contradicted: C032]. |
-| 9 | CSIMarket cost of revenue growth | CSIMarket: 28.99% YoY | income.json: 8.0% ($20,593M vs $19,065M) | CSIMarket methodology unknown [Single-Source: C060]. income.json is ground truth. |
-
-### Claims Requiring Caveats
-
-**[Single-Source] claims used in this report:**
-- Samsung shifting to 3-5 year supply contracts [Single-Source: C019] — Reuters source, Samsung-specific claim not independently confirmed.
-- 30-40 week lead times for non-AI segments [Single-Source: C024] — management statement from earnings call, no independent verification.
-- CoWoS capacity 170-180k units; TPU shipments 7M vs 12M demand [Single-Source: C049] — FundaAI Substack Tier 3 analyst estimates. TSMC and Google do not disclose TPU unit volumes.
-
-**[Unverifiable] claims:**
-- VMware price hike of 45% for Lenovo [Unverifiable: C059] — LinkedIn source. Other sources report 100-600%+ increases.
-
-**[Contradicted] claims presented with all versions:**
-- See discrepancy table above for items #1–5, #8, #9.
-
----
-
-*See appendix files A through H for expanded analysis. See Appendix H for complete source index.*
+- **Per-customer revenue:** Broadcom does not disclose individual customer revenue in SEC filings. AI revenue concentration among 6 XPU customers is not quantified at the customer level.
+- **Debt maturity schedule:** Specific amounts by maturity year not available.
+- **Geographic revenue breakdown:** FMP segments API returned 404; 10-K geographic split not extracted.
+- **AVGO's TSMC CoWoS allocation:** Not publicly disclosed. NVDA at ~50% is Unverifiable [C043].
+- **Custom vs. GPU allocation ratio at hyperscalers:** No hyperscaler discloses this split.
+- **VMware churn rate post-pricing changes:** Not quantified by Broadcom.
+- **Annual AI revenue total:** Broadcom does not disclose annual AI semiconductor revenue; only quarterly figures from earnings calls.
+- **Proxy statement (DEF 14A):** EDGAR parsing error [proxy.json: error]. Executive compensation and governance data unavailable.
+- **Patent portfolio:** raw/patents.json not present in workspace.
+- **Congressional trading:** FMP API returned 404 [government.json].
 
 ---
 
 ## Appendix
 
-# Appendix A: Competitive Position (Expanded)
+    Mac OS X            	   2   q      �                                      ATTR       �   �                     �     com.apple.provenance  ���%��_
 
-## Market Position Detail
+    Mac OS X            	   2   q      �                                      ATTR       �   �                     �     com.apple.provenance  ���%��_
 
-### Custom AI Silicon (XPU/ASIC)
+    Mac OS X            	   2   q      �                                      ATTR       �   �                     �     com.apple.provenance  ���%��_
 
-Broadcom does not disclose a formal market share figure. The custom AI ASIC segment lacks standardized third-party market share methodology.
+    Mac OS X            	   2   q      �                                      ATTR       �   �                     �     com.apple.provenance  ���%��_
 
-**Quantifiable position indicators:**
-- Q1 FY2026 AI revenue: $8,400M (+106% YoY) [File: company_ir.md -- Verified: C002]
-- Q2 FY2026 AI semiconductor guidance: $10,700M [File: company_ir.md -- Verified: C007]
-- Annualized AI run rate: ~$33.6B (Q1) / ~$42.8B (Q2 guidance) [Inference: quarterly × 4] [Sources: company_ir.md]
-- 6 custom XPU customers: Google, Anthropic, Meta, OpenAI, 2 unnamed [File: transcript.json -- Hock Tan]
-- CEO stated "line of sight to achieve AI revenue from chips, just chips, in excess of $100 billion in 2027" [File: transcript.json -- Hock Tan]. This is a forward projection, not verifiable fact. Current run rate is ~$33.6B; reaching $100B requires ~3x growth in ~18 months [Corroborated: C034; Anomaly A001].
+    Mac OS X            	   2   q      �                                      ATTR       �   �                     �     com.apple.provenance  ���%��_
 
-**Marvell comparison (primary competitor):**
-- MRVL FY2026 total revenue: $8,195M (+42% YoY) [Verified: C050]
-- MRVL Q4 FY2026 data center revenue: $1,651.3M (74% of total), +21% YoY [Verified: C051]
-- MRVL reported record design wins in FY2026 [Verified: C050]
-- MRVL exit run-rate target: >$3.0B/quarter by Q4 FY2027 [File: ecosystem_signals.md]
-- AVGO's Q1 FY2026 AI revenue ($8.4B) alone exceeds MRVL's entire annual revenue ($8.2B)
+    Mac OS X            	   2   q      �                                      ATTR       �   �                     �     com.apple.provenance  ���%��_
 
-### Broader Technology Sector
+    Mac OS X            	   2   q      �                                      ATTR       �   �                     �     com.apple.provenance  ���%��_
 
-CSIMarket estimates AVGO at ~4.8% of the broader technology sector by revenue (Q4 2025), against Microsoft at 23.96% and NVIDIA at 14.09% [Corroborated: C038]. This sector definition includes software, cloud, etc. and is not a meaningful competitive metric for AVGO's specific markets.
+    Mac OS X            	   2   q      �                                      ATTR       �   �                     �     com.apple.provenance  ���%��_
 
-### Revenue Trajectory
+# Appendix A: Competitive Position — Expanded
 
-| FY | Revenue ($M) | YoY Growth | Key Driver |
-|----|-------------|-----------|-----------|
-| 2020 | 23,888 | +5.7% | COVID year; Symantec contribution |
-| 2021 | 27,450 | +14.9% | Recovery |
-| 2022 | 33,203 | +21.0% | Semi supercycle |
-| 2023 | 35,819 | +7.9% | Inventory correction |
-| 2024 | 51,574 | +44.0% | VMware acquisition |
-| 2025 | 63,887 | +23.9% | AI ramp + full-year VMware |
+## Custom AI Accelerator (XPU/ASIC) Market
 
-[File: income.json -- revenue]. 5-year CAGR (FY2020–FY2025): 21.7% [Computed]. Note: significant portion is M&A-driven, not organic. Goodwill increased from $43.7B (FY2023) to $97.9B (FY2024) [File: balance.json].
+### Market Share Estimates
 
-## Porter's Five Forces Detail
+Third-party estimates for AVGO custom AI ASIC market share:
+- Gotrade (Apr 2026): ~70% for 2026 [ecosystem_signals.md] [Single-Source C039: Gotrade blog, no methodology cited]
+- Yahoo Finance: 60% projected for 2027 [claim_verification.json: C039 cross-reference]
+- Broadcom does not disclose custom AI ASIC market share in SEC filings [Data gap]
 
-### Threat of New Entrants
+### Scale Comparison: AVGO vs. MRVL
 
-**Capital/IP requirements:** Custom ASIC design requires expertise in SerDes (200G/400G), advanced packaging (CoWoS), process technology (TSMC N3), silicon design, and yield management. CEO: "We've been doing this for 20 years, more than 20 years in silicon... we don't see too many players in the world that can do that" [File: transcript.json -- Hock Tan, Q&A with Harlan Sur].
+| Metric | AVGO | MRVL | Ratio |
+|--------|------|------|-------|
+| AI revenue (Q1 FY2026) | $8.4B quarterly | ~$1.5B annualized custom ASIC [Single-Source C016] | 5.6x (AVGO quarterly vs MRVL annual) |
+| Total revenue (latest FY) | $63.9B (FY2025) | $8.2B (FY2026 ended Jan 2026) [Verified C011] | 7.8x |
+| Data center revenue (latest FY) | ~$30B+ (AI + networking est.) | >$6.0B (+46% YoY) [Corroborated C013] | ~5x |
 
-**Customer-Owned Tooling (COT):** Analyst Harlan Sur (JPMorgan) noted hyperscaler internal XPU designs are "at least 2x less performant" [File: transcript.json -- Harlan Sur, analyst question]. Note: this is an analyst's opinion, not independently verified. CEO response: "we will not see competition in COT for many years to come. It will come eventually, but we're still a long way off" [File: transcript.json -- Hock Tan].
+[income.json: FY2025 revenue $63,887M; ecosystem_signals.md: MRVL data]
 
-**Export controls:** Barriers for non-US entrants but also constrain AVGO's addressable market.
+### Named AI XPU Customers
 
-### Bargaining Power of Suppliers
+| Customer | Product | FY2027 Scale | Source |
+|----------|---------|--------------|--------|
+| Google (Alphabet) | TPU (Ironwood, 7th gen) | "Strong demand"; analyst Rasgon estimated 3+ GW | [transcript.json: CEO Hock Tan] |
+| Anthropic | TPU racks | 1 GW in 2026, "surging in excess of 3 GW" in 2027 | [transcript.json: CEO Hock Tan] |
+| Meta | MTIA custom accelerator | "multiple gigawatts in '27 and beyond" | [transcript.json: CEO Hock Tan] |
+| OpenAI | Custom XPU (6th customer) | "over 1 gigawatt" in 2027 | [transcript.json: CEO Hock Tan] |
+| Customers 4 & 5 | Custom XPUs | "strong shipments...more than double in 2027" | [transcript.json: CEO Hock Tan] |
 
-**TSMC (~95% of wafers):** No long-term agreements — per-order procurement [Verified: C026]. TSMC at capacity limits in 2026 [Verified: C016]. AVGO's wafer requirements represent a "meaningful portion" of TSMC capacity. TSMC Q1 2026: NT$1.134T revenue (+35% YoY), 61% from HPC, 74% from advanced nodes [Verified: C045].
+Total FY2027 scale: ~10 gigawatts. Revenue per GW: analyst Rasgon estimated ~$20B/GW; CEO Tan said "it's not far from the dollars you're talking about" [transcript.json: Hock Tan, Q&A with Stacy Rasgon (Bernstein)].
 
-**PCB suppliers:** Lead times stretched from ~6 weeks to 6 months [Corroborated: C018].
+CEO Tan stated "line of sight to achieve AI revenue from chips, just chips, in excess of $100 billion in 2027" [transcript.json: Hock Tan]. OpenAI 10 GW collaboration through 2029 confirmed [press_releases.md; Verified C066].
 
-**Mitigation:** Management claims "fully secured capacity of these components for '26 through '28" [File: transcript.json -- Hock Tan]. Charlie Kawwas: "we're probably the first one to secure that up to '28 or beyond" [File: transcript.json -- Charlie Kawwas].
+### Marvell Competitive Detail
 
-### Bargaining Power of Buyers
+- FY2026 revenue: $8.195B (+42% YoY), data center >$6B (+46% YoY) [ecosystem_signals.md: Verified C011, Corroborated C013]
+- Custom chip ~$1.5B annualized [Single-Source C016]; guided >20% growth in FY2027
+- 20+ custom design wins at record level [Corroborated C020]
+- $2B strategic investment from NVIDIA (March 2026) for NVLink-compatible interconnect and optical DSPs [Verified C017]
+- Acquisitions: Celestial AI ($3.25B base, up to $5.5B with earnouts, Dec 2025), XConn Technologies ($540M, Jan 2026), Polariton Technologies (Apr 2026) [Verified C018, C019]
+- Non-GAAP gross margin 59.0% (Q4 FY2026), operating margin 35.7% [ecosystem_signals.md: Marvell IR]
+- Reportedly secured portion of next-gen Google TPU work [Corroborated C015: 3 independent sources including The Information, CNBC]. No formal contract confirmed by Marvell IR [Data gap].
 
-**Customer concentration:** 6 XPU customers. Google supply agreement through 2031 [Verified: C055]. Switching costs high (12-24 month redesign cycles for custom XPUs). However, customers retain GPU optionality.
+### NVIDIA Competitive Detail
 
-### Threat of Substitutes
+- Q1 FY2027 revenue $81.6B (+85% YoY), data center $75.2B (+92% YoY) [Verified C021; Contradicted C022 at $75.2B not $75.3B]
+- Hyperscaler revenue $38B (>50% of data center), up 12% QoQ [Corroborated C028]
+- Vera Rubin next-gen: "up to 10x more performance per watt" for specific inference workloads [Verified C031 with "up to" qualifier]
+- Supply constrained "throughout the entire life of Vera Rubin" per Jensen Huang [Verified C031]
+- NVDA acquired Groq for $20B total ($13B upfront) [Contradicted C029: total was $20B, not $13B as stated in some sources; $13B was upfront portion]
+- Cerebras IPO'd at ~$95B market cap (CNBC) to ~$70B (Yahoo Finance) [Corroborated C030; discrepancy in share count methodology]
 
-**GPUs (NVIDIA):** Primary substitute. CEO characterizes XPU as "strategic" vs GPU as "transactional and optionality" [File: transcript.json -- Hock Tan]. Coexistence model within same hyperscaler.
+### Adjacent Competitors / Potential Entrants
 
-**XPU advantages (per management):** Lower cost, lower power, workload-specific optimization for inference. "XPUs will eventually be more the choice" [File: transcript.json -- Hock Tan].
+- **Hyperscaler in-house teams:** Google, Amazon (Trainium), Microsoft (Maia), Meta (MTIA with Broadcom). Risk of full in-house design over time.
+- **AMD:** MI300 and upcoming Helios rack-scale AI systems. Primarily competes with NVIDIA.
+- **Cerebras:** Wafer-scale computing, different from custom ASICs.
 
-**GPU advantages:** General-purpose flexibility, CUDA software ecosystem, proven at scale for training.
+### Switching Costs
 
-### Competitive Rivalry
+**Custom AI ASICs:** 2-4 year co-engineering design cycles with hyperscalers [transcript.json: Charlie Kawwas]. Customers develop proprietary software stacks (Google's JAX/XLA). NRE costs at advanced nodes: $50-100M+ [customer_alternatives.md; verification notes this may be outdated]. Total co-engineering investment per XPU program likely exceeds $500M over multi-year programs [Inference: based on multi-gigawatt scale at ~$20B/GW content] [Sources: transcript.json, customer_alternatives.md].
 
-**Marvell (MRVL):** #2 in custom AI silicon. $8.2B annual revenue vs AVGO's $8.4B in a single quarter of AI revenue alone. Record design wins. Acquired Celestial AI ($3.25B) for co-packaged optics [Corroborated: C052].
+**VMware:** Deep enterprise integration (compute, storage, networking). Post-acquisition subscription bundling increases lock-in. CEO Tan: VCF "cannot be disintermediated or replaced" (management characterization, not independently verified) [transcript.json: Hock Tan]. ARR growth of 19% YoY suggests customers continue signing contracts despite pricing changes [transcript_segments.json: Hock Tan].
 
-**NVIDIA (indirect):** Competes for same hyperscaler compute budget. ~$187.1B TTM revenue. Different modality (merchant GPUs vs custom ASICs).
+### Peer Financial Benchmarking
 
-## Switching Cost Analysis
+| Metric | AVGO | MRVL (est.) | NVDA (est.) | AMD |
+|--------|------|-------------|-------------|-----|
+| Revenue (latest FY, $B) | $63.9 | $8.2 | $215.9 | ~$25B |
+| Revenue Growth (YoY) | +23.9% | +42% | +65% | +14%* |
+| Gross Margin | 67.8% (GAAP) | 59.0% (non-GAAP) | 75.0% (GAAP, Q1 FY2027) | ~50%* |
+| Operating Margin | 39.9% (GAAP) | 35.7% (non-GAAP) | ~55%* | ~25%* |
+| Market Cap ($B) | $1,998 | ~$130* | ~$3,000+* | $822 |
+| FCF Margin | 42.1% | N/A | ~60% (Q1) | N/A |
 
-- **Technical lock-in:** Custom XPUs co-designed with customer LLM architectures over multi-year cycles. "they don't think one generation at a time. They think multiple generation, multiple years" [File: transcript.json -- Hock Tan].
-- **Yield management:** "Anybody can design a chip in a lab that works well. Can you produce 100,000 of those chips quickly at yields that you can afford?" [File: transcript.json -- Hock Tan].
-- **Supply chain lock-in:** AVGO has secured supply through 2028. Competitors would need to establish equivalent relationships.
-- **Financial switching cost:** 12-24 months of engineering for redesign, plus qualification and ramp.
-- **Contractual:** Google agreement through 2031 [Verified: C055]. OpenAI collaboration for 10 GW through 2029 [File: transcript.json].
-- **Evidence of switching:** None observed. CEO stated Meta's MTIA program is "alive and well" [File: transcript.json -- Hock Tan].
+[income.json: AVGO; ecosystem_signals.md: MRVL, NVDA; peer_compare.json: AMD market cap $822B]
+*Marked figures are approximate from available data; detailed peer metrics not pulled in this run.
 
-## Market Structure Direction
+### Short Interest
 
-The AI semiconductor market is evolving from GPU-dominated toward a dual-track model (GPUs + custom XPUs). This structural shift expands AVGO's addressable market [Inference: from customer ordering patterns showing parallel GPU and XPU procurement] [Sources: transcript.json, ecosystem_signals.md]. Barriers to entry appear to be increasing (complexity of design, packaging, supply chain).
+| Metric | Value | Source |
+|--------|-------|--------|
+| Shares short | 51,011,972 | [short_interest.md: Corroborated C077; FINRA report Apr 30, 2026] |
+| % of float | 1.10% | [short_interest.md: Corroborated C077] |
+| Change from prior | -6.62% (from 54.63M) | [short_interest.md: Corroborated C077] |
+| Days to cover | 2.1-2.6 | [Contradicted C074; varies by volume window] |
 
-## Market Sentiment Indicators
+Short interest of 1.10% of float is low and declining.
 
-- **Short interest:** ~51.0M–54.6M shares (1.10–1.32% of float) [Corroborated: C043]. Days to cover: 2.1–2.6.
-- **Historical volatility:** 46.28% annualized [File: options.json].
-- **Analyst ratings:** Most recent 5 actions all maintained positive ratings (Mizuho Outperform, Wells Fargo Overweight, JP Morgan Overweight, Bernstein Outperform, Citigroup Buy) [File: ratings.json]. Note: analyst ratings are opinions, not evidence.
-- **Consensus price target:** $443.72 (median $450, range $335–$510) [File: ratings.json].
+# Appendix B: Supply/Demand Balance — Expanded
 
-# Appendix B: Supply/Demand Balance (Expanded)
+## Demand Decomposition
 
-## Custom AI Silicon (XPU) Segment
+### Backlog
 
-### Current Balance: Demand Exceeds Supply
+- **Total consolidated backlog:** $162B (disclosed Q4 FY2025, Dec 2025) [backlog_breakdown.md: Verified C001]
+- **AI-specific backlog:** $73B "in excess" [backlog_breakdown.md: Verified C001]
+- **AI backlog concentration:** 5 customers at Q4 FY2025 disclosure (now 6) [backlog_breakdown.md: Corroborated C004]
+- **Backlog composition:** includes orders for "XPU switches, DSPs" [claim_verification.json: C001 chase_result]
+- **Backlog coverage:** Total backlog = 2.5x FY2025 revenue ($162B / $63.9B). AI backlog = ~2.2 years at Q1 FY2026 AI run rate ($73B / $33.6B annualized) [Computed]
+- **Single order:** $10B Ironwood TPU rack order from Anthropic received Q3 FY2025 [Corroborated C003]
+- **Updated backlog (Q1 FY2026):** Not disclosed [Data gap]
 
-**Backlog indicators:**
-- $73B AI-specific backlog with 18-month delivery window [Corroborated: C023]. Round number disclosed by management in Q1 FY2026 without customer/product breakdown.
-- $110B consolidated backlog hit in Q3 FY2025, at least half semiconductor orders, mainly AI-related [Corroborated: C022, confirmed across 3 transcript services].
-- Management has secured supply chain components through 2028 [File: transcript.json -- Hock Tan, Charlie Kawwas].
+### AI Revenue Trajectory
 
-### Demand Drivers
+| Period | AI Revenue | YoY Growth | Source |
+|--------|-----------|------------|--------|
+| Q1 FY2025 (implied) | ~$4.1B | — | [Inference: $8.4B / (1 + 1.06)] [Sources: transcript_segments.json, earnings.json] |
+| Q4 FY2025 | Not separately disclosed | +74% YoY | [Verified C071] |
+| Q1 FY2026 | $8.4B | +106% | [Verified C084; transcript_segments.json: Hock Tan] |
+| Q2 FY2026 (guided) | $10.7B | +140% | [transcript_segments.json: Hock Tan] |
 
-**Hyperscaler CapEx acceleration:**
-- Google 2026 CapEx guidance: $180B–$190B (updated April 29, 2026) [Contradicted: C053 — source file used stale $175B–$185B; updated per CFO Anat Ashkenazi]. 2025 actual: $91.45B [Verified: C054]. Q1 2026 CapEx: $35.67B.
-- Google Cloud revenue: $20.03B Q1 2026, +63% YoY [Verified: C053]. Cloud backlog: $240B (~4x annual Cloud revenue).
-- Anthropic revenue run rate surpassing $30B [Corroborated: C056 — confirmed by anthropic.com]. $21B in TPU Ironwood rack orders ($10B + $11B).
-- OpenAI collaboration: 10 gigawatts of custom AI accelerators announced Oct 13, 2025 [Verified: C015].
+AI as % of total revenue: ~27% (Q1 FY2025 implied) → 43.5% (Q1 FY2026) → ~48.6% (Q2 FY2026 guided) [Computed].
 
-**AI revenue trajectory (sequential):**
+Within semiconductors, AI was 67.2% in Q1 FY2026, rising to ~72.3% in Q2 guidance [Computed: $10.7B / ($22.0B − estimated $7.2B software) ≈ $10.7B / $14.8B semi].
 
-| Quarter | AI Revenue | QoQ Change | Source |
-|---------|-----------|-----------|--------|
-| Q2 FY2025 | $4.4B | — | [Corroborated: C058] |
-| Q3 FY2025 | $5.2B | +$0.8B | [Corroborated: C058] |
-| Q4 FY2025 | ~$6.2B | +$1.0B | [Corroborated: C058] |
-| Q1 FY2026 | $8.4B | +$2.2B | [Verified: C002] |
-| Q2 FY2026 (guided) | $10.7B | +$2.3B | [Verified: C007] |
+### Demand Durability: Hyperscaler Capex
 
-Sequential acceleration is increasing ($0.8B → $1.0B → $2.2B → $2.3B guided).
+| Customer | Capex Guidance | Source |
+|----------|---------------|--------|
+| Google (Alphabet) | $175-185B for 2026 | [customer_capex.md: MarketBeat, Feb 2026] |
+| Meta | $60-65B for 2025 (most recent) | [customer_capex.md] |
+| Microsoft | $80B+ | [customer_capex.md] |
+| Amazon | $100B+ | [customer_capex.md] |
 
-### Supply Constraints
+Total hyperscaler AI capex envelope: $350B+ collectively. Specific allocation to AVGO products is not disclosed.
 
-**TSMC capacity:**
-- ~95% of wafers from TSMC [Verified: C017, 10-K]. No long-term agreements — per-order [Verified: C026].
-- Broadcom's Natarajan Ramachandran: "TSMC is hitting (production capacity) limits... that has become a bottleneck, or that has kind of choked the supply chain in 2026" [Verified: C016, Reuters March 2026].
-- TSMC CapEx at high end of $52B–$56B for 2026 [Corroborated: C048]. New fab in Tainan.
-- CoWoS advanced packaging capacity expansion ongoing but demand exceeds supply through at least mid-2027 [File: ecosystem_signals.md -- TSMC CC Wei].
-- One Tier 3 source (FundaAI Substack) estimates CoWoS capacity at 170-180k units by end of 2027, with TPU shipment estimates of ~7M vs Google demand of 12M [Single-Source: C049 — these are proprietary analyst estimates. TSMC and Google do not disclose TPU unit volumes. This claim should not be treated as established fact].
+### Demand-Side Bargaining Power
 
-**Other bottlenecks:**
-- PCB lead times: ~6 weeks to 6 months [Corroborated: C018 — management characterization via Reuters, not independently verified PCB industry data].
-- Laser suppliers at capacity constraints [File: supply_indicators.md].
-- HBM (high-bandwidth memory) supply constraints acknowledged by management.
+Gross margin stability despite volume growth. CEO Tan explicitly rejected margin dilution concerns from rack-level shipments: "you must be a bit hallucinating" [transcript.json: Hock Tan, Q&A with Timothy Arcuri (UBS)]. CFO Spears confirmed: "the impact relative to our overall mix is actually not going to be substantial at all" [transcript.json: Kirsten Spears].
 
-**Mitigation:** CEO stated capacity secured "for '26 through '28" for leading-edge wafers, HBM, and substrates [File: transcript.json -- Hock Tan]. Charlie Kawwas: "we're probably the first one to secure that up to '28 or beyond" [File: transcript.json].
+### Growth Driver Decomposition
 
-### Pricing Dynamics
+In Q1 FY2026, AVGO grew total revenue by ~$4.4B YoY ($19.3B − $14.9B). AI revenue grew by ~$4.3B ($8.4B − ~$4.1B). Non-AI semi was flat; software grew 1% (~$0.1B). Therefore, approximately 98% of YoY revenue growth was from AI semiconductors [Inference: Q1 FY2025 total was $14,916M per earnings.json] [Sources: earnings.json, transcript.json].
 
-- Non-GAAP gross margin: 77% in Q1 FY2026 [File: transcript.json -- Kirsten Spears].
-- CEO dismissed margin compression concerns: "Our gross margin is solidly at the number Kirsten reported" [File: transcript.json -- Hock Tan, Q&A with Timothy Arcuri].
-- Customers entering 3-4 year long-term supply agreements to secure capacity [Single-Source: C019 — Samsung-specific claim of 3-5 year contracts not independently verified].
-- GAAP FY2025 cost of revenue grew 8.0% while revenue grew 23.9% [File: income.json] [Inference: pricing power exceeding cost inflation] [Sources: income.json].
+---
 
-## Networking Semiconductors
+## Supply Analysis
 
-- AI networking revenue grew 60% YoY in Q1 FY2026, representing 33% of AI revenue; projected to reach 40% in Q2 [File: transcript.json -- Hock Tan].
-- Tomahawk 6 (100 Tbps): described as sole-source, first-to-market.
-- 200G SerDes and 1.6 Tbps DSP for optical transceivers: first-to-market [File: transcript.json -- Hock Tan, Q&A with Ross Seymore].
-- Tomahawk 7 (200 Tbps) expected 2027.
-- Ethernet positioning for both scale-out and scale-up networking. Charlie Kawwas: "Ethernet is the scale-out of choice... what we're seeing is the right answer is Ethernet" for scale-up as well [File: transcript.json].
+### Current Constraints by Input Type
 
-## Non-AI Semiconductors
+1. **Leading-edge wafers (TSMC 3nm/5nm):** TSMC sold out across advanced nodes. Advanced chips (≤7nm) = ~74% of TSMC wafer revenue [ecosystem_signals.md: CNBC, Apr 16, 2026]. CEO Tan stated TSMC capacity "has become a bottleneck, or that has kind of choked the supply chain in 2026" [supplier_capacity.md: Yahoo Finance, Mar 23, 2026].
 
-- Q1 FY2026: $4,100M, flat YoY [File: transcript.json -- Hock Tan].
-- Q2 FY2026 guidance: ~$4,100M, +4% YoY.
-- Enterprise networking, broadband, and server storage up YoY, offset by seasonal wireless decline.
-- 30-40 week lead times for non-AI segments [Single-Source: C024 — management statement, not independently verified].
+2. **CoWoS advanced packaging:** Only TSMC provides at scale. Capacity growing >80% CAGR 2026-2028 [Corroborated C036: 3 independent sources, TSMC management]. NVDA estimated ~50% of CoWoS capacity [Unverifiable C043: no primary source, TSMC does not disclose customer-level allocation]. AVGO's specific share not disclosed [Data gap].
 
-## Infrastructure Software (VMware)
+3. **High-Bandwidth Memory (HBM):** Constrained industry-wide. SK Hynix, Samsung, Micron supply. AVGO secured HBM through 2028 [transcript.json: Hock Tan].
 
-- Q1 FY2026: $6,796M, +1% YoY [Verified: C009].
-- VMware revenue within segment: +13% YoY. Total contract value booked: >$9.2B. ARR growth: 19% YoY [File: transcript.json -- Hock Tan].
-- Q2 FY2026 guidance: $7,200M, +9% YoY.
-- Slower reported growth reflects ASC 606 revenue recognition on subscription transitions from perpetual licenses.
-- Deferred revenue: $13,016M total (FY2025), indicating multi-year contractual commitments [File: balance.json].
+4. **Substrates (T-glass):** CEO Tan: "We were early in being able to lock up T-glass" [transcript.json: Hock Tan, Q&A with Ben Reitzes].
 
-## Cycle Positioning
+### How Supply Gets Added
 
-**Current cycle phase:** Hyper-growth driven by AI infrastructure CapEx.
+| Capacity | Timeline | Source |
+|----------|----------|--------|
+| TSMC Tainan 3nm fab | Volume production H1 2027 | [ecosystem_signals.md: Manufacturing Dive, Apr 17, 2026] |
+| TSMC Arizona 2nd fab (3nm) | Production H2 2027 | [Verified C037] |
+| TSMC Japan 2nd fab (3nm) | Production 2028 | [ecosystem_signals.md] |
+| TSMC Arizona packaging fab | Permitting stage | [ecosystem_signals.md] |
+| TSMC total US investment | $165B | [Verified C037] |
+| CoWoS capacity | >80% CAGR through 2028 | [Corroborated C036] |
+| TSMC 2026 capex | High end of $52-56B | [Corroborated C046] |
 
-- Revenue grew from ~$33B (FY2022, pre-VMware/AI) to ~$88B run rate (Q2 FY2026 guidance annualized) in 4 years — 2.7x increase.
-- Revenue has never declined in any year in the data set (FY2014–FY2025), though serial acquisitions mask organic cyclicality [File: income.json].
-- FY2020 COVID year showed +5.7% growth (Symantec acquisition added revenue).
-- FY2023 semiconductor likely experienced organic decline (industry inventory correction) masked by VMware's Nov 2023 close.
+New fabs take 2-3 years from announcement to production. Earliest new 3nm capacity (Tainan) reaches volume H1 2027. Supply constraint is structural in 2026; begins easing 2027.
 
-# Appendix C: Value Chain (Expanded)
+### Supply-Side Bargaining Power
 
-## Semiconductor Value Chain
+TSMC has demonstrable pricing power: Q1 2026 gross margin 66.2% (operating margin 58.1%, net margin 50.5%) [Verified C034], exceeding its own 63-65% guidance range. TSMC is investing at high end of $52-56B capex while maintaining premium pricing.
+
+AVGO's lack of formal long-term supplier agreements per 10-K [Unverifiable C045] contrasts with CEO claims of having "secured capacity through '28." [Inference: operational arrangements exist that are not structured as formal contracts disclosed in SEC filings] [Sources: 10-K FY2025, transcript.json].
+
+TSMC margin dilution from 2nm ramp and overseas expansion could flow through to AVGO's wafer costs [ecosystem_signals.md: Manufacturing Dive, Apr 17, 2026].
+
+---
+
+## Supply/Demand Synthesis
+
+**Net balance:** Demand exceeds supply in 2026. TSMC is sold out. AVGO has secured capacity through 2028, but total industry demand from NVDA, AVGO, MRVL, AMD, Apple, QCOM competing for the same nodes means allocation — not total demand — is the binding constraint.
+
+**Quantitative gap:** AVGO targets $100B+ AI chip revenue for FY2027 from Q1 FY2026 run rate of ~$33.6B ($8.4B × 4). This requires substantial ramp. CoWoS capacity growing >80% CAGR should ease the bottleneck progressively, but demand is also growing (NVDA guided Q2 at $91B).
+
+**Pricing implications:** Gross margins stable-to-expanding. Supply-constrained environment supports pricing stability.
+
+---
+
+## AI Value Chain Position
+
+### Revenue Quantification
+
+| Component | Q1 FY2026 Revenue | % of Total | YoY Growth |
+|-----------|-------------------|-----------|------------|
+| AI Semiconductors (total) | $8.4B | 43.5% | +106% |
+| — Custom XPUs (~2/3) | ~$5.6B (est.) | ~29.0% | +140% |
+| — AI Networking (~1/3) | ~$2.8B (est.) | ~14.5% | +60% |
+| Non-AI Semiconductors | $4.1B | 21.2% | 0% |
+| Infrastructure Software | $6.8B | 35.2% | +1% |
+| **Total** | **$19.3B** | **100%** | **+29.5%** |
+
+[transcript.json: Hock Tan and Kirsten Spears; earnings.json: Q1 FY2026 actual $19,311M]
+
+### Remaining Data Gaps
+
+- Custom vs. GPU allocation ratio at hyperscalers [Not disclosed by any hyperscaler]
+- AVGO's TSMC CoWoS allocation [Not publicly disclosed]
+- Q1 FY2026 updated backlog figure [Not disclosed on Q1 call]
+- Wafer pricing dynamics between TSMC and AVGO [Not disclosed by either party]
+
+# Appendix C: Value Chain — Expanded
+
+## Value Chain Map
+
+### Semiconductor Solutions
 
 ```
-Stage 1: Raw Materials (silicon, copper, specialty chemicals)
-    ↓
-Stage 2: EDA Tools & IP Licensing (Synopsys, Cadence, ARM)
-    ↓
-Stage 3: Chip Design (AVGO — in-house, fabless model) ← AVGO POSITION
-    ↓
-Stage 4: Wafer Fabrication (TSMC ~95%, UMC, GlobalFoundries, SMIC)
-    ↓
-Stage 5: Assembly, Test & Packaging (ASE, SPIL, UTAC, Amkor, STATSChipPAC)
-    ↓
-Stage 6: Distribution & Integration (direct to hyperscalers, enterprise OEMs)
-    ↓
-Stage 7: End Customer (Google, Meta, OpenAI, Anthropic, enterprise IT)
+Raw materials (silicon wafers, chemicals, substrates, HBM)
+  → Wafer fabrication (TSMC primarily; UMC, GlobalFoundries for legacy)
+    → Advanced packaging (TSMC CoWoS; ASE, SPIL, Amkor)
+      → AVGO: CHIP DESIGN + IP + SYSTEM ARCHITECTURE (fabless)
+        → Assembly & test (ASE, SPIL, Foxconn, Amkor)
+          → Distribution (48% via distributors; 52% direct/OEM CMs)
+            → End customers: hyperscalers (Google, Meta, Anthropic, OpenAI + 2 unnamed)
+              → AI data centers → LLM training/inference
 ```
 
-## Software Value Chain
+[EDGAR: 10-K FY2025 — Manufacturing section]
+
+### Infrastructure Software
 
 ```
-Stage 1: Software Development (AVGO — VMware, CA, Symantec) ← AVGO POSITION
-    ↓
-Stage 2: Platform Licensing / Subscription (VMware Cloud Foundation) ← AVGO POSITION
-    ↓
-Stage 3: Enterprise Integration (VARs: NEC, Lenovo, Dell, HP, Cisco)
-    ↓
-Stage 4: End Customer (enterprise IT, government, telecom)
+Open-source ecosystem (Linux, Kubernetes)
+  → AVGO: SOFTWARE DEVELOPMENT + IP (VMware, CA, Symantec)
+    → Distribution: direct sales, resellers, distributors, cloud providers, OEM partners
+      → End customers: enterprises (banks, insurers, government, telcos)
+        → Private/hybrid cloud, mainframe ops, cybersecurity
 ```
 
-## Upstream Suppliers Detail
+[transcript_segments.json: Kirsten Spears]
 
-### Silicon Foundries
+## Upstream: Suppliers
 
-| Foundry | Concentration | Location | Notes |
-|---------|--------------|----------|-------|
-| **TSMC** | ~95% of wafers | Taiwan | 10-K confirmed [Verified: C017] |
-| UMC | Minor | Singapore, Taiwan | Secondary foundry |
-| GlobalFoundries | Minor | Singapore, Germany | Secondary foundry |
-| SMIC | Minor | China | Secondary; export control constraints on advanced nodes |
+### Wafer Fabrication
 
-**Switching costs:** Extremely high for advanced nodes. Chip design tied to foundry's process design kit (PDK). Moving from TSMC N3 would require complete redesign (12-18+ months) plus requalification.
+| Supplier | Role | Concentration | Source |
+|----------|------|---------------|--------|
+| **TSMC** | Primary foundry (3nm/5nm/7nm) | "Majority" of front-end wafer manufacturing | [EDGAR: 10-K FY2025] |
+| UMC | Secondary foundry (mature nodes) | Minor share | [Corroborated C098] |
+| GlobalFoundries | Secondary foundry (specialty) | Minor share | [Corroborated C098] |
 
-**Contract structure:** No long-term agreements — per-order procurement [Verified: C026]. Standard fabless model disclosure but creates supply risk during capacity constraints.
+The "~95% of wafers from TSMC" figure is widely cited but not confirmed in 10-K filing text [Unverifiable C038]. The 10-K uses "the majority" without quantification.
 
-### Assembly, Test & Packaging (OSAT)
+### Assembly, Test, and Packaging
 
-| Company | Location | Services |
-|---------|----------|----------|
-| ASE | Singapore, China, Taiwan | Test, assembly, packaging |
-| SPIL | Taiwan | Test, assembly, packaging |
-| UTAC | Singapore, China, Thailand | Test, assembly, packaging |
-| Amkor | Korea, Philippines, Taiwan, China | Assembly & packaging |
-| STATSChipPAC | Singapore, Korea, Malaysia, China | Test, assembly, packaging |
+| Supplier | Role | Geography | Source |
+|----------|------|-----------|--------|
+| ASE | Assembly & test | Taiwan, China, Singapore | [EDGAR: 10-K FY2025] |
+| SPIL | Assembly & test | Taiwan | [EDGAR: 10-K FY2025] |
+| Amkor | Assembly & packaging | Korea, Philippines, Taiwan, China | [EDGAR: 10-K FY2025] |
+| Foxconn | Contract manufacturing | Taiwan, China | [EDGAR: 10-K FY2025] |
+| TSMC | Advanced packaging (CoWoS) | Taiwan (Arizona permitting) | [EDGAR: 10-K FY2025; ecosystem_signals.md] |
 
-[File: value_chain.md]. More diversified than fabrication (5 providers). However, advanced packaging (CoWoS) required for AI accelerators is largely TSMC-provided, amplifying TSMC concentration.
+### Critical Materials
 
-### Other Supply Chain Components
+Management stated capacity for HBM, substrates (T-glass), and leading-edge wafers secured through 2028 [transcript.json: Hock Tan; Charlie Kawwas]. Charlie Kawwas: "We have to go secure it for multiple years and we're probably the first one to secure that up to '28 or beyond" [transcript.json: Charlie Kawwas, Q&A].
 
-- **PCB suppliers:** Taiwanese and Chinese; lead times 6 weeks → 6 months [Corroborated: C018].
-- **Laser suppliers:** Multiple but at capacity constraints [File: supply_demand.md].
-- **Foxconn:** Named manufacturing partner [File: value_chain.md].
-- **Named material suppliers:** Samsung (memory/components), Freeport-McMoRan (copper), Eastman Chemical (specialty chemicals), SkyWater Technology (US-based foundry) [File: value_chain.md].
+### Procurement Structure
 
-## Downstream Customers Detail
+10-K states: "We purchase materials from hundreds of suppliers on a global basis. These purchases are generally on a purchase order basis" [EDGAR: 10-K FY2025]. However, VP Ramachandran confirmed "long-term agreements with suppliers to secure capacity commitments for as long as three to four years" [Verified C096]. [Inference: general purchases remain per-order; strategic AI components have specific capacity agreements] [Sources: 10-K FY2025, claim_verification.json C096].
 
-### AI Custom Silicon Customers
+### Internal Fabrication
 
-| Customer | Relationship | Key Data | Source |
-|----------|-------------|----------|--------|
-| **Google/Alphabet** | Largest known; TPU supply agreement through 2031 | 2026 CapEx $180B–$190B; Cloud revenue $20.03B Q1 (+63% YoY); $240B backlog | [Verified: C055, C054; Contradicted: C053 for CapEx] |
-| **Anthropic** | Via Google TPU infrastructure | $30B+ run rate; $21B TPU rack orders | [Corroborated: C056] |
-| **Meta** | Named XPU customer | MTIA program "alive and well" per CEO | [transcript.json] |
-| **OpenAI** | 10 GW custom AI accelerators | Collaboration announced Oct 2025 | [Verified: C015] |
-| **2 unnamed** | Hyperscalers | No further detail | [transcript.json] |
+Broadcom maintains internal fab capabilities for III-V compound semiconductors (FBAR filters, GaAs/InP lasers) in the U.S. and Singapore. This is a longstanding capability from Avago Technologies heritage [EDGAR: 10-K FY2025 — Manufacturing section].
 
-**10-K disclosure:** Customers exceeding 10% of revenue exist but exact percentages are not published [Data gap: G001]. Google revenue percentage estimated by analysts at 70-80%+ of AI revenue, but this is estimation, not disclosure.
+## Downstream: Customers
 
-### Infrastructure Software Customers
+### Customer Concentration (10-K, Tier 1)
 
-NEC, Lenovo, Dell, HP, Cisco — VMware Cloud Foundation users. Government/defense customers. VMware price increases widely documented (100-600%+) post-acquisition, specific magnitudes vary. A LinkedIn source claims 45% for Lenovo [Unverifiable: C059] — this figure appears low relative to other reports and should not be relied upon.
+- 48% of revenue via distributors (FY2025 and FY2024) [EDGAR: 10-K FY2025]
+- Top 5 end customers ~40% of revenue (FY2025 and FY2024) [EDGAR: 10-K FY2025]
+- No individual customer named or disclosed as >10% of revenue [Inference: SEC rules require disclosure if a single customer exceeds 10%; absence of disclosure suggests either no single customer exceeds 10% or aggregation through distributors masks direct concentration] [Sources: EDGAR 10-K FY2025]
 
-### Revenue by Segment (Q1 FY2026)
+### Customer Switching Costs
 
-| Segment | Revenue | YoY Growth | Source |
-|---------|---------|-----------|--------|
-| Semiconductor Solutions | $12,515M | +52% | [Verified: C008] |
-| Infrastructure Software | $6,796M | +1% | [Verified: C009] |
-| **Total** | **$19,311M** | **+29%** | [Verified: C001] |
-| AI revenue (sub-segment) | $8,400M | +106% | [Verified: C002] |
+**XPU (custom ASIC):** Multi-year co-engineering (2-4 years), proprietary software stacks, NRE costs $50-100M+ at advanced nodes [customer_alternatives.md; Single-Source C057]. CEO Tan: "Can you produce 100,000 of those chips quickly at yields that you can afford? And we don't see too many players in the world that can do that" [transcript.json: Hock Tan].
 
-AI revenue is a management-disclosed metric, not a GAAP line item [Data gap: G003].
+**VMware:** Enterprise-wide integration of compute, storage, networking virtualization. CEO Tan: VCF is "the permanent abstraction layer between AI software and physical chips" (management characterization) [transcript.json]. TCV >$9.2B booked Q1 FY2026, indicating ongoing customer commitment [transcript_segments.json: Hock Tan].
+
+### Evidence of Actual Switching
+
+- Google/MRVL: Marvell reportedly secured portion of next-gen TPU work — supply diversification, not full switch [Corroborated C015]. No formal contract confirmed [Data gap].
+- VMware: "potential for customer churn to alternative private cloud solutions" post-pricing changes [claim_verification.json: C079]. No quantified churn data available.
 
 ## Margin Capture Analysis
 
-### AVGO Margins (GAAP)
+| Stage | Entity | Gross Margin | Operating Margin | Source |
+|-------|--------|-------------|-----------------|--------|
+| EDA tools | Synopsys, Cadence | ~80% | ~30-35% | [Inference: publicly reported margins] |
+| Foundry | TSMC | 66.2% | 58.1% | [Verified C034] |
+| Chip design (semi) | AVGO | 68% (non-GAAP) | 60% (non-GAAP) | [transcript_segments.json: Kirsten Spears, Q1 FY2026] |
+| Chip design + software (blended) | AVGO | 77% (non-GAAP) | 66.4% (non-GAAP adj. EBITDA ~68%) | [transcript_segments.json: Kirsten Spears] |
+| Software | AVGO | 93% | 78% | [transcript_segments.json: Kirsten Spears, Q1 FY2026] |
+| OSAT | ASE/SPIL | ~20-25% | ~8-12% | [Inference: general industry knowledge, not from workspace data] |
+| GPU design | NVIDIA | 75.0% (GAAP) | — | [ecosystem_signals.md: NVDA Q1 FY2027] |
 
-| FY | Revenue ($B) | Gross Margin | Op Margin | Net Margin | D&A ($B) |
-|----|-------------|-------------|----------|-----------|---------|
-| 2022 | 33.2 | 66.5% | 42.8% | 34.6% | 5.0 |
-| 2023 | 35.8 | 68.9% | 45.3% | 39.3% | 3.8 |
-| 2024 | 51.6 | 63.0% | 26.1% | 11.4% | 10.0 |
-| 2025 | 63.9 | 67.8% | 39.9% | 36.2% | 8.8 |
+**GAAP vs. Non-GAAP gap:** AVGO GAAP operating margin (39.9% FY2025) is ~26pp below non-GAAP (~66%) due to $8.8B D&A (primarily VMware intangible amortization) and $7.6B SBC [income.json; cashflow.json].
 
-[File: income.json]. FY2024 margins depressed by VMware acquisition-related costs. FY2025 recovery driven by revenue growth outpacing cost growth (revenue +23.9%, COGS +8.0%).
-
-### Non-GAAP Q1 FY2026
-
-- Adjusted EBITDA margin: 68% ($13,128M / $19,311M) [Verified: C005]
-- FCF margin: 41% ($8,010M / $19,311M) [Verified: C006]
-- Non-GAAP gross margin: 77% [File: transcript.json -- Kirsten Spears]
-- Non-GAAP figures exclude SBC ($7,568M FY2025) and amortization of acquired intangibles.
-
-### Margin by Chain Stage (Comparison)
-
-| Stage | Company | Gross Margin | Source |
-|-------|---------|-------------|--------|
-| Chip Design | AVGO | 67.8% | [income.json FY2025] |
-| Foundry | TSMC | ~55-57% (est.) | [Inference from TSMC ~50% net margin Q1 2026] [Sources: C045, C046] |
-| OSAT | ASE (est.) | ~20-25% | [Inference: historical OSAT margins; no data in raw files] |
-| Peer | Marvell | ~65% gross | [Verified: C050] |
-
-Both design (AVGO) and fabrication (TSMC) stages capture high margins — funded by hyperscaler CapEx. OSAT has thinnest margins.
-
-### Pricing Power Evidence
-
-- **Custom AI silicon:** $73B backlog, 18-month delivery window [Corroborated: C023]. Supply-constrained environment.
-- **VMware:** Post-acquisition price increases of 100-600%+ widely reported. Infrastructure software revenue +1% YoY [Inference: price increases offset by customer attrition] [Sources: company_ir.md, claim_verification.json].
-- **Networking:** Tomahawk sole-source at each generation provides pricing leverage.
-
-### Revenue Mix Migration
-
-Revenue mix shifting toward AI semiconductor (higher margins). Semiconductor revenue grew 52% vs software +1% (Q1 FY2026), yet consolidated gross margin expanded 4.8pp YoY (63.0% → 67.8%) [Inference: AI semiconductor gross margins likely exceed 67.8%, potentially 75-80%+, to pull the blend up] [Sources: income.json, company_ir.md].
+**Margin trend:** Semiconductor non-GAAP operating margin expanded 260 bps YoY to 60% in Q1 FY2026 [transcript_segments.json: Kirsten Spears]. Software expanded 190 bps YoY to 78% [transcript_segments.json: Kirsten Spears].
 
 ## Integration Direction
 
-### Backward (Toward Suppliers): None
+### Vertical Integration Score
 
-AVGO remains fabless. PP&E flat at ~$2.5B (FY2021–FY2025). CapEx: $623M FY2025 (0.98% of revenue) [File: cashflow.json, metrics.json].
+| Stage | Integration Level | Change Over 3Y |
+|-------|------------------|----------------|
+| EDA/Design tools | Outsourced | Stable |
+| Chip architecture & IP | **In-house** (~19,000 patents) | Stable |
+| SerDes/PHY IP | **In-house** (200G/400G) | Stable |
+| Wafer fabrication (CMOS) | Outsourced (TSMC) | Stable |
+| Wafer fabrication (III-V) | **In-house** | Stable |
+| Advanced packaging | Outsourced (TSMC CoWoS) | Stable |
+| Assembly & test | Outsourced | Stable |
+| System/rack integration | **Partial** (Anthropic racks) | **Integrating** (new FY2024+) |
+| Networking design | **In-house** (Tomahawk, DSPs) | Stable |
+| Infrastructure software | **In-house** (via acquisition) | **Integrated** (VMware Nov 2023) |
 
-### Forward (Toward Customers): Via Acquisitions
+[EDGAR: 10-K FY2025; transcript.json]
 
-Systematic forward integration via software acquisitions: CA Technologies (2018), Symantec Enterprise (2019), VMware (2023). Moves AVGO from component supplier to platform provider.
+## Dependencies and Vulnerabilities
 
-### Customer Integration (COT Threat)
+1. **TSMC single-foundry:** All advanced AI XPUs, Tomahawk, optical DSPs require TSMC leading-edge nodes and CoWoS packaging. No alternative at scale.
+2. **Taiwan geographic:** TSMC, ASE, SPIL headquartered in Taiwan. TSMC expanding to Arizona ($165B, H2 2027+) [Verified C037].
+3. **Customer concentration (AI):** 43.5% of Q1 revenue from 6 XPU customers. Rising to ~48.6% by Q2 guidance.
+4. **HBM/substrate supply:** Industry-wide constraint; AVGO claims secured through 2028.
+5. **CoWoS allocation:** AVGO's specific share not disclosed [Data gap].
+6. **Export controls:** U.S. EAR restrictions on advanced AI semiconductors [EDGAR: 10-K FY2025 risk factors].
 
-Google, Meta, and Amazon all have internal chip design teams. Amazon's Trainium/Graviton are in-house designs. Google's TPU IP split with Broadcom is not disclosed. Google's extension through 2031 [Verified: C055] suggests in-house capability not yet sufficient.
+## Ecosystem Signals
 
-### Competitor Integration
+**MRVL (competitor):** FY2026 revenue $8.2B (+42%); custom ASIC ~$1.5B; secured Google TPU work; $2B NVDA investment [ecosystem_signals.md].
 
-Marvell acquired Celestial AI ($3.25B, co-packaged optics) and XConn Technologies (PCIe/CXL switching) [Corroborated: C052]. Targets $500M annualized run rate by Q4 FY2028. Directly competes with AVGO's optical networking strategy.
+**NVDA (co-opetition):** Q1 FY2027 data center $75.2B (+92%); hyperscaler revenue $38B; acknowledges customer ASIC development in 10-Q [ecosystem_signals.md].
 
-## Inventory Dynamics
+**TSMC (supplier):** Q1 2026 revenue $35.9B (+40.6%); HPC = 61% of revenue; gross margin 66.2%; sold-out 2026; capex $52-56B; CoWoS >80% CAGR [Verified C032, C034; Corroborated C036].
 
-- Q1 FY2026: $2,962M (up 30.5% from $2,270M at FY2025 end) [Verified: C025].
-- Days of inventory outstanding: 40.2 days (FY2025), down from 62.2 (FY2023) [File: metrics.json].
-- Building in absolute terms but turning faster — consistent with demand acceleration.
+# Appendix D: Capital Structure — Expanded
 
-# Appendix D: Capital Structure (Expanded)
+## Equity Composition
 
-## Full Capital Structure Table
+| Item | Value | Source |
+|------|-------|--------|
+| Share Class | Common Stock, $0.001 par value | [insider.json: securityName] |
+| Preferred Equity | $0 (Series A Mandatory Convertible Preferred fully converted Sep 2022) | [balance.json: preferredStock, FY2025; convertible_search.json] |
+| Shares Outstanding | 4,734,670,000 | [shares_float.json: outstandingShares] |
+| Float Shares | 4,642,774,789 (98.1% free float) | [shares_float.json: floatShares, freeFloat] |
+| Dual-Class Structure | No (single class common) | [insider.json] |
 
-### FY2025 (Nov 2, 2025 Balance Sheet)
+## Market Cap
+
+$1,998,078,086,700 ($1,998.1B) at $422.01/share as of 2026-05-26 [quote.json: marketCap].
+
+## Debt Composition
 
 | Component | Amount ($M) | Source |
 |-----------|------------|--------|
-| Market Cap | $1,708,336 | [enterprise_value.json -- FY2025] |
-| Short-term debt | $3,152 | [balance.json -- shortTermDebt FY2025] |
-| Long-term debt | $61,984 | [balance.json -- longTermDebt FY2025] |
-| **Total gross debt** | **$65,136** | [balance.json -- totalDebt FY2025] |
-| Capital lease obligations | $0 | [balance.json -- capitalLeaseObligations FY2025] |
-| Cash & equivalents | $16,178 | [balance.json -- cashAndCashEquivalents FY2025] |
-| **Net debt** | **$48,958** | [balance.json -- netDebt FY2025] |
-| Minority interest | $0 | [balance.json -- minorityInterest FY2025] |
-| **Enterprise Value** | **$1,757,294** | [enterprise_value.json -- FY2025] |
-| Stockholders' equity | $81,292 | [balance.json -- totalStockholdersEquity FY2025] |
-| Total assets | $171,092 | [balance.json -- totalAssets FY2025] |
-
-### Q1 FY2026 (Feb 1, 2026 Balance Sheet)
-
-| Component | Amount ($M) | Source |
-|-----------|------------|--------|
-| Market Cap (current) | $1,978,154 | [quote.json -- marketCap] |
-| Long-term debt | $63,805 | [company_ir.md -- Verified: C011] |
-| Short-term debt | $2,252 | [company_ir.md -- Verified: C011] |
-| **Total debt** | **~$66,057** | [Verified: C039] |
-| Cash & equivalents | $14,174 | [company_ir.md -- Verified: C011] |
-| **Net debt** | **~$51,883** | [Computed] |
-| Stockholders' equity | $79,872 | [company_ir.md -- Verified: C011] |
-| Total assets | $169,903 | [company_ir.md -- Verified: C011] |
-| Goodwill | $97,801 | [company_ir.md -- Verified: C011] |
-| Inventory | $2,962 | [company_ir.md -- Verified: C025] |
-| Accounts receivable | $8,460 | [company_ir.md -- Verified: C011] |
-
-## Debt Evolution Timeline
-
-| Fiscal Year | Total Debt ($M) | Net Debt ($M) | Key Event |
-|-------------|----------------|---------------|-----------|
-| FY2018 | — | — | CA Technologies acquired |
-| FY2019 | 32,840 | 23,416 | Symantec Enterprise acquired |
-| FY2020 | 41,669 | 31,319 | Debt increase for acquisition financing |
-| FY2021 | 40,273 | 28,110 | Deleveraging |
-| FY2022 | 39,978 | 27,562 | Deleveraging |
-| FY2023 | 39,648 | 25,459 | Pre-VMware |
-| FY2024 | 67,566 | 58,218 | VMware ($27.9B debt increase) |
-| FY2025 | 65,136 | 48,958 | Deleveraging (-$2.4B) |
-| Q1 FY2026 | ~66,057 | ~51,883 | +$921M; LT up, ST down (refinancing) |
-
-[File: balance.json -- totalDebt, netDebt, all years]
-
-## Known Debt Tranches
-
-| Description | Amount | Rate | Maturity | Source |
-|-------------|--------|------|----------|--------|
-| Senior Notes | $5,000M | 5.150% | Nov 15, 2031 | [convertible_detail.md -- Verified: C040, SEC 424B2] |
-| Senior Notes | $750M | 4.300% | 2031 | [convertible_detail.md -- Corroborated: C041, Investing.com] |
-| Senior Notes | $1,250M | 4.600% | 2033 | [convertible_detail.md -- Corroborated: C041] |
-| Senior Notes | $1,250M | 4.950% | 2035 | [convertible_detail.md -- Corroborated: C041] |
-| Additional tranches (July 2025, Jan 2026 offerings) | — | — | — | [convertible_detail.md -- details not fully extracted] |
-
-**Identified total: $8,250M** of $65,136M total debt (12.7%). Full maturity schedule requires parsing 10-K debt footnotes [Data gap: G002].
-
-## Mandatory Convertible Preferred Stock
-
-- Ticker: AVGOP
-- Distribution rate: 8.0% per annum ($80/year or $20/quarter) [Verified: C042]
-- Originally announced 2019 via PRNewswire [File: convertible_detail.md]
-
-## Leverage Metrics
-
-| Metric | FY2021 | FY2022 | FY2023 | FY2024 | FY2025 | Source |
-|--------|--------|--------|--------|--------|--------|--------|
-| Net Debt / EBITDA | 1.91x | 1.44x | 1.24x | 2.44x | 1.41x | [metrics.json] |
-| Debt / Equity | 1.61x | 1.76x | 1.65x | 1.00x | 0.80x | [ratios.json] |
-| Debt / Assets | 0.53x | 0.54x | 0.54x | 0.41x | 0.38x | [ratios.json] |
-| Interest Coverage | 5.39x | 8.83x | 9.99x | 3.41x | 7.94x | [ratios.json] |
-| Current Ratio | 2.64x | 2.62x | 2.82x | 1.17x | 1.71x | [ratios.json] |
-| Quick Ratio | — | — | — | — | 1.58x | [ratios.json FY2025] |
-| Cash Ratio | — | — | — | — | 0.87x | [ratios.json FY2025] |
-
-## Interest Expense
-
-| FY | Interest Expense ($M) | Total Debt ($M) | Implied Rate | Source |
-|----|----------------------|----------------|-------------|--------|
-| FY2024 | 3,953 | 67,566 | ~5.8% | [income.json, balance.json] |
-| FY2025 | 3,210 | 65,136 | ~4.9% | [income.json, balance.json] |
-
-Interest expense declined 18.8% despite debt declining only 3.6% [Inference: lower blended interest rates on refinanced debt] [Sources: income.json, balance.json].
-
-## Cash Flow Coverage Detail
-
-### FCF vs Capital Returns
-
-| FY | FCF ($M) | Dividends ($M) | Buybacks ($M) | Total Return ($M) | Payout Ratio | Source |
-|----|---------|---------------|--------------|-------------------|-------------|--------|
-| FY2021 | 13,321 | 6,212 | 1,299 | 7,511 | 56.4% | [cashflow.json] |
-| FY2022 | 16,312 | 7,032 | 8,455 | 15,487 | 94.9% | [cashflow.json] |
-| FY2023 | 17,633 | 7,645 | 7,685 | 15,330 | 86.9% | [cashflow.json] |
-| FY2024 | 19,414 | 9,814 | 12,392 | 22,206 | 114.4% | [cashflow.json] |
-| FY2025 | 26,914 | 11,142 | 6,310 | 17,452 | 64.8% | [cashflow.json] |
-| Q1 FY2026 | 8,010 | 3,100 | 7,850 | 10,950 | 136.7% | [Verified: C010] |
-
-FY2024 total return exceeded FCF (114.4% payout), partially funded by $20.3B new long-term debt [File: cashflow.json -- longTermNetDebtIssuance FY2024].
-
-Q1 FY2026 returned $10.95B against $8.01B FCF — funded by existing cash. New $10B share repurchase program authorized through Dec 31, 2026 [Verified: C010].
-
-## Deferred Revenue (Software-Related)
-
-| FY | Current ($M) | Non-Current ($M) | Total ($M) | Source |
-|----|-------------|-----------------|-----------|--------|
-| FY2022 | 2,931 | 410 | 3,341 | [balance.json] |
-| FY2023 | 2,487 | 299 | 2,786 | [balance.json] |
-| FY2024 | 9,395 | 5,100 | 14,495 | [balance.json] |
-| FY2025 | 9,469 | 3,547 | 13,016 | [balance.json] |
-
-Spiked 5.2x from FY2023 to FY2024 with VMware acquisition. Non-current portion declining ($5.1B → $3.5B) as contracts unwind.
-
-## Asset Composition
-
-| Item | FY2025 ($M) | % of Assets | Source |
-|------|------------|-----------|--------|
-| Goodwill | 97,801 | 57.2% | [balance.json] |
-| Intangible assets | 32,273 | 18.9% | [balance.json] |
-| **Goodwill + Intangibles** | **130,074** | **76.0%** | [balance.json] |
-| PP&E (net) | 2,530 | 1.5% | [balance.json] |
-| Cash & equivalents | 16,178 | 9.5% | [balance.json] |
-| Accounts receivable | 7,145 | 4.2% | [balance.json] |
-| Inventory | 2,270 | 1.3% | [balance.json] |
-| Other | 15,824 | 9.2% | [balance.json] |
-| **Total assets** | **171,092** | **100%** | [balance.json] |
-
-Tangible book value: -$48,782M [File: metrics.json]. The deeply negative tangible book reflects the acquisition-driven strategy.
-
-### Goodwill by Acquisition (Estimated)
-
-| Acquisition | Approx. Goodwill ($B) | Method | Source |
-|-------------|----------------------|--------|--------|
-| Broadcom Corp (2016) | ~$23 | Balance.json step-up FY2015→FY2016 | [balance.json: $1.7B → $24.7B] |
-| CA Technologies (2018) | ~$10 | Step-up FY2018→FY2019: $26.9B → $36.7B | [balance.json] |
-| Symantec Enterprise (2019) | ~$7 | Included in FY2019 step-up | [balance.json, competitive_history.md] |
-| VMware (2023) | ~$54 | Step-up FY2023→FY2024: $43.7B → $97.9B | [balance.json] |
-
-[Inference: goodwill attributions estimated from balance sheet step-ups across fiscal years. May include other minor acquisitions.] [Sources: balance.json, competitive_history.md -- Verified: C037]
-
-# Appendix E: Key Stats (Expanded)
-
-## Technical Indicators (May 13, 2026)
-
-| Indicator | Value | Interpretation | Source |
-|-----------|-------|---------------|--------|
-| Price | $417.80 | — | [quote.json -- price] |
-| Day range | $404.80 – $418.63 | — | [quote.json -- dayLow, dayHigh] |
-| 52-week range | $221.60 – $437.68 | Current price at 93.2% of 52-week high | [quote.json -- yearLow, yearHigh] |
-| Previous close | $419.30 | — | [quote.json -- previousClose] |
-| RSI (14-day) | 58.88 | Neutral zone (neither overbought >70 nor oversold <30) | [technicals.json -- rsi_14] |
-| 21-day EMA | $407.29 | Price above (+2.6%) | [technicals.json -- ema_21d] |
-| 50-day SMA | $365.13 | Price above (+14.4%) | [technicals.json -- sma_50d] |
-| 200-day SMA | $345.51 | Price above (+20.9%) | [technicals.json -- sma_200d] |
-| MACD | null (unavailable) | — | [technicals.json -- macd] |
-| ADV (30d, $) | $8,195,677,679 | ~$8.2B daily dollar volume | [technicals.json -- adv_30d] |
-| Avg Volume (30d, shares) | 19,954,138 | — | [technicals.json -- avg_volume_30d] |
-| Session volume | 11,715,372 | Below average (59% of 30d avg) | [quote.json -- volume] |
-| Beta | 1.44 | 44% more volatile than S&P 500 | [info.json -- beta] |
-| Historical volatility (ann.) | 46.28% | Based on 174 observations | [options.json -- historical_volatility.annualized] |
-
-**Moving average alignment:** Price > 21d EMA > 50d SMA > 200d SMA — all major averages in bullish alignment. Price is 20.9% above the 200d SMA.
-
-## Computed Multiples — Full Methodology
-
-All multiples computed from current price ($417.80 from quote.json) and the relevant financial figure. Not copied from any third-party source.
-
-### Trailing P/E (GAAP)
-
-| Variant | Value | Numerator | Denominator | Source |
-|---------|-------|-----------|-------------|--------|
-| Basic | 85.1x | $417.80 | $4.91 (FY2025 basic EPS) | [quote.json, income.json -- eps FY2025] |
-| Diluted | 87.6x | $417.80 | $4.77 (FY2025 diluted EPS) | [quote.json, income.json -- epsDiluted FY2025] |
-
-**Tax normalization impact:** FY2025 effective tax rate was -1.7% (net $397M tax benefit vs $22,729M pretax income) [File: income.json, ratios.json]. At normalized 21% statutory rate:
-- Tax expense: $22,729M × 0.21 = $4,773M
-- Normalized net income: $22,729M − $4,773M = $17,956M
-- Normalized diluted EPS: $17,956M / 4,853M shares = $3.70
-- **Normalized P/E: 112.9x**
-[Inference: tax-normalized P/E calculation] [Sources: income.json, ratios.json]
-
-### Forward P/E
-
-| Period | Value | Numerator | Denominator | Source |
-|--------|-------|-----------|-------------|--------|
-| FY2026E | 36.9x | $417.80 | $11.32 (consensus avg EPS) | [quote.json, ratings.json -- epsAvg FY2026] |
-| FY2027E | 23.2x | $417.80 | $17.99 (consensus avg EPS) | [quote.json, ratings.json -- epsAvg FY2027] |
-| FY2028E | 18.7x | $417.80 | $22.40 (consensus avg EPS) | [quote.json, ratings.json -- epsAvg FY2028] |
-
-Note: Analyst EPS estimates are opinions, not evidence. FY2028E coverage is thin (7 analysts vs 26 for FY2026E) [File: ratings.json -- numAnalystsEps].
-
-### Other Multiples
-
-| Multiple | Value | Computation | Source |
-|----------|-------|-------------|--------|
-| P/FCF | 73.5x | $1,978.2B / $26.914B | [quote.json marketCap / cashflow.json freeCashFlow FY2025] |
-| P/FCF (SBC-adjusted) | 102.2x | $1,978.2B / ($26.914B − $7.568B) | [Computed: FCF − SBC from cashflow.json] |
-| EV/EBITDA (GAAP) | 50.6x | $1,757.3B / $34.714B | [metrics.json -- evToEBITDA FY2025] |
-| EV/Revenue | 27.5x | $1,757.3B / $63.887B | [metrics.json -- evToSales FY2025] |
-| Dividend Yield | 0.62% | ($0.65 × 4) / $417.80 | [company_ir.md dividend / quote.json price] |
-| P/Book | 24.8x | $1,978.2B / $79.872B | [quote.json / company_ir.md equity Q1 FY2026] |
-| FCF Yield | 1.36% | $26.914B / $1,978.2B | [Computed: cashflow.json / quote.json] |
-| Earnings Yield (GAAP) | 1.17% | $23.126B / $1,978.2B | [income.json / quote.json] |
-
-### P/E Discrepancy Note
-
-FY2024 P/E was 339.4x at FY2024-end market cap (diluted EPS $1.23), reflecting VMware acquisition-year distortions ($10.0B D&A, $3.7B tax expense, $5.7B SBC) [File: income.json -- FY2024]. The P/E compression from 339.4x to 87.6x is an arithmetic normalization, not a change in operating performance.
-
-## Short Interest Detail
-
-| Metric | Value | Date | Source |
-|--------|-------|------|--------|
-| Shares short | ~51.01M | April 30, 2026 | [short_interest.md -- Corroborated: C043, MarketBeat] |
-| % of float | 1.10% | April 30, 2026 | [MarketBeat via C043] |
-| % of float (alt.) | 1.32% | Earlier date | [Benzinga via C043] |
-| Days to cover | 2.1–2.6 | — | [short_interest.md] |
-
-The discrepancy in float percentage (1.10% vs 1.32%) reflects different float calculations or reporting dates [File: claim_verification.json -- C043].
-
-## Earnings Beat/Miss History (Full)
-
-| Report Date | Quarter | EPS Actual | EPS Est. | Beat ($) | Beat (%) | Rev Actual ($M) | Rev Est. ($M) | Rev Beat ($M) | Rev Beat (%) |
-|-------------|---------|-----------|----------|---------|---------|----------------|--------------|--------------|-------------|
-| 2026-03-04 | Q1 FY26 | $2.05 | $2.03 | +$0.02 | +1.0% | 19,311 | 19,256 | +55 | +0.3% |
-| 2025-12-11 | Q4 FY25 | $1.95 | $1.87 | +$0.08 | +4.3% | 18,015 | 17,466 | +549 | +3.1% |
-| 2025-09-04 | Q3 FY25 | $1.69 | $1.66 | +$0.03 | +1.8% | 15,952 | 15,826 | +126 | +0.8% |
-| 2025-06-05 | Q2 FY25 | $1.58 | $1.57 | +$0.01 | +0.6% | 15,004 | 14,958 | +46 | +0.3% |
-| 2025-03-06 | Q1 FY25 | $1.60 | $1.51 | +$0.09 | +6.0% | 14,916 | 14,616 | +300 | +2.1% |
-| 2024-12-12 | Q4 FY24 | $1.42 | $1.38 | +$0.04 | +2.9% | 14,054 | 14,068 | -14 | -0.1% |
-| 2024-09-05 | Q3 FY24 | $1.24 | $1.22 | +$0.02 | +1.6% | 13,072 | 12,979 | +93 | +0.7% |
-| 2024-06-12 | Q2 FY24 | $1.10 | $1.09 | +$0.01 | +0.9% | 12,487 | 12,057 | +430 | +3.6% |
-| 2024-03-07 | Q1 FY24 | $1.10 | $1.037 | +$0.063 | +6.1% | 11,961 | 11,795 | +166 | +1.4% |
-
-[File: earnings.json]. 9/9 EPS beats (100%). 8/9 revenue beats. Median EPS beat: +$0.03 (+1.8%). Pattern of narrow, consistent beats is consistent with systematic guidance conservatism.
+| **Total Debt** | **$65,136** | [balance.json: totalDebt, FY2025] |
+| Short-term Debt | $3,152 | [balance.json: shortTermDebt, FY2025] |
+| Long-term Debt | $61,984 | [balance.json: longTermDebt, FY2025] |
+| Capital Lease Obligations | $0 | [balance.json: capitalLeaseObligations, FY2025] |
 
-**Next earnings:** June 3, 2026. Consensus: EPS $2.40, revenue $22,023M [File: earnings.json].
+### Debt Type
 
-## Analyst Consensus (Opinion Data)
+Primarily senior unsecured notes across multiple maturities. In November 2023, Broadcom issued $29B in new senior notes to finance the VMware acquisition ($61B). Known tranche: 2031 Notes at 5.150% [convertible_detail.md: SEC.gov filing reference, Tier 1 source].
 
-| Metric | FY2026E | FY2027E | FY2028E | Source |
-|--------|---------|---------|---------|--------|
-| Revenue (avg) | $103.6B | $161.1B | $203.2B | [ratings.json] |
-| EPS (avg) | $11.32 | $17.99 | $22.40 | [ratings.json] |
-| # Revenue analysts | 31 | 34 | 19 | [ratings.json] |
-| # EPS analysts | 26 | 26 | 7 | [ratings.json] |
-| Price target consensus | $443.72 | — | — | [ratings.json] |
-| Price target range | $335 – $510 | — | — | [ratings.json] |
+### Debt Maturity Profile
 
-Implied revenue growth: FY2026E +62.1%, FY2027E +55.5%, FY2028E +26.1% [Computed from ratings.json estimates].
+**Data gap:** The detailed maturity schedule by year (specific amounts maturing each year) is not available in the raw data files. A 10-K extraction or SEC filing review would provide this detail. What is known:
+- Short-term debt (due within 1 year): $3,152M [balance.json]
+- Long-term debt: $61,984M [balance.json]
+- Known tranche: 2031 Notes at 5.150% [convertible_detail.md]
 
-## Scoring Metrics
+### Debt Trajectory
 
-| Metric | Value | Interpretation | Source |
-|--------|-------|---------------|--------|
-| Altman Z-Score | 14.34 | >3.0 = low bankruptcy probability | [scores.json] |
-| Piotroski F-Score | 6 of 9 | Moderate | [scores.json] |
-| Graham Number | $43.65 | Price significantly above | [metrics.json FY2025] |
+| Year | Total Debt ($M) | Cash ($M) | Net Debt ($M) | Source |
+|------|----------------|----------|--------------|--------|
+| FY2025 | $65,136 | $16,178 | $48,958 | [balance.json] |
+| FY2024 | $67,566 | $9,348 | $58,218 | [balance.json] |
+| FY2023 | $39,648 | $14,189 | $25,459 | [balance.json] |
+| FY2022 | $39,978 | $12,416 | $27,562 | [balance.json] |
+| FY2021 | $40,273 | $12,163 | $28,110 | [balance.json] |
 
-Note: Scores.json uses TTM figures (revenue $68.282B vs FY2025 annual $63.887B), indicating inclusion of Q1 FY2026.
+Total debt increased $27,918M from FY2023 to FY2024 due to VMware acquisition financing [Inference: timing aligns with VMware close Nov 2023; cashflow.json shows $20.3B net debt issuance + $26.0B acquisition spend] [Sources: balance.json, cashflow.json]. FY2025 saw $2,430M debt reduction while cash increased $6,830M, reducing net debt by $9,260M.
 
-## FMP DCF Reference
+### Interest Expense
 
-- FMP computed DCF: $201.89 [File: dcf.json]
-- Stock price at time: $417.08 [File: dcf.json]
-- FMP DCF assumptions not disclosed. Presented as a data point, not evidence.
+| Year | Interest Expense ($M) | Implied Avg Cost of Debt | Source |
+|------|----------------------|--------------------------|--------|
+| FY2025 | $3,210 | 4.9% ($3,210M / $65,136M) | [income.json: interestExpense] |
+| FY2024 | $3,996 | 5.9% ($3,996M / $67,566M) | [income.json] |
+| FY2023 | $1,625 | 4.1% ($1,625M / $39,648M) | [income.json] |
 
-## Greenwald Value Decomposition
+## Convertible Debt Details
 
-### Asset Reproduction Value
+No convertible debt currently outstanding. Historical: Series A Mandatory Convertible Preferred Stock ($3.0B issued September 2019) automatically converted to common stock September 30, 2022 [convertible_search.json: EDGAR EFTS results; convertible_detail.md: PR Newswire press release]. By FY2025, preferred stock = $0 [balance.json: preferredStock].
 
-- Total assets: $171,092M [File: balance.json]
-- Less goodwill: -$97,801M [File: balance.json]
-- Less intangible assets: -$32,273M [File: balance.json]
-- **Tangible book value: -$48,782M** [File: metrics.json]
-- PP&E: $2,530M [File: balance.json]
+## Cash and Equivalents
 
-### Earnings Power Value (No Growth)
+| Item | Amount ($M) | Source |
+|------|------------|--------|
+| Cash & Cash Equivalents | $16,178 | [balance.json: cashAndCashEquivalents, FY2025] |
+| Short-term Investments | $0 | [balance.json: cashAndShortTermInvestments = cashAndCashEquivalents] |
+| **Total Cash & STI** | **$16,178** | [balance.json] |
 
-- FY2025 pretax income: $22,729M [File: income.json]
-- Tax-normalized net income (21%): $17,956M [Computed: $22,729M × (1 − 0.21)]
-- SBC: -$7,568M [File: cashflow.json]
-- D&A (proxy for maintenance capex): +$8,775M [File: income.json]
-- Actual capex: -$623M [File: cashflow.json]
-- **Owner earnings: $18,540M** [Computed: $17,956M + $8,775M − $623M − $7,568M]
-- Estimated WACC: ~8.6% [Inference: 55.5% × 12.4% CoE + 44.5% × 3.9% CoD after-tax] [Sources: info.json beta, ratios.json debtToCapital, income.json interest, balance.json debt]
-- **Note:** financial_data.md stated WACC of ~7.6%, but the formula shown (55.5% × 12.4% + 44.5% × 3.9%) correctly yields ~8.6%. This discrepancy is a computation error in the financial analysis.
-- **EPV: ~$215B** [Computed: $18,540M / 0.086]
+## Minority Interest
 
-### Franchise Value
+$0 [balance.json: minorityInterest, FY2025].
 
-- Market cap: $1,978.2B [File: quote.json]
-- EPV: ~$215B
-- **Franchise value: ~$1,763B (89.1% of market cap)**
-- The market prices $1.76T of franchise value — reflecting expectations of sustained growth and competitive advantages. This is a factual calculation, not a judgment.
+## Enterprise Value
 
-## ROIC vs Estimated Cost of Capital
+| Method | Value | Source |
+|--------|-------|--------|
+| **Current Price** | **$2,047,036M ($2,047.0B)** | [Computed: $1,998,078M + $65,136M − $16,178M] |
+| FMP at Filing (stale) | $1,757,294M ($1,757.3B) | [enterprise_value.json: at $362.55/share] |
 
-| FY | ROIC | Est. WACC | Spread | Source |
-|----|------|----------|--------|--------|
-| FY2021 | 12.2% | ~8.6%* | +3.6pp | [metrics.json] |
-| FY2022 | 19.7% | ~8.6%* | +11.1pp | [metrics.json] |
-| FY2023 | 22.5% | ~8.6%* | +13.9pp | [metrics.json] |
-| FY2024 | 5.6% | ~8.6%* | -3.0pp | [metrics.json] |
-| FY2025 | 16.4% | ~8.6%* | +7.8pp | [metrics.json] |
+The FMP-stored EV was calculated at $362.55/share (FY2025 filing date), which is 14.1% below the current price of $422.01.
 
-*WACC is approximate and held constant for illustration. Actual WACC varies with leverage and market conditions. FY2024 ROIC below WACC was driven by VMware acquisition inflating invested capital (+$80.3B) while GAAP earnings were depressed.
+## Net Debt / EBITDA
 
-## ROE Decomposition (DuPont)
+| Metric | Value | Computation | Source |
+|--------|-------|-------------|--------|
+| Net Debt | $48,958M | $65,136M − $16,178M | [balance.json] |
+| FY2025 EBITDA | $34,714M | — | [income.json: ebitda] |
+| **Net Debt / EBITDA** | **1.41x** | $48,958M / $34,714M | [Computed] |
 
-| Component | FY2025 | FY2024 | Source |
-|-----------|--------|--------|--------|
-| Net profit margin | 36.2% | 11.4% | [ratios.json] |
-| Asset turnover | 0.37x | 0.31x | [metrics.json] |
-| Financial leverage | 2.10x | 2.45x | [ratios.json] |
-| **ROE** | **28.4%** | **8.7%** | [metrics.json] |
+Leverage trajectory:
+- FY2025: 1.41x
+- FY2024: 2.44x ($58,218M / $23,867M EBITDA)
+- FY2023: 1.24x ($25,459M / $20,548M EBITDA)
 
-Verification: 36.2% × 0.37 × 2.10 = 28.1% (~matches 28.4%, rounding) [Computed].
+Rapid deleveraging from FY2024 peak of 2.44x [Inference: driven by EBITDA growth ($23.9B → $34.7B, +45%) and $2.4B debt paydown] [Sources: balance.json, income.json].
 
-# Appendix F: Risk Factors (Expanded)
+## Interest Coverage
 
-## Customer/Revenue Concentration
+EBIT / Interest Expense:
+- FY2025: 7.9x ($25,484M / $3,210M) [income.json]
+- FY2024: 3.4x ($13,461M / $3,996M) [income.json]
+- FY2023: 10.0x ($16,206M / $1,625M) [income.json]
 
-### Quantified Exposure
+# Appendix E: Key Stats — Expanded
 
-- **6 custom XPU customers:** Google, Anthropic (via Google TPU), Meta, OpenAI, 2 unnamed [File: transcript.json -- Hock Tan].
-- **10-K discloses** customers exceeding 10% of revenue but does not provide exact percentages [Data gap: G001].
-- **Google is the single largest identified customer.** Supply agreement through 2031 [Verified: C055].
-- **AI revenue concentration:** $8.4B Q1 FY2026 [Verified: C002] = 43.5% of total $19,311M revenue, from a small number of hyperscale customers.
-- **Anthropic amplifies Google concentration:** $21B in TPU rack orders flow through Google's TPU infrastructure [Corroborated: C056]. Google's own workloads + Anthropic's spending route through the same Broadcom-designed TPU platform.
-- **Google 2026 CapEx:** $180B–$190B guidance [Contradicted: C053 for stale figure]. Up from $91.45B in 2025 [Verified: C054]. A reduction in Google CapEx would directly reduce AVGO's AI revenue.
+All multiples computed at current price ($422.01) unless otherwise noted. All monetary figures in USD.
 
-### Denominator Discipline
+## Price and Trading
 
-Analyst estimates of Google at ~78% of ASIC revenue (HSBC) are estimates, not disclosures. "ASIC revenue" is a subset of "AI revenue" ($8.4B), which is a subset of semiconductor revenue ($12.5B). If ASIC revenue is ~$6B and 78% = $4.7B/quarter from Google, that's ~$18.8B annualized. This is illustrative, not verified [Data gap: G001].
+| Metric | Value | Computation | Source |
+|--------|-------|-------------|--------|
+| Price | $422.01 | — | [quote.json: price, 2026-05-26] |
+| 52-Week Range | $234.43 – $442.36 | — | [quote.json: yearLow, yearHigh] |
+| ADV (30d, shares) | 18,770,049 | — | [technicals.json: avg_volume_30d] |
+| ADV (30d, $) | $7,868M | 18,770,049 × $422.01 / 1e6 = $7,921M (note: technicals.json reports $7,868M pre-computed) | [technicals.json: adv_30d] |
+| ADV (longer-term, $) | $10,036M | info.json avgVolume (23,781,641) × $422.01 | [info.json: averageVolume] |
+| RSI (14-day) | 56.4 | — | [technicals.json: rsi_14] |
+| 21-day EMA | $413.84 | — | [technicals.json: ema_21d] |
+| 50-day SMA | $379.04 | — | [technicals.json: sma_50d] |
+| 200-day SMA | $350.44 | — | [technicals.json: sma_200d] |
+| Beta | 1.44 | — | [info.json: beta] |
+
+## Valuation Multiples
+
+| Metric | Value | Computation | Source |
+|--------|-------|-------------|--------|
+| Trailing P/E (FY2025 diluted EPS) | 88.5x | $422.01 / $4.77 | [quote.json; income.json: epsDiluted FY2025] |
+| LTM P/E (last 4 quarters non-GAAP) | 58.0x | $422.01 / $7.27 ($1.58+$1.69+$1.95+$2.05) | [quote.json; earnings.json: epsActual Q2-Q4 FY2025 + Q1 FY2026] |
+| Forward P/E (FY2026E) | 37.5x | $422.01 / $11.27 | [quote.json; ratings.json: epsAvg FY2026] |
+| Forward P/E (FY2027E) | 23.3x | $422.01 / $18.11 | [quote.json; ratings.json: epsAvg FY2027] |
+| EV/EBITDA (FY2025) | 59.0x | $2,047.0B / $34.7B | [Computed: EV from balance.json + quote.json; EBITDA from income.json] |
+| EV/Revenue (FY2025) | 32.0x | $2,047.0B / $63.9B | [Computed] |
+| EV/Revenue (FY2026E) | 19.8x | $2,047.0B / $103.3B | [Computed; ratings.json: revenueAvg FY2026] |
+| EV/Revenue (FY2027E) | 12.6x | $2,047.0B / $162.3B | [Computed; ratings.json: revenueAvg FY2027] |
+| P/FCF (FY2025) | 74.2x | $1,998.1B / $26.9B | [quote.json; cashflow.json: freeCashFlow FY2025] |
+| P/FCF-ex-SBC | 103.3x | $1,998.1B / ($26.9B − $7.6B SBC) = $1,998.1B / $19.3B | [quote.json; cashflow.json] |
+| Dividend Yield | 0.62% | ($0.65/qtr × 4) / $422.01 = $2.60 / $422.01 | [transcript.json: Kirsten Spears; quote.json] |
+
+### Notes on Trailing P/E
+
+The 88.5x trailing P/E uses FY2025 diluted EPS of $4.77. This figure is affected by: (1) a negative effective tax rate of -1.7% in FY2025, which increased reported net income by ~$4.1B vs. a normalized 16.5% rate [Inference: at 16.5%, tax would be $3.75B vs. actual benefit of -$397M, a $4.1B swing] [Sources: income.json, ratios.json]; (2) $8.8B in D&A (primarily VMware intangible amortization) [income.json]. The LTM P/E of 58.0x using the last 4 reported quarters' non-GAAP EPS provides a more comparable metric [earnings.json].
+
+## Margins (GAAP)
+
+| Year | Gross Margin | Operating Margin | Net Margin | EBITDA Margin | Source |
+|------|-------------|-----------------|-----------|--------------|--------|
+| FY2025 | 67.8% | 39.9% | 36.2% | 54.3% | [income.json] |
+| FY2024 | 63.0% | 26.1% | 11.4% | 46.3% | [income.json] |
+| FY2023 | 68.9% | 45.2% | 39.3% | 57.4% | [income.json] |
+| FY2022 | 66.5% | 42.8% | 34.6% | 57.7% | [income.json] |
+| FY2021 | 61.4% | 31.0% | 24.5% | 53.5% | [income.json] |
 
-### Contractual Protection
+## Segment Margins (Q1 FY2026, Non-GAAP)
 
-Google agreement through 2031 [Verified: C055]. Terms (minimum commitments, take-or-pay, penalty clauses) not publicly disclosed. Presence of an agreement does not necessarily mean Google cannot reduce volumes within it.
+| Segment | Gross Margin | Operating Margin | Source |
+|---------|-------------|-----------------|--------|
+| Semiconductor Solutions | ~68% | 60% | [transcript_segments.json: Kirsten Spears] |
+| Infrastructure Software | 93% | 78% | [transcript_segments.json: Kirsten Spears] |
+| Consolidated | 77% | ~68% adj. EBITDA | [transcript_segments.json: Kirsten Spears] |
 
-## Supplier Concentration
+## Cash Flow
 
-### TSMC (~95% of Wafers)
+| Year | Revenue ($B) | OCF ($B) | CapEx ($M) | FCF ($B) | FCF Margin | Source |
+|------|-------------|---------|-----------|---------|-----------|--------|
+| FY2025 | $63.9 | $27.5 | $623 | $26.9 | 42.1% | [income.json, cashflow.json] |
+| FY2024 | $51.6 | $20.0 | $548 | $19.4 | 37.6% | [income.json, cashflow.json] |
+| FY2023 | $35.8 | $18.1 | $452 | $17.6 | 49.2% | [income.json, cashflow.json] |
+| FY2022 | $33.2 | $16.7 | $424 | $16.3 | 49.1% | [income.json, cashflow.json] |
+| FY2021 | $27.4 | $13.8 | $443 | $13.3 | 48.5% | [income.json, cashflow.json] |
 
-- Confirmed in 10-K [Verified: C017]. Advanced node (3nm, 5nm) effectively sole-sourced.
-- No long-term agreements — per-order procurement [Verified: C026].
-- TSMC at capacity limits in 2026 [Verified: C016]. Expansion to 2027.
-- AVGO's wafer requirements = "meaningful portion" of TSMC capacity.
-- TSMC Q1 2026: NT$1.134T revenue (+35% YoY), net income +58% YoY [Verified: C045, C046].
-- TSMC CapEx: high end of $52B–$56B for 2026 [Corroborated: C048].
+CapEx/Revenue consistently below 2% [Inference: consistent with fabless model where wafer fabrication is outsourced to TSMC] [Sources: cashflow.json, 10-K FY2025].
 
-### Geographic Concentration
+## Returns on Capital
 
-- **Foundries:** Taiwan (TSMC, SPIL, UMC), Singapore (UMC, GlobalFoundries, UTAC, ASE), China (SMIC, ASE)
-- **OSAT:** Taiwan, Singapore, China, Korea, Philippines
-- **PCB suppliers:** Taiwan, China (at capacity, lead times 6 months) [Corroborated: C018]
-- **Headquarters:** Palo Alto, CA [File: info.json]
+| Year | ROIC | ROIC-WACC Spread | Invested Capital ($B) | Source |
+|------|------|------------------|----------------------|--------|
+| FY2025 | 16.4% | +4.2pp | $145.7 | [metrics.json] |
+| FY2024 | 5.6% | −6.6pp | $143.9 | [metrics.json] |
+| FY2023 | 22.5% | +10.3pp | $63.6 | [metrics.json] |
+| FY2022 | 19.7% | +7.5pp | $64.4 | [metrics.json] |
+| FY2021 | 12.2% | ~0pp | $67.5 | [metrics.json] |
 
-### Taiwan Strait Geopolitical Risk
+WACC estimate: ~12.2% (CAPM: 4.5% RFR + 1.44 beta × 5.5% ERP = 12.4% cost of equity; 4.9% pre-tax cost of debt; 96.8% equity weight) [Computed from info.json, income.json, balance.json, quote.json].
 
-~95% of advanced node wafers from TSMC in Taiwan. TSMC is building US fabs (Arizona) but advanced node capacity remains Taiwan-centric. A Taiwan Strait disruption would severely impact AVGO's ability to manufacture AI accelerators.
+## DuPont ROE Decomposition (FY2025)
 
-## Regulatory and Geopolitical Exposure
+| Component | Value | Source |
+|-----------|-------|--------|
+| Net Margin | 36.2% ($23.1B / $63.9B) | [income.json] |
+| Asset Turnover | 0.373x ($63.9B / $171.1B) | [income.json, balance.json] |
+| Financial Leverage | 2.10x ($171.1B / $81.3B) | [balance.json] |
+| **ROE** | **28.4%** (36.2% × 0.373 × 2.10) | [Computed] |
 
-### EU Antitrust (Active)
+## Greenwald Decomposition
 
-Broadcom suing EU antitrust regulators over request for documents containing legal advice from U.S. lawyers in a VMware-related case [File: news.json -- Reuters, May 13, 2026]. Active legal proceeding with uncertain financial exposure.
+| Item | Value | Source |
+|------|-------|--------|
+| Tangible Book Value | −$48.8B | [Computed: $171.1B assets − $97.8B goodwill − $32.3B intangibles − $89.8B liabilities] |
+| Earnings Power Value | $155.6B ($32.86/share) | [Inference: $19.0B normalized NI / 12.2% WACC] [Sources: income.json, transcript.json] |
+| Franchise Value | $1,842.5B (92.2% of mkt cap) | [Computed: $1,998.1B − $155.6B] |
 
-### China/Export Controls
+## Earnings History
 
-- Geographic revenue breakdown unavailable (FMP segments API returned 404) [File: segments.json].
-- SMIC listed as secondary foundry — advanced node chips cannot be produced there under current US export controls.
-- News coverage identifies AVGO as potentially benefiting from easing China tariffs [File: news.json].
-- Degree of revenue exposure to China is a data gap.
+| Quarter | EPS Actual | EPS Est. | EPS Delta | Rev Actual ($B) | Rev Est. ($B) | Rev Delta ($M) |
+|---------|-----------|---------|-----------|----------------|--------------|----------------|
+| Q1 FY2026 | $2.05 | $2.03 | +$0.02 | $19.31 | $19.26 | +$55 |
+| Q4 FY2025 | $1.95 | $1.87 | +$0.08 | $18.02 | $17.47 | +$549 |
+| Q3 FY2025 | $1.69 | $1.66 | +$0.03 | $15.95 | $15.83 | +$126 |
+| Q2 FY2025 | $1.58 | $1.57 | +$0.01 | $15.00 | $14.96 | +$46 |
+| Q1 FY2025 | $1.60 | $1.51 | +$0.09 | $14.92 | $14.62 | +$300 |
+| Q4 FY2024 | $1.42 | $1.38 | +$0.04 | $14.05 | $14.07 | −$14 |
+| Q3 FY2024 | $1.24 | $1.22 | +$0.02 | $13.07 | $12.98 | +$93 |
+| Q2 FY2024 | $1.10 | $1.09 | +$0.01 | $12.49 | $12.06 | +$430 |
+| Q1 FY2024 | $1.10 | $1.04 | +$0.06 | $11.96 | $11.79 | +$166 |
 
-### Tariff/Trade
+[earnings.json: all quarters]
 
-Supply chain concentrated in Asia. Products manufactured in Asia shipped to US/global customers. Subject to import tariffs. Easing of China tariffs would benefit AVGO [File: news.json].
+9 of 9 quarters beat on EPS. 8 of 9 beat on revenue (Q4 FY2024 was −$14M). Average EPS beat: +$0.04 (+2.8%). Average revenue beat: +$195M (+1.4%).
 
-## Technology and Disruption Risk
+## Analyst Consensus
 
-### Customer-Owned Tooling (COT)
+| Year | Revenue Est. ($B) | YoY Growth | EPS Est. | # Analysts | Source |
+|------|------------------|-----------|---------|-----------|--------|
+| FY2026E | $103.3 | +61.7% | $11.27 | 33 (rev) | [ratings.json] |
+| FY2027E | $162.3 | +57.1% | $18.11 | 35 (rev) | [ratings.json] |
+| FY2028E | $206.4 | +27.2% | $22.61 | 21 (rev) | [ratings.json] |
 
-- CEO: "we will not see competition in COT for many years to come. It will come eventually" [File: transcript.json -- Hock Tan].
-- Google extended Broadcom agreement through 2031 [Verified: C055], suggesting in-house capabilities not yet sufficient.
-- Amazon has Trainium/Graviton (in-house designs) — evidence COT is technically feasible.
-- OpenAI chose outsourced ASIC model (Broadcom partnership) [Verified: C015].
-- Marvell reported record design wins [Verified: C050] — custom ASIC market growing, not shrinking.
+Price target consensus: Median $456, range $335–$582, 46 analysts [ratings.json].
 
-### NVIDIA Ecosystem
+## Capital Returns
 
-CUDA software ecosystem creates inertia for GPUs. If NVIDIA delivers strong performance/watt improvements, the case for custom XPUs weakens for smaller-scale customers. Every hyperscaler customer also uses NVIDIA GPUs.
+| Year | Dividends ($B) | Buybacks ($B) | Total ($B) | % of FCF | Source |
+|------|---------------|-------------|-----------|---------|--------|
+| FY2025 | $11.1 | $6.3 | $17.5 | 65% | [cashflow.json] |
+| FY2024 | $9.8 | $12.4 | $22.2 | 114% | [cashflow.json] |
+| FY2023 | $7.6 | $7.7 | $15.3 | 87% | [cashflow.json] |
 
-### Co-Packaged Optics Competition
+Q1 FY2026: $3.1B dividends + $7.8B buybacks = $10.9B [transcript.json: Kirsten Spears].
 
-Marvell's Celestial AI acquisition ($3.25B) targets co-packaged optics, directly competing with AVGO [Corroborated: C052]. CEO: CPO "will come in its time, not this year, maybe not next year" [File: transcript.json -- Hock Tan].
+## Other Scores
 
-## Financial Risks
+| Metric | Value | Source |
+|--------|-------|--------|
+| Altman Z-Score | 14.49 | [scores.json] |
+| Piotroski Score | 6/9 | [scores.json] |
 
-### Debt Profile
+Note: Z-Score of 14.49 is elevated [Inference: the market-value-of-equity / total-liabilities component is dominant at $2,008B / $90.0B = 22.3x] [Sources: scores.json].
 
-| FY | Total Debt ($M) | Net Debt/EBITDA | Interest Coverage |
-|----|----------------|-----------------|-------------------|
-| FY2023 | 39,648 | 1.24x | 9.99x |
-| FY2024 | 67,566 | 2.44x | 3.41x |
-| FY2025 | 65,136 | 1.41x | 7.94x |
-| Q1 FY2026 | ~66,057 | — | — |
+# Appendix F: Risk Factors — Expanded
 
-[File: balance.json, metrics.json, ratios.json]
+## 1. Customer Concentration
 
-Complete debt maturity waterfall unavailable [Data gap: G002]. Only $8.25B of $65.1B total debt has identified maturity details.
+**AI XPU revenue concentration:** $8.4B quarterly AI semiconductor revenue (43.5% of total) from 6 XPU customers [transcript_segments.json: Hock Tan]. Per-customer revenue not disclosed in SEC filings [Data gap]. The 10-K discloses: top 5 end customers ~40% of total revenue through all channels (FY2025 and FY2024) [EDGAR: 10-K FY2025].
 
-### SBC Dilution
+**Revenue impact estimate:** If the largest customer (likely Google, with analyst Rasgon estimating ~3 GW of ~10 GW total) represents ~25% of AI revenue, a 50% reduction from that customer would equal ~$1.05B/quarter or ~$4.2B annually, approximately 5.4% of the annualized Q1 run rate [Inference: assumes top customer = ~25% of AI revenue] [Sources: transcript.json].
 
-| FY | SBC ($M) | SBC/Revenue | Diluted Shares (M) | YoY Share Growth |
-|----|---------|------------|--------------------|--------------------|
-| FY2022 | 1,533 | 4.6% | 4,230 | — |
-| FY2023 | 2,171 | 6.1% | 4,270 | +0.9% |
-| FY2024 | 5,741 | 11.1% | 4,778 | +11.9% |
-| FY2025 | 7,568 | 11.8% | 4,853 | +1.6% |
+**Correlated demand risk:** All 6 XPU customers are hyperscale AI infrastructure buyers. A macro-driven AI capex pause would affect all customers simultaneously.
 
-[File: cashflow.json, metrics.json, income.json]
+**Trend:** Customer count grew from 5 to 6 with OpenAI added in Q1 FY2026 [transcript.json: Hock Tan].
 
-SBC nearly doubled as % of revenue post-VMware (6.1% → 11.8%). Per-share metrics grow slower than aggregate: FCF/share CAGR 12.7% vs aggregate FCF CAGR 18.2% (FY2022–FY2025) due to 14.7% diluted share count increase.
+## 2. Cyclicality and Macro Sensitivity
 
-### Tax Rate Anomaly
+**Revenue through prior cycles:**
+| Period | Revenue ($B) | YoY Growth |
+|--------|-------------|------------|
+| FY2020 (COVID) | $23.9 | +5.7% |
+| FY2023 (semi downturn) | $35.8 | +7.9% |
+| FY2025 (AI ramp) | $63.9 | +23.9% |
 
-| FY | Effective Tax Rate | Tax ($M) | Pretax Income ($M) | Source |
-|----|-------------------|---------|-------------------|----|
-| FY2021 | 0.4% | 28 | 6,764 | [ratios.json, income.json] |
-| FY2022 | 7.6% | 941 | 12,436 | |
-| FY2023 | 6.7% | 1,008 | 15,090 | |
-| FY2024 | 37.8% | 3,744 | 9,905 | |
-| FY2025 | **-1.7%** | **-397** | **22,729** | |
+[income.json]
 
-FY2025: Net $397M tax benefit on $22.7B pretax income. At normalized 21%: tax = $4,773M; NI = $17,956M vs reported $23,126M — 22.3% reduction. [Inference: negative rate likely reflects utilization of deferred tax assets from VMware purchase accounting] [Sources: income.json, ratios.json, balance.json -- deferredTaxLiabilitiesNonCurrent dropped from $4,703M to $2,704M].
+Beta: 1.44 [info.json]. 52-week range: $234.43–$442.36 (89% peak-to-trough) [quote.json].
 
-### AR vs Revenue Divergence
+**Current AI cycle risk:** AI revenue growing 106% YoY (Q1 FY2026), guided 140% YoY (Q2). These growth rates are historically anomalous. No hyperscaler has publicly disclosed ROI from AI infrastructure at current spending levels. CEO Tan addressed this indirectly: customers are "on the path to...productizing and monetizing their LLMs" [transcript.json: Hock Tan].
 
-- FY2025 AR: $7,145M (+61.8% YoY) vs revenue +23.9% [File: balance.json, income.json].
-- AR grew 2.6x faster than revenue.
-- DSO: 31.3 days (FY2024) → 40.8 days (FY2025) [File: metrics.json].
-- Q1 FY2026 AR: $8,460M (+18.4% from FY2025 in one quarter) [Verified: C011].
-- May reflect customer mix shift toward hyperscalers with longer payment terms. Magnitude (2.6x ratio) warrants monitoring.
+## 3. Technology and Disruption Risk
 
-### Working Capital Consumption
+**GPU competition:** NVIDIA data center revenue $75.2B in Q1 FY2027 exceeds AVGO's entire FY2025 revenue ($63.9B) [Contradicted C022: $75.2B not $75.3B]. Vera Rubin promises "up to 10x more performance per watt" for specific inference workloads [Verified C031].
 
-| FY | Change in WC ($M) | Key Components |
-|----|-------------------|---------------|
-| FY2022 | -1,654 | AR +$870M, Inv +$627M |
-| FY2023 | -1,643 | Other WC -$1,692M |
-| FY2024 | -4,637 | Other WC -$7,235M (VMware) |
-| FY2025 | **-8,500** | AR -$2,717M, Other WC -$5,155M |
+**Customer-owned tooling (COT):** Analyst Harlan Sur (JPMorgan) raised the risk. CEO Tan: "We will not see competition in COT for many years to come. It will come eventually" [transcript.json: Hock Tan, Q&A]. Note: Sur's assertion that COT designs are "at least 2x less performant" is the analyst's opinion, not a confirmed fact [transcript.json: analyst Harlan Sur (JPMorgan), question].
 
-[File: cashflow.json]. Largest WC drain in data set. Partially offsets strong FCF.
+**Marvell threat:** MRVL custom ASIC ~$1.5B annualized vs. AVGO $33.6B annualized AI revenue (4.5% scale). Growing faster (>20% guided). Reportedly secured portion of Google TPU work [Corroborated C015]. NVIDIA $2B investment [Verified C017].
 
-### GAAP vs Non-GAAP Gap
+**CPO disruption:** Could displace Broadcom optical DSPs and SerDes. CEO Tan: CPO "will come in its time, not this year, maybe not next year" [transcript.json: Hock Tan].
 
-- GAAP EBITDA FY2025: $34,714M [File: income.json]
-- Adjusted EBITDA FY2025: $43,000M [Verified: C013]
-- Gap: ~$8.3B, primarily SBC ($7,568M)
-- GAAP D&A: $8,775M FY2025 (declining from $10,010M FY2024 as VMware intangibles amortize)
-- Intangibles/total assets: 76.0% [File: metrics.json]
-- Tangible book value: -$48,782M [File: metrics.json]
+## 4. Supply Chain Risk
 
-## Insider Activity Detail
+**TSMC single-source:** "The majority" of front-end wafer manufacturing [EDGAR: 10-K FY2025]. No alternative foundry offers comparable advanced packaging (CoWoS) at scale. TSMC sold out through 2026 [ecosystem_signals.md].
 
-| Name | Role | Type | Date | Shares | Price Range | Proceeds (est.) |
-|------|------|------|------|--------|-------------|----------------|
-| Samueli, Henry | Director (co-founder) | S-Sale | 2026-03-25 | 223,402 | $317–$321 | ~$71.3M |
-| Velaga, S. Ram | President, ISG | S-Sale | 2026-04-08–10 | 38,215 | $352–$371 | ~$13.6M |
-| Kawwas, Charlie B | President, SSG | S-Sale | 2026-04-08 | 10,000 | $345.23 | ~$3.5M |
-| Page, Justine | Director | S-Sale | 2026-04-08 | 2,018 | $353.00 | ~$0.7M |
-| Delly, Gayla J | Director | S-Sale | 2026-04-09 | 1,000 | $358.31 | ~$0.4M |
-| Tan, Hock E | CEO | G-Gift | 2026-04-08 | 22,000 | $0 | Gift |
+**Taiwan geographic:** TSMC, ASE, SPIL headquartered in Taiwan. TSMC expanding to Arizona ($165B total, first 3nm fab H2 2027) [Verified C037]. Partially addresses geographic concentration over 2027-2028 timeframe.
 
-[File: insider.json]. No open-market purchases by any insider. 10b5-1 plan status not indicated. Multiple directors received 864-share equity awards on April 20, 2026.
+**Middle East supply chain:** TSMC flagged specialty chemical/gas supply concerns from Middle East conflict [ecosystem_signals.md: CNBC, Apr 16, 2026]. Indirect risk to AVGO.
 
-## Key Person Risk
+**No long-term contracts:** 10-K states "generally on a purchase order basis" [EDGAR: 10-K FY2025]. However, VP Ramachandran confirmed "long-term agreements...for as long as three to four years" for strategic components [Verified C096].
 
-- **CEO:** Hock E. Tan — has led all major strategic decisions since the Avago-Broadcom merger in 2016 [File: info.json -- ceo]. CEO start date not available in raw data [Data gap].
-- **CFO transition:** Amie Thuener (Alphabet's VP, CAO and Corporate Controller) joining as CFO effective June 12, 2026, replacing Kirsten Spears [Verified: C057]. Incoming CFO from AVGO's largest customer.
+## 5. Execution and Integration Risk
 
-## Earnings Consistency Analysis
+**VMware integration:** Goodwill increased $54.2B (FY2023→FY2024) [balance.json]. Software operating margin expanding (78%, +190 bps YoY) [transcript_segments.json]. VMware TCV >$9.2B, ARR +19% YoY [transcript_segments.json: Hock Tan]. Post-acquisition pricing increases (up to 45% reported) create churn risk [claim_verification.json: C079]. No quantified churn data [Data gap].
 
-9/9 EPS beats (100% rate). Beat magnitudes: +$0.01 to +$0.09 (+0.6% to +6.1%). Median: +$0.03 (+1.8%). Pattern of narrow, consistent beats consistent with systematic guidance conservatism [File: earnings.json].
+**Key person risk:** CEO Hock E. Tan has led all major acquisitions. No succession plan details available [Data gap].
 
-## Base Rate Risk Context
+**Employee count discrepancy:** info.json description says 19,000 (outdated); fullTimeEmployees field says 37,000 [info.json].
 
-### Serial Acquirer Risk
+## 6. Financial Risk
 
-ROIC trajectory: 12.2% (FY2021) → 22.5% (FY2023) → 5.6% (FY2024, VMware) → 16.4% (FY2025) [File: metrics.json]. Pre-acquisition ROIC of 22.5% not yet restored.
+**Leverage:** Net Debt/EBITDA 1.41x (FY2025), down from 2.44x (FY2024) [Computed: balance.json, income.json]. Interest coverage 7.9x (FY2025) vs. 3.4x (FY2024) [income.json].
 
-### Sustained Growth Base Rate
+**SBC dilution:** SBC grew from $2.2B (6.1% of revenue, FY2023) to $7.6B (11.8%, FY2025) [cashflow.json]. Diluted shares grew 13.7% over 2 years (FY2023→FY2025, 4,270M → 4,853M) [income.json]. P/FCF-ex-SBC of 103.3x vs. headline P/FCF of 74.2x.
 
-Revenue growing ~30% at Q1 FY2026 (+29%), guided +47% for Q2. Analyst consensus: FY2026E revenue $103.6B (+62%) [File: ratings.json]. This growth rate at >$64B revenue is historically unusual. Growth currently driven by structural shift (hyperscaler AI CapEx) rather than organic share gains alone.
+**AR/revenue divergence:** FY2025 AR grew 61.8% vs. revenue 23.9%. DSO expanded from 31.3 to 40.8 days (+30%) [balance.json, income.json, metrics.json]. The divergence warrants monitoring. [Inference: partially a mix effect from higher Q4 revenue run rate, but the $2.7B AR build suggests real term changes] [Sources: balance.json, income.json, cashflow.json].
 
-## Data Gaps in Risk Assessment
+**Tax rate volatility:** FY2021: 0.4%, FY2022: 7.5%, FY2023: 6.7%, FY2024: 37.8%, FY2025: -1.7% [ratios.json]. FY2025 negative rate inflated net income by ~$4.1B vs. normalized 16.5%. CFO guided 16.5% for Q2 FY2026 [transcript.json: Kirsten Spears].
 
-| ID | Gap | Impact |
-|----|-----|--------|
-| G001 | Exact customer concentration percentages | Cannot quantify Google or any single customer's exact revenue share |
-| G002 | Complete debt maturity waterfall | Capital structure analysis has incomplete maturity profile |
-| G003 | AI revenue segment definition | Management metric, not GAAP; definition could change |
-| G004 | Q1 FY2026 quarterly income statement from API | Cannot cross-reference against API data |
-| G005 | NVDA operating margin (two Forbes figures: 60.4% vs 58.8%) | Peer comparison imprecise |
-| — | Geographic revenue breakdown | FMP returned 404 |
-| — | Congressional trading data | FMP returned 404 |
-| — | Options chain / implied volatility | FMP returned 404 |
-| — | Full transcript detail | Single-line JSON format truncates in read operations |
+**Working capital drain:** Accelerating: FY2021 −$0.1B → FY2022 −$1.7B → FY2023 −$1.6B → FY2024 −$4.6B → FY2025 −$8.5B [cashflow.json]. FY2025 includes −$2.7B AR, −$0.5B inventory, −$5.2B "other working capital" [cashflow.json].
 
-# Appendix G: Transcript Highlights
+## 7. Regulatory and Geopolitical Risk
 
-*Source: Q1 FY2026 Earnings Call (reported March 4, 2026) [File: transcript.json]*
+**Export controls:** Advanced AI semiconductors subject to U.S. EAR restrictions. Primary customers are U.S.-based hyperscalers, limiting direct China exposure. Tariff/trade policy changes could affect broader semiconductor pricing [EDGAR: 10-K FY2025 risk factors].
 
-*Note: transcript.json is single-line JSON format. Quotes below are from the competitive_position.md, value_chain.md, and risk_factors.md analyses, which extracted key passages. Full CFO prepared remarks on tax guidance, forward leverage targets, and detailed capital allocation strategy could not be fully extracted due to format limitations [Data gap].*
+**Geographic revenue:** Not available (FMP segments API returned 404) [Data gap].
+
+## 8. Insider Activity
+
+| Insider | Role | Date | Shares | Price | Value | Remaining | Source |
+|---------|------|------|--------|-------|-------|-----------|--------|
+| Henry Samueli | Director | 2026-03-25 | 223,402 sold | $317-321 | ~$71.3M | ~37.0M (indirect) | [insider.json] |
+| S. Ram Velaga | President ISG | 2026-04-08-10 | 38,215 sold | $352-371 | ~$13.5M | 57,932 | [insider.json] |
+| Charlie Kawwas | President SSG | 2026-04-08 | 10,000 sold | $345 | ~$3.5M | 787,184 (indirect) | [insider.json] |
+| Hock E. Tan | CEO | 2026-04-08 | 22,000 gifted | — | $0 | 110,836 (direct) | [insider.json] |
+
+No insider purchases in the available window. Samueli's $71.3M sale = 0.46% of ~$15.6B remaining position.
+
+## 9. Notable Non-Disclosures (Negative Space)
+
+- Broadcom does not disclose per-customer revenue in SEC filings, while the AI revenue is concentrated among 6 named customers
+- Broadcom does not report AI revenue in SEC filings as a separate line item — only in quarterly earnings call commentary
+- Geographic revenue breakdown not separately available from FMP data
+- VMware churn rate post-pricing changes not disclosed
+- No specific TSMC CoWoS allocation data disclosed
+- Custom ASIC vs. GPU allocation ratio not disclosed by any hyperscaler
+- Proxy statement parsing error prevented governance and compensation analysis [proxy.json: error]
+
+## 10. Management Deflections (Transcript)
+
+- When asked about rack-level gross margins by analyst Timothy Arcuri (UBS), CEO Tan dismissed the premise rather than providing data: "you must be a bit hallucinating" [transcript.json: Hock Tan]
+- When asked about chip vs. rack revenue breakdown by analyst Vivek Arya (BofA), CEO Tan declined: "I'd rather not answer that" [transcript.json: Hock Tan]
+- When asked about $100B+ target composition, CEO Tan stated it was "pretty much all based on chips" without providing a precise chip/rack split [transcript.json: Hock Tan, Q&A with Blayne Curtis]
+
+# Appendix G: Transcript Highlights — Key Management Quotes by Topic
+
+Source: Q1 FY2026 Earnings Call (reported March 4, 2026). Speakers: Hock Tan (CEO), Kirsten Spears (CFO), Charlie Kawwas (President, Semiconductor Solutions Group).
 
 ---
 
-## AI Revenue & Strategy
+## AI Revenue and Growth
 
-**CEO Hock Tan (prepared remarks):**
-- "we have line of sight to achieve AI revenue from chips, just chips, in excess of $100 billion in 2027" [File: transcript.json -- Hock Tan]
-  - *Context:* Forward projection, not verifiable fact. Current annualized run rate ~$33.6B. Would require ~3x growth in ~18 months [Anomaly: A001].
-- "Our collaboration with these 6 customers to develop AI XPUs is deep, strategic and multiyear" [File: transcript.json -- Hock Tan]
-- Meta's MTIA program is "alive and well" — refuting analyst reports questioning it [File: transcript.json -- Hock Tan]
+**Hock Tan (CEO), prepared remarks:**
+> "In our fiscal Q1 2026, total revenue reached a record $19.3 billion, and that's up 29% year-on-year and exceeding our guidance on the back of stronger than expected AI semiconductor revenue."
 
-**CEO on XPU vs GPU positioning (Q&A with Vivek Arya):**
-- XPU is "strategic" versus GPU is "transactional and optionality" for customers [File: transcript.json -- Hock Tan]
-- "XPUs will eventually be more the choice simply because it will allow flexibility in making designs that work with particular workloads" [File: transcript.json -- Hock Tan, Q&A with C.J. Muse]
+**Hock Tan, on AI revenue:**
+> "AI semiconductor revenue of $8.4 billion was up 106% year-on-year, and our custom accelerator business grew 140% year-on-year."
 
-## Technology Differentiation
+**Hock Tan, on AI networking:**
+> "Q1 AI networking revenue grew 60% year-on-year and represented 1/3 of total AI revenue."
 
-**CEO Hock Tan (prepared remarks):**
-- "we bring to the partnerships unmatched technology in SerDes, silicon design, process technology, advanced packaging and networking" [File: transcript.json -- Hock Tan]
+**Hock Tan, on FY2027 target:**
+> "We have line of sight to achieve AI revenue from chips, just chips, in excess of $100 billion in 2027."
 
-**CEO on barriers to entry (Q&A with Harlan Sur, JPMorgan):**
-- "We've been doing this for 20 years, more than 20 years in silicon... we don't see too many players in the world that can do that" [File: transcript.json -- Hock Tan]
-- On yield management: "Anybody can design a chip in a lab that works well. Can you produce 100,000 of those chips quickly at yields that you can afford?" [File: transcript.json -- Hock Tan]
+[transcript_segments.json: Hock Tan]
 
-**Analyst Harlan Sur (JPMorgan) — analyst opinion, not company statement:**
-- COT efforts are "at least 2x less performant than your current generation solutions, 2x less complex in terms of chip design complexity, packaging complexity, IP" [File: transcript.json -- Harlan Sur, analyst question]
-- *Attribution note:* This is an analyst's assessment, not independently verified.
+---
 
-## Customer-Owned Tooling (COT) Risk
+## Custom XPU Customers
 
-**CEO Hock Tan (Q&A with Harlan Sur):**
-- "we will not see competition in COT for many years to come. It will come eventually, but we're still a long way off" [File: transcript.json -- Hock Tan]
+**Hock Tan, on 6 customers:**
+> "We also now have a sixth customer. We expect OpenAI deploying in volume their first-generation XPU in 2027 at over 1 gigawatt."
 
-## Supply Chain
+**Hock Tan, on Anthropic:**
+> "Anthropic is off to a very good start in 2026 for 1 gigawatt of TPU compute. For '27, demand expected to surge in excess of 3 gigawatts."
 
-**CEO Hock Tan (prepared remarks):**
-- Secured capacity "for '26 through '28" for leading-edge wafers, HBM, and substrates [File: transcript.json -- Hock Tan]
+**Hock Tan, on Meta:**
+> "Meta's custom accelerator MTIA road map is alive and well. We're shipping now...will scale to multiple gigawatts in '27."
 
-**President Charlie Kawwas (Q&A):**
-- "we have to go secure it for multiple years and we're probably the first one to secure that up to '28 or beyond" [File: transcript.json -- Charlie Kawwas]
+**Hock Tan, on scale confirmation (Q&A with Stacy Rasgon, Bernstein):**
+> "If you look at it by gigawatt in '27, we are seeing it getting close to 10 gigawatts."
 
-## Networking
+**Stacy Rasgon (analyst, Bernstein), question:** Asked about ~$20B/GW content.
+**Hock Tan, response:** "You're right, it's not far from the dollars you're talking about."
 
-**CEO Hock Tan (Q&A with Ross Seymore):**
-- Tomahawk 6 (100 Tbps) is the only 100 Tbps switch available
-- First-to-market in 200G SerDes and 1.6 Tbps DSP for optical transceivers
-- AI networking grew to 33% of AI revenue in Q1; projected 40% in Q2
+[transcript_segments.json: Hock Tan; transcript.json: Q&A section]
 
-**President Charlie Kawwas (Q&A with Tom O'Malley):**
-- "Ethernet is the scale-out of choice... what we're seeing is the right answer is Ethernet" for scale-up networking as well [File: transcript.json -- Charlie Kawwas]
+---
 
-**CEO on co-packaged optics (Q&A with Tom O'Malley):**
-- CPO "will come in its time, not this year, maybe not next year" [File: transcript.json -- Hock Tan]
+## Competitive Position and COT
 
-## Customer Relationships
+**Harlan Sur (analyst, JPMorgan), question:** "There's been a lot of noise around CSPs and hyperscalers embarking on their own internal XPU, TPU design efforts, right? We call it COT, or customer-owned tooling."
 
-**CEO Hock Tan (Q&A with Joshua Buchalter):**
-- On multi-generational design cycles: "they don't think one generation at a time. They think multiple generation, multiple years" [File: transcript.json -- Hock Tan]
+**Hock Tan, response:**
+> "We will not see competition in COT for many years to come. It will come eventually, but we're still a long way off."
 
-**CEO on OpenAI (context of prepared remarks):**
-- "10 gigawatts through 2029" referenced in context of OpenAI discussion [File: transcript.json -- Hock Tan]
+**Hock Tan, on differentiation:**
+> "We bring to the partnerships unmatched technology in SerDes, silicon design, process technology, advanced packaging and networking to enable each of these customers to achieve optimal performance."
 
-## Margins & Pricing
+**Hock Tan, on production capability:**
+> "Anybody can design a chip in a lab that works well. Can you produce 100,000 of those chips quickly at yields that you can afford? And we don't see too many players in the world that can do that."
 
-**CFO Kirsten Spears:**
-- Non-GAAP gross margin: 77% in Q1 FY2026 [File: transcript.json -- Kirsten Spears]
-- Non-GAAP operating margin: 66.4% in Q1 FY2026 [File: transcript.json -- Kirsten Spears]
+**Hock Tan, on GPU vs. XPU (Q&A with C.J. Muse):**
+> "The one size fits all of a general purpose GPU gets you only that far...XPUs will eventually be more the choice simply because it will allow flexibility in making designs that work with particular workloads."
 
-**CEO on margin concerns (Q&A with Timothy Arcuri):**
-- Dismissed rack-level margin compression: "Our gross margin is solidly at the number Kirsten reported" [File: transcript.json -- Hock Tan]
-- Margins on AI products are "fairly consistent with the models we have in the rest of the semiconductor business"
+[transcript.json: Hock Tan, Q&A]
+
+---
+
+## Supply Chain and Capacity
+
+**Hock Tan, on supply secured:**
+> "We have fully secured capacity of these components for '26 through '28."
+
+**Charlie Kawwas, on supply commitments:**
+> "We have to go secure it for multiple years and we're probably the first one to secure that up to '28 or beyond."
+
+**Hock Tan, on T-glass substrates:**
+> "We were early in being able to lock up T-glass."
+
+**Hock Tan, on TSMC bottleneck (industry event, March 2026):**
+> Referenced in supplier_capacity.md: "They will be increasing the capacity to 2027, but that has become a bottleneck, or that has kind of choked the supply chain in 2026."
+
+[transcript.json: Hock Tan, Charlie Kawwas; supplier_capacity.md]
+
+---
+
+## Networking Strategy
+
+**Hock Tan, on Tomahawk:**
+> "Tomahawk 6 operates at 100 terabit per second with 200G SerDes, and we are first-to-market."
+
+**Hock Tan, on optical DSPs:**
+> "We are again the only player out there doing DSP at 1.6 terabit."
+
+**Charlie Kawwas, on Ethernet:**
+> "Ethernet is the scale-out of choice" and XPU designs are "being asked to scale-up through Ethernet."
+
+**Hock Tan, on CPO (co-packaged optics):**
+> "CPO will come in its time, not this year, maybe not next year."
+
+[transcript_segments.json; transcript.json: Q&A]
+
+---
 
 ## VMware / Infrastructure Software
 
-**CEO Hock Tan:**
-- VMware Cloud Foundation is "the essential software layer in data centers"
-- ARR growth of 19% YoY [File: transcript.json -- Hock Tan]
+**Hock Tan, on VCF:**
+> VCF is "the permanent abstraction layer between AI software and physical chips, silicon" that "cannot be disintermediated or replaced."
 
-## Notable Analyst Questions
+**Hock Tan, on VMware TCV:**
+> "Total contract value booked in Q1 exceeded $9.2 billion, sustaining ARR growth of 19% year-on-year."
 
-The following analyst questions touched on topics where management responses were qualitative rather than quantitative:
-
-1. **COT timeline** — Management said "many years" without specifying a number. [File: transcript.json]
-2. **Rack-level margin compression** — CEO deflected with "solidly at the number Kirsten reported" without addressing specific rack economics. [File: transcript.json -- Hock Tan, Q&A with Timothy Arcuri]
-3. **Customer concentration specifics** — No analyst question resulted in management disclosing exact revenue percentages for any customer.
-
-## Topics NOT Discussed (Negative Space)
-
-Based on available transcript data:
-- No discussion of geographic revenue breakdown
-- No disclosure of customer-specific revenue percentages
-- No specific covenant or leverage target mentioned in extracted portions
-- No discussion of tax rate guidance or expected normalization timeline
-- Limited detail on VMware customer churn or retention metrics
-
-*Note: Full transcript extraction was limited by single-line JSON format. Additional topics may have been discussed but not captured in extracted passages [Data gap].*
-
-# Appendix H: Source Index
-
-## Data Files Used
-
-All raw data files are located at: `workspace/AVGO_2026-05-13/raw/`
-
-### Tier 1: SEC Filings & Company Disclosures
-
-| File | Provider | Content | Date | Reliability |
-|------|----------|---------|------|-------------|
-| income.json | FMP (Financial Modeling Prep) | Annual income statements FY2014–FY2025 | As of FY2025 (Nov 2, 2025) | High — derived from SEC filings |
-| balance.json | FMP | Annual balance sheets FY2014–FY2025 | As of FY2025 (Nov 2, 2025) | High |
-| cashflow.json | FMP | Annual cash flow statements FY2014–FY2025 | As of FY2025 (Nov 2, 2025) | High |
-| company_ir.md | Broadcom IR (investors.broadcom.com) | Q1 FY2026 results, balance sheet, guidance | March 4, 2026 | High — primary company disclosure |
-| press_releases.md | PRNewswire, GlobeNewsWire, Broadcom IR | FY2025 quarterly results, strategic announcements | FY2025 quarterly | High — verbatim company releases |
-| filings.json | SEC EDGAR via FMP | SEC filing list (10-K, 10-Q, 8-K, etc.) | Current | High |
-| latest_10k.json | SEC EDGAR via FMP | FY2025 10-K accession number reference | FY2025 | High (accession only, not full text) |
-| convertible_detail.md | SEC 424B2, Investing.com | Debt tranches, senior notes, mandatory convertible | Various | High for SEC filings; Medium for Investing.com |
-
-### Tier 2: Financial Data APIs
-
-| File | Provider | Content | Date | Reliability |
-|------|----------|---------|------|-------------|
-| info.json | FMP | Company profile, market cap, beta, employees | Current | Medium-High |
-| quote.json | FMP | Real-time price, market cap, 52-week range | May 13, 2026 | High (real-time) |
-| metrics.json | FMP | ROIC, ROE, DSO, DIO, EV/EBITDA, etc. (FY2021–FY2025) | As of FY2025 | High |
-| ratios.json | FMP | Margins, leverage, coverage, per-share (FY2021–FY2025) | As of FY2025 | High |
-| earnings.json | FMP | Quarterly EPS and revenue actual vs estimated | Through Q1 FY2026 | High |
-| ratings.json | FMP | Analyst grades, price targets, forward estimates | Current | Medium (analyst opinions) |
-| technicals.json | FMP | RSI, SMA, EMA, MACD, ADV | May 13, 2026 | High (computed from price data) |
-| enterprise_value.json | FMP | EV history (FY2021–FY2025) | As of FY2025 | High |
-| scores.json | FMP | Altman Z-Score, Piotroski F-Score | TTM | Medium-High |
-| dcf.json | FMP | Proprietary DCF fair value ($201.89) | Current | Low (opaque methodology) |
-| peers.json | FMP | Peer company list and profiles | Current | Medium |
-| peer_compare.json | FMP | Peer profile comparison data | Current | Medium |
-| insider.json | FMP / SEC Form 4 | Insider transactions (sales, gifts, awards) | Through April 2026 | High (derived from SEC filings) |
-| options.json | FMP | Historical volatility (46.28%); options chain unavailable | Current | Medium (partial data) |
-
-### Tier 2-3: Web Research & Analysis
-
-| File | Provider | Content | Date | Reliability |
-|------|----------|---------|------|-------------|
-| ecosystem_signals.md | Multiple (CNBC, Marvell IR, Google earnings, FundaAI) | TSMC, Marvell, Google peripheral signals | April–May 2026 | Medium (mixed sources; see claim verification) |
-| competitive_history.md | Multiple (Seeking Alpha, CSIMarket, StockStory, PredictStreet) | Competitive landscape evolution | Various | Medium (web sources, some contradicted) |
-| competitor_data.md | Multiple (Forbes, CSIMarket, Trefis) | Peer margin comparisons | Various | Medium (some contradicted) |
-| supply_demand.md | Reuters, FundaAI | TSMC capacity, PCB bottlenecks, demand drivers | March 2026 | Medium-High (Reuters is Tier 1 for news) |
-| supply_indicators.md | Multiple (PredictStreet, transcripts) | Backlog, lead times, inventory, 10-K risk factors | Various | Medium |
-| value_chain.md | Multiple (CSIMarket, company disclosures) | Upstream suppliers, downstream customers | Various | Medium |
-| industry.json | Multiple web sources | Market outlook, key industry data points | Various | Medium |
-| short_interest.md | ShortSqueeze, Benzinga, MarketBeat | Short interest data | April–May 2026 | Medium |
-| news.json | FMP | Recent news with sentiment | May 13, 2026 | Medium (news aggregation) |
-
-### Tier 3: Transcripts
-
-| File | Provider | Content | Date | Reliability |
-|------|----------|---------|------|-------------|
-| transcript.json | FMP / AlphaSense | Q1 FY2026 earnings call transcript | March 4, 2026 | Medium (management narrative; biased view) |
-
-### Verification Data
-
-| File | Provider | Content | Date | Reliability |
-|------|----------|---------|------|-------------|
-| claim_verification.json | Research pipeline (web-verify) | 62 claims checked with confidence tags | May 13, 2026 | High (systematic verification) |
-
-### Unavailable Data (API Errors)
-
-| File | Issue | Impact |
-|------|-------|--------|
-| segments.json | FMP 404 error | No segment or geographic revenue data from API |
-| dividends.json | FMP 404 error | No dividend history from API |
-| sector_perf.json | FMP 404 error | No sector performance data |
-| short_interest.json | FMP 404 error | Short interest from web search only |
-| government.json | FMP 404 error (senate + house) | No congressional trading data |
-
-## Claim Verification Summary
-
-Total claims checked: 62 [File: claim_verification.json]
-
-| Tag | Count | Treatment in Report |
-|-----|-------|-------------------|
-| Verified | 26 | Cited normally |
-| Corroborated | 16 | Cited with note |
-| Single-Source | 10 | Caveat included in report text |
-| Contradicted | 5 | All versions presented |
-| Unverifiable | 5 | Included with explicit caveat or omitted |
-
-### Key Contradicted Claims
-
-| ID | Claim | Versions | Resolution |
-|----|-------|----------|------------|
-| C020 | Semiconductor market CAGR | Iowa: 9%, McKinsey: 13%, Technavio: 3.8% | Range presented (3.8%–13%) |
-| C027 | AVGO operating margin | Forbes: 40.8%, CSIMarket: 41.46%, Trefis: 39.0%, income.json: 39.89% | GAAP from income.json used as ground truth |
-| C030 | AVGO 2025 stock return | Forbes: +69%, Motley Fool/SlickCharts/TIKR: +49% | +49% corroborated by 3 sources |
-| C032 | AVGO revenue growth (LTM) | Trefis: 28.0%, income.json: 23.9% | income.json used |
-| C053 | Google 2026 CapEx guidance | Stale: $175B–$185B, Updated: $180B–$190B | Updated figure used |
-
-### Key Single-Source Claims
-
-| ID | Claim | Source | Caveat |
-|----|-------|--------|--------|
-| C019 | Samsung 3-5 year supply contracts | Reuters | Samsung-specific claim not independently confirmed |
-| C024 | 30-40 week lead times (non-AI) | Earnings call | No independent verification |
-| C029 | Forbes P/E of 64.2 | Forbes | Methodology unknown; doesn't match computed figure |
-| C049 | CoWoS 170-180k capacity; TPU 7M vs 12M demand | FundaAI Substack | Tier 3 analyst estimates; TSMC/Google don't disclose |
-| C060 | CSIMarket COGS growth 28.99% | CSIMarket | Doesn't match income.json 8.0% |
-
-### Key Unverifiable Claims
-
-| ID | Claim | Source | Note |
-|----|-------|--------|------|
-| C059 | VMware 45% price hike for Lenovo | LinkedIn | Other sources report 100-600%+ |
-| C061 | Analyst consensus $475 (range $360–$630) | TickerNerd | Consensus calculations vary by source |
-
-## Data Gap Summary
-
-| ID | Data Gap | Impact on Analysis |
-|----|----------|-------------------|
-| G001 | Exact customer concentration % | Cannot quantify single-customer revenue share |
-| G002 | Complete debt maturity schedule | Incomplete maturity profile |
-| G003 | AI revenue formal definition | Management metric, not GAAP; could change |
-| G004 | Q1 FY2026 quarterly income from API | Cannot cross-reference quarterly financials |
-| G005 | NVDA operating margin (two different Forbes figures) | Peer comparison imprecise |
-| — | Geographic revenue breakdown | Cannot assess regional concentration |
-| — | Congressional trading data | Cannot assess political insider activity |
-| — | Options chain / implied volatility | Cannot compute put/call ratio or IV |
-| — | Full transcript text | CFO details on tax, leverage targets may be missing |
-| — | VMware customer churn / retention | Cannot quantify attrition from price increases |
-| — | TSMC contractual terms with AVGO | Neither party discloses pricing/volume commitments |
-| — | Peer financial data (NVDA, AMD income/margins) | Limited peer comparison |
+[transcript_segments.json: Hock Tan]
 
 ---
 
-*Report compiled: May 13, 2026*
-*Data sources: FMP API, SEC EDGAR, Broadcom IR, Reuters, Marvell IR, Google/Alphabet earnings, web search with claim verification*
-*Claim verification: 62 claims checked; 26 verified, 16 corroborated, 10 single-source, 5 contradicted, 5 unverifiable*
+## Financial Guidance and Margins
+
+**Kirsten Spears (CFO), prepared remarks:**
+> "Revenue for our Semiconductor Solutions segment was a record $12.5 billion, with growth accelerating to 52% year-on-year."
+> "Revenue for Infrastructure Software of $6.8 billion was up 1% year-on-year."
+> "Gross margin for Infrastructure Software was 93% in the quarter."
+> "Semiconductor operating margin of 60% was up 260 basis points year-on-year, reflecting strong operating leverage."
+> "Q1 software operating margin was up 190 basis points year-on-year to 78%."
+> "Free cash flow in the quarter was $8 billion and represented 41% of revenue."
+> "Adjusted EBITDA of $13.1 billion or 68% of revenue."
+
+**Kirsten Spears, Q2 guidance:**
+> "We expect consolidated gross margin to be flat sequentially at 77%."
+> "We expect adjusted EBITDA to be approximately 68% of revenue."
+> Non-GAAP tax rate: "approximately 16.5% due to the impact of the global minimum tax."
+> Diluted shares: "approximately 4.94 billion, excluding the impact of potential share repurchases."
+
+**Hock Tan, on rack-level margins (Q&A with Timothy Arcuri, UBS):**
+> "Hate to tell you that you must be a bit hallucinating. Our gross margin is solidly at the number Kirsten reported."
+
+**Kirsten Spears, on rack margins:**
+> "The impact relative to our overall mix is actually not going to be substantial at all."
+
+**Hock Tan, on chip vs. rack breakdown (Q&A with Vivek Arya, BofA):**
+> "I'd rather not answer that."
+
+[transcript_segments.json; transcript.json: Q&A]
+
+---
+
+## Capital Allocation
+
+**Kirsten Spears, on Q1 returns:**
+> Dividends of $3.1B and buybacks of $7.8B. Dividend per share: $0.65.
+
+**Kirsten Spears, on buyback:**
+> Board authorized new repurchase program effective through end of calendar year 2026.
+
+[transcript.json: Kirsten Spears]
+
+---
+
+## Analyst Questions with Non-Specific or Deflected Answers
+
+1. **Chip vs. rack revenue split** — CEO Tan declined to answer (Vivek Arya question).
+2. **Rack-level gross margin quantification** — CEO Tan dismissed premise (Timothy Arcuri question).
+3. **Per-customer revenue concentration** — Not addressed despite multiple customer-level questions.
+4. **TSMC CoWoS allocation specifics** — Not disclosed.
+
+# Appendix H: Source Index
+
+## Source Files Used in This Report
+
+| # | File | Provider | Data Date | Reliability Tier | Usage |
+|---|------|----------|-----------|-----------------|-------|
+| 1 | raw/info.json | FMP | 2026-05-27 | Tier 2 (Financial API) | Company profile, price, market cap, employees, beta |
+| 2 | raw/quote.json | FMP | 2026-05-26 | Tier 2 (Financial API) | Current price, market cap, 52-week range |
+| 3 | raw/income.json | FMP | Period end 2025-11-02 | Tier 2 (Financial API) | Revenue, margins, EBITDA, EPS, D&A, R&D, interest expense, tax |
+| 4 | raw/balance.json | FMP | Period end 2025-11-02 | Tier 2 (Financial API) | Debt, cash, goodwill, intangibles, assets, equity, AR, inventory, deferred revenue |
+| 5 | raw/cashflow.json | FMP | Period end 2025-11-02 | Tier 2 (Financial API) | OCF, capex, FCF, SBC, dividends, buybacks, working capital |
+| 6 | raw/metrics.json | FMP | Period end 2025-11-02 | Tier 2 (Financial API) | ROIC, DSO, DIO, DPO, CCC, FCF yield, SBC/revenue, intangibles/assets |
+| 7 | raw/ratios.json | FMP | Period end 2025-11-02 | Tier 2 (Financial API) | Margins, tax rate, leverage ratios, dividend data |
+| 8 | raw/earnings.json | FMP | Through 2026-06-03 | Tier 2 (Financial API) | Quarterly EPS and revenue actuals vs. estimates |
+| 9 | raw/ratings.json | FMP | 2026-05-27 | Tier 2 (Financial API) | Consensus revenue/EPS estimates, price targets |
+| 10 | raw/enterprise_value.json | FMP | Period end 2025-11-02 | Tier 2 (Financial API) | Historical enterprise value at filing-date prices |
+| 11 | raw/shares_float.json | FMP | 2026-05-27 | Tier 2 (Financial API) | Outstanding shares, float, free float % |
+| 12 | raw/technicals.json | FMP | 2026-05-26 | Tier 2 (Financial API) | RSI, EMA, SMA, ADV, volume |
+| 13 | raw/scores.json | FMP | 2026-05-27 | Tier 2 (Financial API) | Altman Z-Score, Piotroski Score |
+| 14 | raw/dcf.json | FMP | 2026-05-26 | Tier 2 (Financial API) | FMP DCF model estimate |
+| 15 | raw/insider.json | FMP | 2026-05-27 | Tier 2 (Financial API) | Insider transactions |
+| 16 | raw/peers.json | FMP | 2026-05-27 | Tier 2 (Financial API) | Peer company list |
+| 17 | raw/peer_compare.json | FMP | 2026-05-27 | Tier 2 (Financial API) | Peer company profiles (AMD, etc.) |
+| 18 | raw/segments.json | FMP | 2026-05-27 | Tier 2 (Financial API) | Empty (404 error) |
+| 19 | raw/short_interest.json | FMP | 2026-05-27 | Tier 2 (Financial API) | Empty (404 error) |
+| 20 | raw/dividends.json | FMP | 2026-05-27 | Tier 2 (Financial API) | Empty (404 error) |
+| 21 | raw/transcript.json | FMP | Q1 FY2026 | Tier 3 (Transcript) | Earnings call: Hock Tan, Kirsten Spears, Charlie Kawwas, analyst Q&A |
+| 22 | raw/transcript_segments.json | FMP | Q1 FY2026 | Tier 3 (Transcript) | Segment-specific transcript excerpts |
+| 23 | raw/transcript_competitors.json | FMP | Q1 FY2026 | Tier 3 (Transcript) | Competitor mentions in transcript |
+| 24 | raw/presentations.json | Company IR | 2026-05-27 | Tier 1 (Company Disclosure) | Investor presentations and IR events |
+| 25 | raw/facts.json | EDGAR | 2026-05-27 | Tier 1 (SEC Filing) | XBRL concept data |
+| 26 | raw/filings.json | EDGAR | 2026-05-27 | Tier 1 (SEC Filing) | SEC filings list |
+| 27 | raw/filing_search.json | EDGAR | 2026-05-27 | Tier 1 (SEC Filing) | EDGAR full-text search results |
+| 28 | raw/filing_events.json | EDGAR | 2026-05-27 | Tier 1 (SEC Filing) | 8-K material events |
+| 29 | raw/edgar_search_risks.json | EDGAR | 2026-05-27 | Tier 1 (SEC Filing) | Risk factor search results |
+| 30 | raw/convertible_search.json | EDGAR | 2026-05-27 | Tier 1 (SEC Filing) | Convertible notes EFTS search |
+| 31 | raw/proxy.json | EDGAR | Filed 2026-03-02 | Tier 1 (SEC Filing) | DEF 14A (parsing error, empty) |
+| 32 | raw/insider_detail.json | EDGAR | 2026-05-27 | Tier 1 (SEC Filing) | Form 4 transactions |
+| 33 | raw/holders_detail.json | EDGAR | 2026-05-27 | Tier 1 (SEC Filing) | 13F institutional ownership |
+| 34 | raw/latest_10k_text.txt | EDGAR | FY2025 (filed 2025-12-18) | Tier 1 (SEC Filing) | 10-K full text (partial) |
+| 35 | raw/business_overview.md | Serper (Web) | 2026-05-27 | Tier 4 (Web Research) | Business description, acquisition history |
+| 36 | raw/segment_financials.md | Serper (Web) | 2026-05-27 | Tier 4 (Web Research) | Segment revenue data |
+| 37 | raw/competitive_by_product.md | Serper (Web) | 2026-05-27 | Tier 4 (Web Research) | Product-level competitive landscape |
+| 38 | raw/competitive_history.md | Serper (Web) | 2026-05-27 | Tier 4 (Web Research) | Competitive landscape evolution |
+| 39 | raw/competitor_data.md | Serper (Web) | 2026-05-27 | Tier 4 (Web Research) | Competitor financial comparisons |
+| 40 | raw/customer_alternatives.md | Serper (Web) | 2026-05-27 | Tier 4 (Web Research) | Switching costs, Porter's analysis |
+| 41 | raw/customer_capex.md | Serper (Web) | 2026-05-27 | Tier 4 (Web Research) | Hyperscaler capex guidance |
+| 42 | raw/ecosystem_signals.md | Hermes | 2026-05-27 | Tier 4 (Web Research) | MRVL, NVDA, TSMC peripheral signals |
+| 43 | raw/backlog_breakdown.md | Serper (Web) | 2026-05-27 | Tier 4 (Web Research) | Backlog data |
+| 44 | raw/supplier_capacity.md | Serper (Web) | 2026-05-27 | Tier 4 (Web Research) | TSMC capacity constraints |
+| 45 | raw/supply_demand.md | Serper (Web) | 2026-05-27 | Tier 4 (Web Research) | Supply/demand indicators |
+| 46 | raw/supply_indicators.md | Serper (Web) | 2026-05-27 | Tier 4 (Web Research) | Backlog and capacity data |
+| 47 | raw/revenue_mix.md | Serper (Web) | 2026-05-27 | Tier 4 (Web Research) | Revenue mix breakdown |
+| 48 | raw/value_chain.md | Serper (Web) | 2026-05-27 | Tier 4 (Web Research) | Value chain structure |
+| 49 | raw/convertible_detail.md | Serper (Web) | 2026-05-27 | Tier 4 (Web Research) | Debt details |
+| 50 | raw/short_interest.md | Serper (Web) | 2026-05-27 | Tier 4 (Web Research) | Short interest data |
+| 51 | raw/press_releases.md | Serper (Web) | 2026-05-27 | Tier 4 (Web Research) | Recent press releases |
+| 52 | raw/company_ir.md | Serper (Web) | 2026-05-27 | Tier 4 (Web Research) | IR page information |
+| 53 | raw/claim_verification.json | Derived | 2026-05-27 | Derived | Confidence tags for 135 web-sourced claims |
+
+## Reliability Tier Definitions
+
+1. **Tier 1 — SEC filings and company announcements:** 10-K, 10-Q, proxy statements, company IR, press releases. Highest confidence.
+2. **Tier 2 — Standardized financial APIs:** FMP-derived financial statements, metrics, ratios, quotes. Derived from filings.
+3. **Tier 3 — Earnings transcripts:** Management statements and analyst questions. Narrative-shaped; speaker attribution required.
+4. **Tier 4 — Third-party research:** Expert calls, industry research, web search results. Verify against higher tiers.
+5. **Tier 5 — News, blogs, commentary:** Context only. Not primary evidence.
+
+## Claim Verification Summary
+
+135 web-sourced claims checked:
+- **Verified:** 64 (47%)
+- **Corroborated:** 37 (27%)
+- **Single-Source:** 14 (10%)
+- **Contradicted:** 10 (7%)
+- **Unverifiable:** 10 (7%)
+
+[claim_verification.json]
+
+## Key Contradicted Claims
+
+| Claim ID | Claim | Issue | Resolution |
+|----------|-------|-------|------------|
+| C022 | NVDA Q1 FY2027 data center revenue | $75.3B vs $75.2B cited across sources | Use $75.2B per NVDA earnings release |
+| C029 | NVDA-Groq acquisition total | $13B vs $20B | Total was $20B ($13B upfront + earnouts) |
+| C074 | AVGO days-to-cover | 2.1 vs 2.6 | Varies by volume averaging window |
+
+## Key Unverifiable Claims
+
+| Claim ID | Claim | Issue |
+|----------|-------|-------|
+| C038 | AVGO depends on TSMC for ~95% of wafers | 10-K says "the majority" without quantification |
+| C043 | NVDA occupies ~50% of TSMC CoWoS capacity | TSMC does not disclose customer-level allocation |
+| C045 | AVGO has no long-term supplier agreements | 10-K uses "generally on a purchase order basis" but VP confirmed 3-4 year agreements for strategic components |
+
+## Data Not Available
+
+- FMP segments.json: 404 error (segment revenue by FMP API)
+- FMP short_interest.json: 404 error
+- FMP dividends.json: 404 error
+- EDGAR proxy.json: parsing error (DEF 14A text empty)
+- Geographic revenue breakdown: not available
+- Debt maturity schedule by year: not extracted from 10-K
+- Per-customer revenue concentration: not disclosed by Broadcom
+- Patent portfolio: raw/patents.json not present
+- Congressional trading: FMP API 404
