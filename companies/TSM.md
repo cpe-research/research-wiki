@@ -16,6 +16,10 @@ edges:
 
 # TSM (TSM)
 
+## Competitors
+
+- [AVGO](AVGO.md) (AVGO)
+
 ## Key Insiders
 
 - Chuang Tzu-Sou (officer: VP)
