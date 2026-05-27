@@ -24,7 +24,7 @@ sources:
 - **Country:** TW
 - **Website:** https://www.tsmc.com
 
-## Competitors
+## Overview
 
 - [Samsung](005930.KS.md) (005930.KS)
 - [Intel](INTC.md) (INTC)

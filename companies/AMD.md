@@ -24,7 +24,7 @@ sources:
 - **Country:** US
 - **Website:** https://www.amd.com
 
-## Competitors
+## Overview
 
 - [NVIDIA](NVDA.md) (NVDA)
 - [Intel](INTC.md) (INTC)
