@@ -16,6 +16,10 @@ edges:
 
 # AMD (AMD)
 
+## Competitors
+
+- [AVGO](AVGO.md) (AVGO)
+
 ## Key Insiders
 
 - Norrod Forrest Eugene (officer: EVP & GM DESG)

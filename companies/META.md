@@ -11,23 +11,10 @@ sources:
   - holders.json
   - transcript_competitors.json
 edges:
-  - { type: competes_with, target: AAPL, confidence: 0.6 }
-  - { type: competes_with, target: AVGO, confidence: 0.6 }
-  - { type: competes_with, target: TSM, confidence: 0.6 }
-  - { type: partners_with, target: AVGO, confidence: 0.85 }
-  - { type: competes_with, target: AAPL, confidence: 0.6 }
-  - { type: competes_with, target: AVGO, confidence: 0.6 }
-  - { type: competes_with, target: TSM, confidence: 0.6 }
-  - { type: partners_with, target: AVGO, confidence: 0.85 }
+  - { type: competes_with, target: AVGO, confidence: 0.4 }
 ---
 
 # META (META)
-
-## Competitors
-
-- [AAPL](AAPL.md) (AAPL)
-- [AVGO](AVGO.md) (AVGO)
-- [TSM](TSM.md) (TSM)
 
 ## Key Insiders
 

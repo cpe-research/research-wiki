@@ -13,7 +13,7 @@ updated: "2026-05-27"
 - [NVDA (NVDA)](companies/NVDA.md)
 - [Qorvo, Inc. (QRVO)](companies/QRVO.md)
 - [TSM (TSM)](companies/TSM.md)
-- [UBER (UBER)](companies/UBER.md)
+- [Uber Technologies, Inc. (UBER)](companies/UBER.md)
 
 ## Graph Statistics
 
