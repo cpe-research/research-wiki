@@ -1,7 +1,10 @@
 ---
 type: company
 ticker: TSM
-name: TSM
+name: Taiwan Semiconductor Manufacturing Company Limited
+sector: Technology
+industry: Semiconductors
+country: TW
 updated: "2026-05-27"
 sources:
   - info.json
@@ -12,11 +15,24 @@ sources:
   - transcript_competitors.json
 ---
 
-# TSM (TSM)
+# Taiwan Semiconductor Manufacturing Company Limited (TSM)
+
+## Overview
+
+- **Sector:** Technology
+- **Industry:** Semiconductors
+- **Country:** TW
+- **Website:** https://www.tsmc.com
 
 ## Competitors
 
-- [AVGO](AVGO.md) (AVGO)
+- Samsung Foundry
+- Semiconductor Manufacturing International Corporation
+- [Samsung Electronics](SSNLF.md) (SSNLF)
+- [GlobalFoundries](GFS.md) (GFS)
+- [United Microelectronics Corporation](UMC.md) (UMC)
+- [Intel](INTC.md) (INTC)
+- SMIC
 
 ## Key Insiders
 

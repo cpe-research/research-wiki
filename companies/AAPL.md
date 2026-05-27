@@ -25,14 +25,12 @@ sources:
 
 ## Competitors
 
-- [SSNLF](SSNLF.md) (SSNLF)
-- [MSFT](MSFT.md) (MSFT)
-- [GOOGL](GOOGL.md) (GOOGL)
-- [AMZN](AMZN.md) (AMZN)
-- [SONY](SONY.md) (SONY)
-- 005930.KS
-- Huawei
-- [Xiaomi](XIACF.md) (XIACF)
+- [Samsung Electronics](SSNLF.md) (SSNLF)
+- [Microsoft](MSFT.md) (MSFT)
+- [Alphabet](GOOGL.md) (GOOGL)
+- [Amazon](AMZN.md) (AMZN)
+- [Sony Group](SONY.md) (SONY)
+- [Meta Platforms](META.md) (META)
 
 ## Key Insiders
 
@@ -45,9 +43,9 @@ sources:
 
 - Axiom Investment Management LLC
 - BERKSHIRE HATHAWAY INC  (BRK-A, BRK-B)
-- BSN Capital Partners Ltd
 - Blankinship & Foster, LLC
 - BlueMountain Capital Management, LLC
+- BSN Capital Partners Ltd
 - CHILDRESS CAPITAL ADVISORS, LLC
 - COLUMBIA CAPITAL LLC
 - First Trust Investment Solutions L.P.

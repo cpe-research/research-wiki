@@ -1,7 +1,10 @@
 ---
 type: company
 ticker: AMD
-name: AMD
+name: Advanced Micro Devices, Inc.
+sector: Technology
+industry: Semiconductors
+country: US
 updated: "2026-05-27"
 sources:
   - info.json
@@ -12,12 +15,24 @@ sources:
   - transcript_competitors.json
 ---
 
-# AMD (AMD)
+# Advanced Micro Devices, Inc. (AMD)
+
+## Overview
+
+- **Sector:** Technology
+- **Industry:** Semiconductors
+- **Country:** US
+- **Website:** https://www.amd.com
 
 ## Competitors
 
-- [AVGO](AVGO.md) (AVGO)
-- [NVIDIA Corporation](NVDA.md) (NVDA)
+- [NVIDIA](NVDA.md) (NVDA)
+- [Intel](INTC.md) (INTC)
+- [Broadcom](AVGO.md) (AVGO)
+- [Marvell Technology](MRVL.md) (MRVL)
+- Ampere Computing
+- [Lattice Semiconductor](LSCC.md) (LSCC)
+- [Qualcomm](QCOM.md) (QCOM)
 
 ## Key Insiders
 
@@ -27,14 +42,14 @@ sources:
 
 ## Top Institutional Holders
 
+- Blankinship & Foster, LLC
 - BNP PARIBAS FINANCIAL MARKETS
 - BRIGADE CAPITAL MANAGEMENT, LP
-- Blankinship & Foster, LLC
 - COATUE MANAGEMENT LLC
 - MAPLELANE CAPITAL, LLC
-- MUFG Securities EMEA plc
 - Mizuho Markets Cayman LP
 - Modern Wealth Management, LLC
+- MUFG Securities EMEA plc
 - Oak Grove Capital LLC
 - Platinum Management (NY) LLC
 

@@ -1,7 +1,7 @@
 ---
 type: company
 ticker: UBER
-name: UBER
+name: Uber
 updated: "2026-05-27"
 sources:
   - info.json
@@ -12,7 +12,7 @@ sources:
   - transcript_competitors.json
 ---
 
-# UBER (UBER)
+# Uber (UBER)
 
 ## Key Insiders
 
@@ -27,9 +27,9 @@ sources:
 - Draper Asset Management, LLC
 - EMJ Capital Ltd.
 - Freshford Capital Management, LLC
-- GPI CAPITAL, L.P.
 - Game Plan Financial Advisors, LLC
 - Genesis Financial Group, LLC
+- GPI CAPITAL, L.P.
 - INVESTMENT MANAGEMENT ASSOCIATES INC /ADV
 
 ---

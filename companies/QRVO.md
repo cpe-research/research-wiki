@@ -1,7 +1,10 @@
 ---
 type: company
 ticker: QRVO
-name: QRVO
+name: Qorvo, Inc.
+sector: Technology
+industry: Semiconductors
+country: US
 updated: "2026-05-27"
 sources:
   - info.json
@@ -12,18 +15,31 @@ sources:
   - transcript_competitors.json
 ---
 
-# QRVO (QRVO)
+# Qorvo, Inc. (QRVO)
+
+## Overview
+
+- **Sector:** Technology
+- **Industry:** Semiconductors
+- **Country:** US
+- **Website:** https://www.qorvo.com
 
 ## Competitors
 
-- [AVGO](AVGO.md) (AVGO)
+- [Skyworks Solutions](SWKS.md) (SWKS)
+- [Broadcom](AVGO.md) (AVGO)
+- [Qualcomm](QCOM.md) (QCOM)
+- Murata Manufacturing
+- [Analog Devices](ADI.md) (ADI)
+- [NXP Semiconductors](NXPI.md) (NXPI)
+- [MACOM Technology Solutions](MTSI.md) (MTSI)
 
 ## Key Insiders
 
-- BRUGGEWORTH ROBERT A (director, officer: President and CEO)
 - Brown Grant (officer: SVP & Chief Financial Officer)
-- CREVISTON STEVEN E (officer: SVP, Connectivity & Sensors)
+- BRUGGEWORTH ROBERT A (director, officer: President and CEO)
 - Chesley Philip (officer: SVP, High Performance Analog)
+- CREVISTON STEVEN E (officer: SVP, Connectivity & Sensors)
 - FEGO PAUL J (officer: SVP, Global Operations)
 - Harrison Gina (officer: VP and Corporate Controller)
 - Stewart Frank P. (officer: SVP, Advanced Cellular)

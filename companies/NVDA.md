@@ -1,7 +1,7 @@
 ---
 type: company
 ticker: NVDA
-name: NVDA
+name: NVIDIA
 updated: "2026-05-27"
 sources:
   - info.json
@@ -12,12 +12,12 @@ sources:
   - transcript_competitors.json
 ---
 
-# NVDA (NVDA)
+# NVIDIA (NVDA)
 
 ## Competitors
 
-- [AVGO](AVGO.md) (AVGO)
 - [Advanced Micro Devices, Inc.](AMD.md) (AMD)
+- [Broadcom Inc.](AVGO.md) (AVGO)
 
 ## Key Insiders
 
@@ -25,9 +25,9 @@ sources:
 - Kress Colette (officer: EVP & Chief Financial Officer)
 - Puri Ajay K (officer: EVP, Worldwide Field Ops)
 - Robertson Donald F Jr (officer: Principal Accounting Officer)
-- STEVENS MARK A (director)
 - Shah Aarti S. (director)
 - Shoquist Debora (officer: EVP, Operations)
+- STEVENS MARK A (director)
 - Teter Timothy S. (officer: EVP, General Counsel and Sec)
 
 ---

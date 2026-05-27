@@ -1,7 +1,7 @@
 ---
 type: company
 ticker: AVGO
-name: AVGO
+name: Broadcom
 updated: "2026-05-27"
 sources:
   - info.json
@@ -12,15 +12,11 @@ sources:
   - transcript_competitors.json
 ---
 
-# AVGO (AVGO)
+# Broadcom (AVGO)
 
 ## Competitors
 
-- [AMD](AMD.md) (AMD)
-- [META](META.md) (META)
-- [NVDA](NVDA.md) (NVDA)
-- [QRVO](QRVO.md) (QRVO)
-- [TSM](TSM.md) (TSM)
+- [Advanced Micro Devices, Inc.](AMD.md) (AMD)
 
 ## Key Insiders
 
@@ -42,11 +38,11 @@ sources:
 - BERKOWITZ CAPITAL & CO  LLC
 - BNP PARIBAS FINANCIAL MARKETS
 - BOOTHBAY FUND MANAGEMENT, LLC
+- Capital Advisory Group Advisory Services, LLC
 - COATUE MANAGEMENT LLC
 - CTC LLC
-- Capital Advisory Group Advisory Services, LLC
 - DAI ICHI MUTUAL LIFE INSURANCE CO
-- DRUKER NEIL
+- Destination Wealth Management
 
 ---
 

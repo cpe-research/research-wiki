@@ -1,7 +1,7 @@
 ---
 type: company
 ticker: META
-name: META
+name: Meta Platforms
 updated: "2026-05-27"
 sources:
   - info.json
@@ -12,11 +12,11 @@ sources:
   - transcript_competitors.json
 ---
 
-# META (META)
+# Meta Platforms (META)
 
 ## Competitors
 
-- [AVGO](AVGO.md) (AVGO)
+- [Apple Inc.](AAPL.md) (AAPL)
 
 ## Key Insiders
 
@@ -27,15 +27,15 @@ sources:
 ## Top Institutional Holders
 
 - AAF Wealth Management, LLC
+- Adams Wealth Management
 - ADAPT Investment Managers SA
 - AKUNA SECURITIES LLC
 - ALKEON CAPITAL MANAGEMENT LLC
-- Adams Wealth Management
 - Axiom Investment Management LLC
+- BloombergSen Inc.
 - BNP PARIBAS ARBITRAGE, SNC
 - BNP PARIBAS FINANCIAL MARKETS
 - BRANT POINT INVESTMENT MANAGEMENT LLC
-- BSN Capital Partners Ltd
 
 ---
 
