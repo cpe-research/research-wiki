@@ -2,7 +2,7 @@
 type: company
 ticker: NVDA
 name: NVIDIA
-updated: "2026-05-28"
+updated: "2026-05-29"
 sources:
   - info.json
   - value_chain.md

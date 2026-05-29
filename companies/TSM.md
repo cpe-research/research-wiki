@@ -5,7 +5,7 @@ name: Taiwan Semiconductor Manufacturing Company Limited
 sector: Technology
 industry: Semiconductors
 country: TW
-updated: "2026-05-28"
+updated: "2026-05-29"
 sources:
   - info.json
   - value_chain.md
