@@ -5,7 +5,7 @@ name: Apple Inc.
 sector: Technology
 industry: Consumer Electronics
 country: US
-updated: "2026-05-29"
+updated: "2026-05-31"
 sources:
   - info.json
   - value_chain.md

@@ -2,7 +2,7 @@
 type: company
 ticker: META
 name: Meta Platforms
-updated: "2026-05-29"
+updated: "2026-05-31"
 sources:
   - info.json
   - value_chain.md
